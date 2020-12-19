@@ -2,14 +2,16 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/simon/.oh-my-zsh"
+export ZSH="/home/red0x15/.oh-my-zsh"
+
+bindkey -v
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="lukerandall"
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
+# ZSH_THEME="lukerandall"
 # ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
@@ -103,5 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias myip="curl http://ipecho.net/plain; echo"
+alias discord="/opt/discord/Discord/Discord"
 
-pfetch
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export EDITOR=/usr/bin/nvim

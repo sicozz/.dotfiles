@@ -2,17 +2,12 @@
 function zle-keymap-select() {
   # update keymap variable for the prompt
   VI_KEYMAP=$KEYMAP
+
   zle reset-prompt
   zle -R
 }
 
 zle -N zle-keymap-select
-
-function zle-line-init zle-keymap-select {
-  RPS1="${${KEYMAP/vicmd/NORMAL}/(main|viins)/INSERT}"
-  RPS2=$RPS1
-  zle reset-prompt
-}
 
 function vi-accept-line() {
   VI_KEYMAP=main
