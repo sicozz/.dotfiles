@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/plugged')
 " colorscheme
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
+Plug 'altercation/vim-colors-solarized'
 
 " Status bar
 Plug 'vim-airline/vim-airline'
@@ -46,9 +47,15 @@ call plug#end()
 " End pluggin manager
 
 " Set colorscheme style
-let g:gruvbox_material_background = 'hard' 
-let g:gruvbox_material_statusline_style = 'original'
-colorscheme gruvbox-material
+" " For gruvbox
+" let g:gruvbox_material_background = 'hard' 
+" let g:gruvbox_material_statusline_style = 'original'
+" "
+
+let g:solarized_termcolors=16
+let g:solarized_visibility="high"
+let g:solarized_contrast="high"
+colorscheme solarized
 set background=dark
 
 " Keybindings
