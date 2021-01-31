@@ -41,7 +41,7 @@ let g:airline_symbols.linenr = ''
 let g:airline_skip_empty_sections = 1
 
 " Switch to your current theme
-let g:airline_theme = 'gruvbox_material'
+let g:airline_theme = 'tomorrow'
 
 " Always show tabs
 set showtabline=2

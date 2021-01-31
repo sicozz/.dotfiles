@@ -1,7 +1,7 @@
 syntax on
 
 set noerrorbells                        " Disables the bell sound on error
-set mouse=a				" Enables mouse integration
+set mouse=a				                " Enables mouse integration
 set tabstop=4 softtabstop=4             " Sets tabs to 4 spaces
 set shiftwidth=4                        " Sets shifs indent to 4 spaces
 set expandtab                           " Enables real copy and paste
@@ -9,21 +9,25 @@ set smartindent                         " Uses autoindent
 set nu                                  " Puts the line numbers at the left
 set number relativenumber               " Line numbers are relative
 set nowrap                              " Disables auto-linewrap
-set smartcase                           " Search is 'smart' case sensitive
 set noswapfile                          " Doesn't creates .swaps
 set nobackup                            " Doesn't creates .backup
-set undodir=~/.config/nvim/undodir             " Sets directory for undotree
+set undodir=~/.config/nvim/undodir      " Sets directory for undotree
 set undofile                            " Creates undofiles
+set hidden                              " Different buffers at a time so you can swap between them whitout saving
+set nohlsearch                          " Not more nasty search highlith
 set incsearch                           " Incremently highlights search matches
+set guicursor=                          " Always block cursor
+set scrolloff=8                         " It scrollosff with n lines span
 set colorcolumn=80                      " Sets limit line with color
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+set signcolumn=yes                      " Left column for special messages
 
 " Start pluggin manager
 call plug#begin('~/.config/nvim/plugged')
 " colorscheme
-Plug 'morhetz/gruvbox'
-Plug 'sainnhe/gruvbox-material'
+" Plug 'morhetz/gruvbox'
+" Plug 'sainnhe/gruvbox-material'
 Plug 'altercation/vim-colors-solarized'
+Plug 'ayu-theme/ayu-vim'
 
 " Status bar
 Plug 'vim-airline/vim-airline'
@@ -52,11 +56,19 @@ call plug#end()
 " let g:gruvbox_material_statusline_style = 'original'
 " "
 
-let g:solarized_termcolors=16
-let g:solarized_visibility="high"
-let g:solarized_contrast="high"
-colorscheme solarized
-set background=dark
+" " For solarized
+" let g:solarized_termcolors=16
+" let g:solarized_visibility="high"
+" let g:solarized_contrast="high"
+" colorscheme solarized
+" set background=dark
+" "
+
+" " For ayu
+set termguicolors
+let ayucolor="light"  " for light version of theme
+colorscheme ayu
+" "
 
 " Keybindings
 let mapleader = " "
