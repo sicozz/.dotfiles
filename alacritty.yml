@@ -12,13 +12,13 @@ font:
   bold:
     family: Roboto Mono for Powerline
     # Style can be specified to pick a specific face.
-    # style: Bold
+    style: Bold
 
   # The italic font face
   italic:
     family: Roboto Mono for Powerline
     # Style can be specified to pick a specific face.
-    # style: Italic
+    style: Italic
 
 
 # background_opacity: 0.96
@@ -57,40 +57,41 @@ schemes:
       cyan:    '#93a1a1' # base1
       white:   '#fdf6e3' # base3
 
-  solarized_dark: &dark
+  ayu_dark: &dark
     # Default colors
     primary:
-      background: '#002b36' # base03
-      foreground: '#839496' # base0
+      background: '#0A0E14'
+      foreground: '#B3B1AD'
 
     # Cursor colors
     cursor:
-      text:   '#002b36' # base03
-      cursor: '#839496' # base0
+      text:   '#e8eaeb' # base03
+      cursor: '#8a9199' # base0
 
     # Normal colors
     normal:
-      black:   '#073642' # base02
-      red:     '#dc322f' # red
-      green:   '#859900' # green
-      yellow:  '#b58900' # yellow
-      blue:    '#268bd2' # blue
-      magenta: '#d33682' # magenta
-      cyan:    '#2aa198' # cyan
-      white:   '#eee8d5' # base2
+      black:    '#01060e' # base02
+      red:      '#ea6c73' # red
+      green:    '#91b362' # green
+      yellow:   '#f9af4f' # yellow
+      blue:     '#53bdfa' # blue
+      magenta:  '#fae994' # magenta
+      cyan:     '#90e1c6' # cyan
+      white:    '#c7c7c7' # base2
 
-    # Bright colors
+    # bright colors
     bright:
-      black:   '#002b36' # base03
-      red:     '#cb4b16' # orange
-      green:   '#586e75' # base01
-      yellow:  '#657b83' # base00
-      blue:    '#839496' # base0
-      magenta: '#6c71c4' # violet
-      cyan:    '#93a1a1' # base1
-      white:   '#fdf6e3' # base3
+      black:    '#686868' # base03
+      red:      '#f07178' # orange
+      green:    '#c2d94c' # base01
+      yellow:   '#ffb454' # base00
+      blue:     '#59c2ff' # base0
+      magenta:  '#ffee99' # violet
+      cyan:     '#95e6cb' # base1
+      white:    '#ffffff' # base3
 
-colors: *light
+# Colorscheme selection
+colors: *dark
 
 
 # Shell configuration
