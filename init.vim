@@ -34,11 +34,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Utils
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-fugitive'
+Plug 'sheerun/vim-polyglot'                 " Multiple language support
+Plug 'tpope/vim-fugitive'                   " Git from vim
 Plug 'vim-utils/vim-man'
-Plug 'mbbill/undotree'
-Plug 'dbeniamine/cheat.sh-vim'
+Plug 'mbbill/undotree'                      " File history
+Plug 'dbeniamine/cheat.sh-vim'              " The best pluggin
+Plug 'christoomey/vim-tmux-navigator'       " Vim/tmux navigation fusion
 
 " Autocomple
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -70,6 +71,7 @@ call plug#end()
 " colorscheme ayu
 " "
 
+let g:tmux_navigator_disable_when_zoomed = 1            " Prevent vim-tmux-navigator to get out of zoomed pane
 colorscheme felipec
 let g:lightline = { 'colorscheme': 'felipec' }
 
@@ -88,7 +90,8 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <C-q> :bd<CR>
 
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
