@@ -41,7 +41,8 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_skip_empty_sections = 1
 
 " Switch to your current theme
-let g:airline_theme = 'tomorrow'
+"let g:airline_theme = 'base16_chalk'
+let g:airline_theme = 'badwolf'
 
 " Always show tabs
 set showtabline=2

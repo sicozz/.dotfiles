@@ -24,74 +24,93 @@ font:
 # background_opacity: 0.96
 # Colors schemes configuration
 schemes:
-  ayu_light: &light
-    # Default colors
+  material_theme: &light
+  # Default colors
     primary:
-      background: '#fafafa' # base03
-      foreground: '#575F66' # base0
-
-    # Cursor colors
-    cursor:
-      text:   '#e8eaeb' # base03
-      cursor: '#8a9199' # base0
+      background: '#161d21'
+      foreground: '#d8d8d8'
 
     # Normal colors
     normal:
-      black:   '#d3d3d3' # base02
-      red:     '#f51818' # red
-      green:   '#859900' # green
-      yellow:  '#f2ae49' # yellow
-      blue:    '#399ee6' # blue
-      magenta: '#a37acc' # magenta
-      cyan:    '#55b4d4' # cyan
-      white:   '#ffffff' # base2
+      black:   '#000000'  # Arbitrary
+      red:     '#e53935'
+      green:   '#91b859'
+      yellow:  '#ffb62c'
+      blue:    '#6182b8'
+      magenta: '#ff5370'  # Dark pink of the original material theme
+      cyan:    '#39adb5'
+      white:   '#a0a0a0'  # Arbitrary
 
     # Bright colors
     bright:
-      black:   '#000000' # base03
-      red:     '#cb4b16' # orange
-      green:   '#99bf4d' # base01
-      yellow:  '#ffd700' # base00
-      blue:    '#1e90ff' # base0
-      magenta: '#6c71c4' # violet
-      cyan:    '#93a1a1' # base1
-      white:   '#fdf6e3' # base3
+      black:   '#4e4e4e'  # Arbitrary
+      red:     '#ff5370'
+      green:   '#c3e88d'
+      yellow:  '#ffcb6b'
+      blue:    '#82aaff'
+      magenta: '#f07178'  # Pink of the original material theme
+      cyan:    '#89ddff'
+      white:   '#ffffff'  # Arbitrary
 
+  # Colors (Ayu Dark)
   ayu_dark: &dark
     # Default colors
     primary:
       background: '#0A0E14'
       foreground: '#B3B1AD'
 
-    # Cursor colors
-    cursor:
-      text:   '#e8eaeb' # base03
-      cursor: '#8a9199' # base0
-
     # Normal colors
     normal:
-      black:    '#01060e' # base02
-      red:      '#ea6c73' # red
-      green:    '#91b362' # green
-      yellow:   '#f9af4f' # yellow
-      blue:     '#53bdfa' # blue
-      magenta:  '#fae994' # magenta
-      cyan:     '#90e1c6' # cyan
-      white:    '#c7c7c7' # base2
+      black: '#01060E'
+      red: '#EA6C73'
+      green: '#91B362'
+      yellow: '#F9AF4F'
+      blue: '#53BDFA'
+      magenta: '#FAE994'
+      cyan: '#90E1C6'
+      white: '#C7C7C7'
+
+    # Bright colors
+    bright:
+      black: '#686868'
+      red: '#F07178'
+      green: '#C2D94C'
+      yellow: '#FFB454'
+      blue: '#59C2FF'
+      magenta: '#FFEE99'
+      cyan: '#95E6CB'
+      white: '#FFFFFF'
+
+  happy_pallete: &custom
+    # Default colors
+    primary:
+      background: '#0a0e14'
+      foreground: '#e0e0e0'
+
+    # normal colors
+    normal:
+      black:      '#01060e'
+      red:        '#cc0000'
+      green:      '#2ebd2e'
+      yellow:     '#ffbf00'
+      blue:       '#007fff'
+      magenta:    '#ff08c1'
+      cyan:       '#008b8b'
+      white:      '#fffaf0'
 
     # bright colors
     bright:
-      black:    '#686868' # base03
-      red:      '#f07178' # orange
-      green:    '#c2d94c' # base01
-      yellow:   '#ffb454' # base00
-      blue:     '#59c2ff' # base0
-      magenta:  '#ffee99' # violet
-      cyan:     '#95e6cb' # base1
-      white:    '#ffffff' # base3
+      black:      '#686868'
+      red:        '#ff2f2f'
+      green:      '#51d551'
+      yellow:     '#ffce3b'
+      blue:       '#4ea6ff'
+      magenta:    '#ff43d0'
+      cyan:       '#00d9d9'
+      white:      '#ffffff'
 
 # Colorscheme selection
-colors: *dark
+colors: *custom
 
 
 # Shell configuration

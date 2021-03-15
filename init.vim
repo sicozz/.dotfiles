@@ -24,10 +24,12 @@ set colorcolumn=80                      " Sets limit line with color
 call plug#begin('~/.config/nvim/plugged')
 " colorscheme
 " Plug 'morhetz/gruvbox'
-" Plug 'sainnhe/gruvbox-material'
+Plug 'sjl/badwolf'
 " Plug 'altercation/vim-colors-solarized'
-Plug 'ayu-theme/ayu-vim'
-Plug 'felipec/vim-felipec'
+" Plug 'felipec/vim-felipec'
+" Plug 'lighthaus-theme/vim-lighthaus'
+" Plug 'ayu-theme/ayu-vim'
+" Plug 'jpo/vim-railscasts-theme'
 
 " Status bar
 Plug 'vim-airline/vim-airline'
@@ -53,8 +55,8 @@ call plug#end()
 
 " Set colorscheme style
 " " For gruvbox
-" let g:gruvbox_material_background = 'hard' 
-" let g:gruvbox_material_statusline_style = 'original'
+" let g:gruvbox_contrast_dark = 'hard'
+" colorscheme gruvbox
 " "
 
 " " For solarized
@@ -71,26 +73,42 @@ call plug#end()
 " colorscheme ayu
 " "
 
-let g:tmux_navigator_disable_when_zoomed = 1            " Prevent vim-tmux-navigator to get out of zoomed pane
-colorscheme felipec
-let g:lightline = { 'colorscheme': 'felipec' }
+" " For felipec
+" colorscheme felipec
+" "
 
-" Keybindings
+" colorscheme lighthaus
+colorscheme badwolf
+
 let mapleader = " "
 let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
+let g:tmux_navigator_disable_when_zoomed = 1            " Prevent vim-tmux-navigator to get out of zoomed pane
+" Tmux navigator mappings
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <A-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <A-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <A-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <A-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <A-p> :TmuxNavigatePrevious<cr>
+"
+
+" Keybindings
 vnoremap <leader>p "_dP
 nnoremap <C-p> :GFiles<CR>
 nnoremap <Tab> :bn<CR>
 nnoremap <S-Tab> :bp<CR>
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>j :wincmd j<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
+"nnoremap <leader>h :wincmd h<CR>
+"nnoremap <leader>j :wincmd j<CR>
+"nnoremap <leader>k :wincmd k<CR>
+"nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>f :Files<CR>
+nmap <leader>gd <Plug>(cod-definition)
+nmap <leader>gr <Plug>(cod-references)
 nnoremap <C-q> :bd<CR>
 
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
