@@ -106,7 +106,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias myip="curl http://ipecho.net/plain; echo"
-alias discord="/opt/discord/Discord/Discord"
+alias vim="nvim"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export EDITOR=/usr/bin/nvim
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"

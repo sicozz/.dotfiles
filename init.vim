@@ -32,8 +32,8 @@ Plug 'sjl/badwolf'
 " Plug 'jpo/vim-railscasts-theme'
 
 " Status bar
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
 " Utils
 Plug 'sheerun/vim-polyglot'                 " Multiple language support
@@ -85,8 +85,8 @@ let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
-let g:tmux_navigator_disable_when_zoomed = 1            " Prevent vim-tmux-navigator to get out of zoomed pane
 " Tmux navigator mappings
+let g:tmux_navigator_disable_when_zoomed = 1            " Prevent vim-tmux-navigator to get out of zoomed pane
 let g:tmux_navigator_no_mappings = 1
 
 nnoremap <silent> <A-h> :TmuxNavigateLeft<cr>
@@ -107,9 +107,16 @@ nnoremap <S-Tab> :bp<CR>
 "nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>f :Files<CR>
-nmap <leader>gd <Plug>(cod-definition)
-nmap <leader>gr <Plug>(cod-references)
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gr <Plug>(coc-references)
 nnoremap <C-q> :bd<CR>
 
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
