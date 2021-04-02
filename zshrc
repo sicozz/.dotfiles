@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
+# sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/red0x15/.oh-my-zsh"
+export ZSH="/home/sicoz/.oh-my-zsh"
 
 bindkey -v
 
@@ -10,10 +11,10 @@ bindkey -v
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 # ZSH_THEME="lukerandall"
 # ZSH_THEME="agnoster"
-ZSH_THEME="arrow"
+# ZSH_THEME="arrow"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -76,6 +77,7 @@ ZSH_THEME="arrow"
 plugins=(
     git
     vi-mode
+    safe-paste
 )
 
 source $ZSH/oh-my-zsh.sh

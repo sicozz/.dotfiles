@@ -18,18 +18,15 @@ set incsearch                           " Incremently highlights search matches
 set guicursor=                          " Always block cursor
 set scrolloff=8                         " It scrollosff with n lines span
 set colorcolumn=80                      " Sets limit line with color
-"set signcolumn=yes                      " Left column for special messages
+"set textwidth=80                        " Sets line wrap limit
+" set signcolumn=yes                      " Left column for special messages
+set path+=**                            " Fuzzy finding vim source
 
 " Start pluggin manager
 call plug#begin('~/.config/nvim/plugged')
-" colorscheme
-" Plug 'morhetz/gruvbox'
-Plug 'sjl/badwolf'
-" Plug 'altercation/vim-colors-solarized'
-" Plug 'felipec/vim-felipec'
-" Plug 'lighthaus-theme/vim-lighthaus'
-" Plug 'ayu-theme/ayu-vim'
-" Plug 'jpo/vim-railscasts-theme'
+" Colorscheme
+Plug 'ayu-theme/ayu-vim'
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 
 " Status bar
 " Plug 'vim-airline/vim-airline'
@@ -47,66 +44,53 @@ Plug 'christoomey/vim-tmux-navigator'       " Vim/tmux navigation fusion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " File search within git repos
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 
 call plug#end()
 " End pluggin manager
 
-" Set colorscheme style
-" " For gruvbox
-" let g:gruvbox_contrast_dark = 'hard'
-" colorscheme gruvbox
-" "
-
-" " For solarized
-" let g:solarized_termcolors=16
-" let g:solarized_visibility="high"
-" let g:solarized_contrast="high"
-" colorscheme solarized
-" set background=dark
-" "
-
-" " For ayu
+" Colorscheme configs
+set termguicolors
+let ayucolor="dark"  " for dark version of theme
+colorscheme ayu
+" if exists('+termguicolors')
+"   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 " set termguicolors
-" let ayucolor="light"  " for light version of theme
-" colorscheme ayu
-" "
+" endif
+" colorscheme spaceduck
 
-" " For felipec
-" colorscheme felipec
-" "
-
-" colorscheme lighthaus
-colorscheme badwolf
+" Variables
 
 let mapleader = " "
 let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
-" Tmux navigator mappings
 let g:tmux_navigator_disable_when_zoomed = 1            " Prevent vim-tmux-navigator to get out of zoomed pane
 let g:tmux_navigator_no_mappings = 1
 
+" Tmux navigator mappings
 nnoremap <silent> <A-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <A-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <A-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <A-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <A-p> :TmuxNavigatePrevious<cr>
-"
 
 " Keybindings
 vnoremap <leader>p "_dP
-nnoremap <C-p> :GFiles<CR>
-nnoremap <Tab> :bn<CR>
-nnoremap <S-Tab> :bp<CR>
-"nnoremap <leader>h :wincmd h<CR>
+"nnoremap <Tab> :bn<CR>                                " Buffer navigation
+"nnoremap <S-Tab> :bp<CR>
+nnoremap <Tab> :b#<CR>
+"nnoremap <leader>h :wincmd h<CR>                       " windoww jumps without tmux_navigator
 "nnoremap <leader>j :wincmd j<CR>
 "nnoremap <leader>k :wincmd k<CR>
 "nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>f :Files<CR>
+" nnoremap <C-p> :GFiles<CR>                            " fzf git remap
+" nnoremap <leader>f :Files<CR>                         " fzf global remap
+
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nnoremap <C-q> :bd<CR>
