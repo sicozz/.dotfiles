@@ -1,7 +1,8 @@
 syntax on
 set noerrorbells                        " Disables the bell sound on error
 set mouse=a				                " Enables mouse integration
-set tabstop=4 softtabstop=4             " Sets tabs to 4 spaces
+set tabstop=4
+set softtabstop=4                       " Sets tabs to 4 spaces
 set shiftwidth=4                        " Sets shifs indent to 4 spaces
 set expandtab                           " Enables real copy and paste
 "set smartindent                         " Uses autoindent
@@ -28,10 +29,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'ayu-theme/ayu-vim'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 
-" Status bar
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-
 " Utils
 Plug 'sheerun/vim-polyglot'                 " Multiple language support
 Plug 'tpope/vim-fugitive'                   " Git from vim
@@ -51,25 +48,25 @@ call plug#end()
 " End pluggin manager
 
 " Colorscheme configs
-set termguicolors
-let ayucolor="dark"  " for dark version of theme
-colorscheme ayu
-" if exists('+termguicolors')
-"   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 " set termguicolors
-" endif
-" colorscheme spaceduck
+" let ayucolor="dark"  " for dark version of theme
+" colorscheme ayu
+
+set termguicolors
+colorscheme spaceduck
 
 " Variables
-
 let mapleader = " "
-let g:netrw_browse_split = 2
 let g:netrw_banner = 0
-let g:netrw_winsize = 25
+" let g:netrw_winsize = 25
 
 let g:tmux_navigator_disable_when_zoomed = 1            " Prevent vim-tmux-navigator to get out of zoomed pane
 let g:tmux_navigator_no_mappings = 1
+
+" Templates
+autocmd BufNewFile  *.html	0r ~/.config/nvim/templates/skeleton.html
+autocmd BufNewFile  *.tex	0r ~/.config/nvim/templates/skeleton.tex
+autocmd BufNewFile  *.bib	0r ~/.config/nvim/templates/skeleton.bib
 
 " Tmux navigator mappings
 nnoremap <silent> <A-h> :TmuxNavigateLeft<cr>
@@ -80,20 +77,44 @@ nnoremap <silent> <A-p> :TmuxNavigatePrevious<cr>
 
 " Keybindings
 vnoremap <leader>p "_dP
-"nnoremap <Tab> :bn<CR>                                " Buffer navigation
-"nnoremap <S-Tab> :bp<CR>
-nnoremap <Tab> :b#<CR>
+
+nnoremap <Tab> :silent b#<CR>
+nnoremap <Left> :silent bp<CR> :redraw!<CR>
+nnoremap <Right> :silent bn<CR> :redraw!<CR>
+nnoremap <C-q> :bd<CR>
+
+let s:hidden_all = 0
+function! ToggleHiddenAll()
+    if s:hidden_all  == 0
+        let s:hidden_all = 1
+        set norelativenumber
+        set nonumber
+        set noshowmode
+        set noshowcmd
+        set noruler
+        set laststatus=0
+    else
+        let s:hidden_all = 0
+        set relativenumber
+        set number
+        set showmode
+        set showcmd
+        set ruler
+        set laststatus=2
+    endif
+endfunction
+nnoremap <F5> :call ToggleHiddenAll()<CR>
+
+nnoremap <leader>u :UndotreeShow<CR>
 "nnoremap <leader>h :wincmd h<CR>                       " windoww jumps without tmux_navigator
 "nnoremap <leader>j :wincmd j<CR>
 "nnoremap <leader>k :wincmd k<CR>
 "nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>u :UndotreeShow<CR>
 " nnoremap <C-p> :GFiles<CR>                            " fzf git remap
 " nnoremap <leader>f :Files<CR>                         " fzf global remap
 
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
-nnoremap <C-q> :bd<CR>
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :

@@ -76,7 +76,7 @@ bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 #bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
-# focus_follows_mouse no
+focus_follows_mouse no
 
 # change focus
 bindsym $mod+h focus left
@@ -337,11 +337,11 @@ set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
-set $stlB     #1D2224
-set $stlFBg   #04545B
-set $stlUBg   #FF0000
-set $stl0T    #E0E0E0
-set $stl1T    #7B7B7B
+set $stlB     #0F111B
+set $stlFBg   #1B1C36
+set $stlUBg   #E33400
+set $stl0T    #ECF0C1
+set $stl1T    $stlFBg
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
@@ -376,7 +376,7 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          $stlFBg $stlFBg $stl0T  #FDF6E3
+  client.focused          $stlFBg $stlFBg $stl0T  #FDF6E3  #686F9A
   client.focused_inactive $stlBg  $stlBg  $stl1T  #454948
   client.unfocused        $stlBg  $stlBg  $stl1T  #454948
   client.urgent           $stlUBg $stlUBg $stl0T  #268BD2
