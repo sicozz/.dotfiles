@@ -23,6 +23,25 @@ set colorcolumn=80                      " Sets limit line with color
 " set signcolumn=yes                      " Left column for special messages
 set path+=**                            " Fuzzy finding vim source
 
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = "[".GitBranch()."]"
+  return strlen(l:branchname) > 2?'  '.l:branchname.' ':''
+endfunction
+
+let g:branch__ = StatuslineGit()
+set statusline=
+"set statusline+=%{branch__}
+set statusline+=%{StatuslineGit()}
+set statusline+=\ %f
+set statusline+=%m
+set statusline+=%=
+set statusline+=\ FT:\ %Y
+set statusline+=\ BN:\ %n
+set statusline+=\ LN:\ %l
 " Start pluggin manager
 call plug#begin('~/.config/nvim/plugged')
 " Colorscheme
@@ -41,8 +60,9 @@ Plug 'christoomey/vim-tmux-navigator'       " Vim/tmux navigation fusion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " File search within git repos
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'stsewd/fzf-checkout.vim'
 
 call plug#end()
 " End pluggin manager
@@ -106,12 +126,18 @@ endfunction
 nnoremap <F5> :call ToggleHiddenAll()<CR>
 
 nnoremap <leader>u :UndotreeShow<CR>
+" Git shortcuts
+nmap <leader>gs :G<CR>
+nmap <leader>gj :diffget //3<CR>
+nmap <leader>gf :diffget //2<CR>
+nnoremap <leader>gc :GCheckout<CR>
 "nnoremap <leader>h :wincmd h<CR>                       " windoww jumps without tmux_navigator
 "nnoremap <leader>j :wincmd j<CR>
 "nnoremap <leader>k :wincmd k<CR>
 "nnoremap <leader>l :wincmd l<CR>
-" nnoremap <C-p> :GFiles<CR>                            " fzf git remap
-" nnoremap <leader>f :Files<CR>                         " fzf global remap
+" Fzf shortcuts
+nnoremap <C-p> :GFiles<CR>
+nnoremap <leader>f :Files<CR>
 
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)

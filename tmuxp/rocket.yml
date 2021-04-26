@@ -1,0 +1,12 @@
+session_name: " "
+start_directory: $HOME/
+
+windows:
+  - window_name: vim
+    layout: tiled
+    panes:
+      - vim
+  - window_name: zsh
+    layout: tiled
+    panes:
+      - clear; neofetch
