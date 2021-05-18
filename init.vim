@@ -5,7 +5,6 @@ set tabstop=4
 set softtabstop=4                       " Sets tabs to 4 spaces
 set shiftwidth=4                        " Sets shifs indent to 4 spaces
 set expandtab                           " Enables real copy and paste
-"set smartindent                         " Uses autoindent
 set nu                                  " Puts the line numbers at the left
 set number relativenumber               " Line numbers are relative
 set nowrap                              " Disables auto-linewrap
@@ -19,45 +18,39 @@ set incsearch                           " Incremently highlights search matches
 set guicursor=                          " Always block cursor
 set scrolloff=8                         " It scrollosff with n lines span
 set colorcolumn=80                      " Sets limit line with color
-"set textwidth=80                        " Sets line wrap limit
-" set signcolumn=yes                      " Left column for special messages
+set completeopt=menuone                 " Shows completion even if there is only one option
+set shortmess+=c                        " Silences completion menu messages  
+"set signcolumn=yes                      " Left column for special messages
 set path+=**                            " Fuzzy finding vim source
 
-function! GitBranch()
-  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+function! s:statusline_expr()
+  let mod = "%{&modified ? '[+] ' : !&modifiable ? '[x] ' : ''}"
+  let ro  = "%{&readonly ? '[RO] ' : ''}"
+  let ft  = "%{len(&filetype) ? '['.&filetype.'] ' : ''}"
+  let fug = "%{exists('g:loaded_fugitive') ? fugitive#statusline() : ''}"
+  let sep = ' %= '
+  let pos = ' %-12(%l : %c%V%) '
+  let pct = ' %P'
+
+  return '[%n] %f %<'.mod.ro.ft.fug.sep.pos.'%*'.pct
 endfunction
 
-function! StatuslineGit()
-  let l:branchname = "[".GitBranch()."]"
-  return strlen(l:branchname) > 2?'  '.l:branchname.' ':''
-endfunction
+let &statusline = s:statusline_expr()
 
-let g:branch__ = StatuslineGit()
-set statusline=
-"set statusline+=%{branch__}
-set statusline+=%{StatuslineGit()}
-set statusline+=\ %f
-set statusline+=%m
-set statusline+=%=
-set statusline+=\ FT:\ %Y
-set statusline+=\ BN:\ %n
-set statusline+=\ LN:\ %l
 " Start pluggin manager
 call plug#begin('~/.config/nvim/plugged')
 " Colorscheme
-Plug 'ayu-theme/ayu-vim'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+Plug 'lifepillar/vim-solarized8'
+Plug 'wojciechkepka/bogster'
 
 " Utils
 Plug 'sheerun/vim-polyglot'                 " Multiple language support
 Plug 'tpope/vim-fugitive'                   " Git from vim
+Plug 'vim-scripts/AutoComplPop'             " completion menu autopopup
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'                      " File history
-Plug 'dbeniamine/cheat.sh-vim'              " The best pluggin
 Plug 'christoomey/vim-tmux-navigator'       " Vim/tmux navigation fusion
-
-" Autocomple
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " File search within git repos
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -68,17 +61,11 @@ call plug#end()
 " End pluggin manager
 
 " Colorscheme configs
-" set termguicolors
-" let ayucolor="dark"  " for dark version of theme
-" colorscheme ayu
-
 set termguicolors
-colorscheme spaceduck
+colorscheme bogster
 
 " Variables
 let mapleader = " "
-let g:netrw_banner = 0
-" let g:netrw_winsize = 25
 
 let g:tmux_navigator_disable_when_zoomed = 1            " Prevent vim-tmux-navigator to get out of zoomed pane
 let g:tmux_navigator_no_mappings = 1
@@ -94,6 +81,8 @@ nnoremap <silent> <A-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <A-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <A-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <A-p> :TmuxNavigatePrevious<cr>
+nnoremap <silent> <A-v> :wincmd v<cr>
+nnoremap <silent> <A-s> :wincmd s<cr>
 
 " Keybindings
 vnoremap <leader>p "_dP
@@ -127,27 +116,31 @@ nnoremap <F5> :call ToggleHiddenAll()<CR>
 
 nnoremap <leader>u :UndotreeShow<CR>
 " Git shortcuts
+
 nmap <leader>gs :G<CR>
 nmap <leader>gj :diffget //3<CR>
 nmap <leader>gf :diffget //2<CR>
-nnoremap <leader>gc :GCheckout<CR>
+nnoremap <leader>gc :GBranches<CR>
 "nnoremap <leader>h :wincmd h<CR>                       " windoww jumps without tmux_navigator
 "nnoremap <leader>j :wincmd j<CR>
 "nnoremap <leader>k :wincmd k<CR>
 "nnoremap <leader>l :wincmd l<CR>
+
+" Fzf colors match colorscheme
+let g:fzf_colors =                                                                         
+\ { 'fg':      ['fg', 'Normal'],                                                           
+  \ 'bg':      ['bg', 'Normal'],                                                           
+  \ 'hl':      ['fg', 'Comment'],                                                          
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],                             
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],                                       
+  \ 'hl+':     ['fg', 'Statement'],                                                        
+  \ 'info':    ['fg', 'PreProc'],                                                          
+  \ 'border':  ['fg', 'Ignore'],                                                           
+  \ 'prompt':  ['fg', 'Conditional'],                                                      
+  \ 'pointer': ['fg', 'Exception'],                                                        
+  \ 'marker':  ['fg', 'Keyword'],                                                          
+  \ 'spinner': ['fg', 'Label'],                                                            
+  \ 'header':  ['fg', 'Comment'] } 
 " Fzf shortcuts
 nnoremap <C-p> :GFiles<CR>
 nnoremap <leader>f :Files<CR>
-
-nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gr <Plug>(coc-references)
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction

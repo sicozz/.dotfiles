@@ -24,33 +24,33 @@ font:
 # background_opacity: 0.96
 # Colors schemes configuration
 schemes:
-  material_theme: &light
-  # Default colors
+  # Bogster Colorscheme
+  bogster: &bogster
     primary:
-      background: '#161d21'
-      foreground: '#d8d8d8'
+      background: '#161c23'
+      foreground: '#c6b8ad'
 
-    # Normal colors
+    # normal colors
     normal:
-      black:   '#000000'  # Arbitrary
-      red:     '#e53935'
-      green:   '#91b859'
-      yellow:  '#ffb62c'
-      blue:    '#6182b8'
-      magenta: '#ff5370'  # Dark pink of the original material theme
-      cyan:    '#39adb5'
-      white:   '#a0a0a0'  # Arbitrary
+      black:      '#161c23'
+      red:        '#d32c5d'
+      green:      '#2cd3a4'
+      yellow:     '#dcb659'
+      blue:       '#597fdc'
+      magenta:    '#b759dc'
+      cyan:       '#59dcd8'
+      white:      '#e5ded6'
 
-    # Bright colors
+    # bright colors
     bright:
-      black:   '#4e4e4e'  # Arbitrary
-      red:     '#ff5370'
-      green:   '#c3e88d'
-      yellow:  '#ffcb6b'
-      blue:    '#82aaff'
-      magenta: '#f07178'  # Pink of the original material theme
-      cyan:    '#89ddff'
-      white:   '#ffffff'  # Arbitrary
+      black:      '#536984'
+      red:        '#dc597f'
+      green:      '#59dcb7'
+      yellow:     '#dc7759'
+      blue:       '#59c0dc'
+      magenta:    '#b759dc'
+      cyan:       '#59dcd8'
+      white:      '#e5ded6'
 
   # Colors (My pallete)
   happy_pallete: &custom
@@ -110,8 +110,7 @@ schemes:
       white:      '#f0f1ce'
 
 # Colorscheme selection
-colors: *duck
-
+colors: *bogster
 
 # Shell configuration
 shell:

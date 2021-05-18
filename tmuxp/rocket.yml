@@ -1,4 +1,4 @@
-session_name: " "
+session_name: "1337"
 start_directory: $HOME/
 
 windows:
@@ -9,4 +9,4 @@ windows:
   - window_name: zsh
     layout: tiled
     panes:
-      - clear; neofetch
+      - clear; neofetch; setxkbmap -layout us -variant dvp
