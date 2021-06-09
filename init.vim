@@ -42,6 +42,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Colorscheme
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 Plug 'lifepillar/vim-solarized8'
+Plug 'arcticicestudio/nord-vim'
 Plug 'wojciechkepka/bogster'
 
 " Utils
@@ -61,8 +62,21 @@ call plug#end()
 " End pluggin manager
 
 " Colorscheme configs
+let g:nord_cursor_line_number_background = 1
+let g:nord_bold_vertical_split_line = 1
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+augroup nord-theme-overrides
+  autocmd!
+  " Use the darkest snow storm as foreground for active StatusLine.
+  autocmd ColorScheme nord highlight StatusLine guifg=#2E3440 guibg=#D8DEE9
+  " Use the yellow for line numbers
+  autocmd ColorScheme nord highlight LineNr ctermfg=8 guifg=#EBCB8B
+  " Now tildes are white
+  autocmd ColorScheme nord highlight EndOfBuffer ctermfg=0 guifg=#D8DEE9
+augroup END
 set termguicolors
-colorscheme bogster
+colorscheme nord
 
 " Variables
 let mapleader = " "
@@ -118,13 +132,15 @@ nnoremap <leader>u :UndotreeShow<CR>
 " Git shortcuts
 
 nmap <leader>gs :G<CR>
-nmap <leader>gj :diffget //3<CR>
-nmap <leader>gf :diffget //2<CR>
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
 nnoremap <leader>gc :GBranches<CR>
 "nnoremap <leader>h :wincmd h<CR>                       " windoww jumps without tmux_navigator
 "nnoremap <leader>j :wincmd j<CR>
 "nnoremap <leader>k :wincmd k<CR>
 "nnoremap <leader>l :wincmd l<CR>
+inoremap <expr> <C-k> pumvisible() ? "<C-n>" : "<C-k>" 
+inoremap <expr> <C-x> pumvisible() ? "<C-p>" : "<C-x>" 
 
 " Fzf colors match colorscheme
 let g:fzf_colors =                                                                         

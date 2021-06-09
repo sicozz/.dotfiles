@@ -8,16 +8,11 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border pixel 2
 default_floating_border normal
 
 # Hide borders
 hide_edge_borders both
-
-# change borders
-bindsym $mod+u border none
-bindsym $mod+y border pixel 1
-bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -47,7 +42,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 #bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id pa-applet
-bindsym $mod+Ctrl+m exec pavucontrol
+bindsym $mod+Shift+m exec pavucontrol
 
 ################################################################################################
 
@@ -149,15 +144,15 @@ bindsym $mod+Ctrl+k workspace next
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 " 1 "
-set $ws2 " 2 "
-set $ws3 " 3 "
+set $ws1 1
+set $ws2 2
+set $ws3 3
 set $ws4 4
 set $ws5 5
 set $ws6 6
 set $ws7 7
-set $ws8 " 8 "
-set $ws9 " 9 "
+set $ws8 8
+set $ws9 9
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -203,7 +198,7 @@ assign [class="zoom"] $ws3
 # Video recording
 assign [class="obs"] $ws8
 # Music
-assign [class="Spotify"] $ws9
+assign [class="spotify"] $ws9
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -337,11 +332,12 @@ set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
-set $stlB     #0F111B
-set $stlFBg   #1B1C36
-set $stlUBg   #E33400
-set $stl0T    #ECF0C1
-set $stl1T    $stlFBg
+set $stlBg    #2E3440
+set $stlFBg   #EBCB8B
+set $stlUBg   #BF616A
+set $stlBor   #5E81AC
+set $stl0T    #2E3440
+set $stl1T    #5E81AC
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
@@ -363,11 +359,11 @@ bar {
         separator  #454947
 
 #                           border  backgr. text
-        focused_workspace   $stlFBg $stlFBg $stl0T
+        focused_workspace   $stlBor $stlFBg $stl0T
         active_workspace    #595B5B #353836 #FDF6E3
-        inactive_workspace  $stlBg  $stlBg  $stl1T
-        binding_mode        $stl0T $stlFBg $stl0T
-        urgent_workspace    $stlUBg $stlUBg $stl0T
+        inactive_workspace  $stlBor $stlBg  $stl1T
+        binding_mode        $stlBor $stlFBg $stl0T
+        urgent_workspace    $stlBor $stlUBg $stl1T
     }
 }
 
@@ -376,7 +372,7 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          $stlFBg $stlFBg $stl0T  #FDF6E3  #686F9A
+  client.focused          #D8DEE9 #D8DEE9 $stl0T  #FDF6E3  $stl1T
   client.focused_inactive $stlBg  $stlBg  $stl1T  #454948
   client.unfocused        $stlBg  $stlBg  $stl1T  #454948
   client.urgent           $stlUBg $stlUBg $stl0T  #268BD2

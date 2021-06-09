@@ -108,9 +108,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias myip="curl http://ipecho.net/plain; echo"
-alias vim="nvim -c intro"
+alias vim="nvim"
 alias xclipcp="xclip -selection clipboard"
-alias rocket="tmuxp load rocket"
+alias rocket="setxkbmap -layout us -variant dvorak; tmux"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export EDITOR=/usr/bin/nvim
