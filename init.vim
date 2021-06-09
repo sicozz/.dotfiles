@@ -40,10 +40,8 @@ let &statusline = s:statusline_expr()
 " Start pluggin manager
 call plug#begin('~/.config/nvim/plugged')
 " Colorscheme
-Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
-Plug 'lifepillar/vim-solarized8'
 Plug 'arcticicestudio/nord-vim'
-Plug 'wojciechkepka/bogster'
+Plug 'cocopon/iceberg.vim'
 
 " Utils
 Plug 'sheerun/vim-polyglot'                 " Multiple language support
@@ -62,21 +60,15 @@ call plug#end()
 " End pluggin manager
 
 " Colorscheme configs
-let g:nord_cursor_line_number_background = 1
-let g:nord_bold_vertical_split_line = 1
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
-augroup nord-theme-overrides
+augroup iceberg-theme-overrides
   autocmd!
-  " Use the darkest snow storm as foreground for active StatusLine.
-  autocmd ColorScheme nord highlight StatusLine guifg=#2E3440 guibg=#D8DEE9
   " Use the yellow for line numbers
-  autocmd ColorScheme nord highlight LineNr ctermfg=8 guifg=#EBCB8B
+  autocmd ColorScheme iceberg highlight LineNr ctermfg=239 ctermbg=235 guifg=#a5a9b7 guibg=#1e2132
   " Now tildes are white
-  autocmd ColorScheme nord highlight EndOfBuffer ctermfg=0 guifg=#D8DEE9
+  autocmd ColorScheme iceberg highlight EndOfBuffer ctermfg=0 guifg=#a5a9b7
 augroup END
 set termguicolors
-colorscheme nord
+colorscheme iceberg
 
 " Variables
 let mapleader = " "
