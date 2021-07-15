@@ -16,7 +16,7 @@ set hidden                              " Different buffers at a time so you can
 set nohlsearch                          " Not more nasty search highlith
 set incsearch                           " Incremently highlights search matches
 set guicursor=                          " Always block cursor
-set scrolloff=8                         " It scrollosff with n lines span
+set scrolloff=5                         " It scrollosff with n lines span
 set colorcolumn=80                      " Sets limit line with color
 set completeopt=menuone                 " Shows completion even if there is only one option
 set shortmess+=c                        " Silences completion menu messages  
@@ -40,8 +40,8 @@ let &statusline = s:statusline_expr()
 " Start pluggin manager
 call plug#begin('~/.config/nvim/plugged')
 " Colorscheme
-Plug 'arcticicestudio/nord-vim'
 Plug 'cocopon/iceberg.vim'
+Plug 'w0ng/vim-hybrid'
 
 " Utils
 Plug 'sheerun/vim-polyglot'                 " Multiple language support
@@ -62,13 +62,21 @@ call plug#end()
 " Colorscheme configs
 augroup iceberg-theme-overrides
   autocmd!
-  " Use the yellow for line numbers
+  " Use the blue for line numbers
   autocmd ColorScheme iceberg highlight LineNr ctermfg=239 ctermbg=235 guifg=#a5a9b7 guibg=#1e2132
   " Now tildes are white
   autocmd ColorScheme iceberg highlight EndOfBuffer ctermfg=0 guifg=#a5a9b7
 augroup END
+
+augroup hybrid-theme-overrides
+  autocmd!
+  " Use the blue for line numbers
+  autocmd ColorScheme hybrid highlight LineNr ctermfg=239 guifg=#6d7581
+  " Now tildes are white
+  autocmd ColorScheme hybrid highlight EndOfBuffer ctermfg=0 guifg=#c1c4ca
+augroup END
 set termguicolors
-colorscheme iceberg
+colorscheme hybrid
 
 " Variables
 let mapleader = " "
@@ -131,8 +139,9 @@ nnoremap <leader>gc :GBranches<CR>
 "nnoremap <leader>j :wincmd j<CR>
 "nnoremap <leader>k :wincmd k<CR>
 "nnoremap <leader>l :wincmd l<CR>
-inoremap <expr> <C-k> pumvisible() ? "<C-n>" : "<C-k>" 
-inoremap <expr> <C-x> pumvisible() ? "<C-p>" : "<C-x>" 
+inoremap <expr> <A-,> pumvisible() ? "<C-y>" : "<A-,>" 
+inoremap <expr> <A-.> pumvisible() ? "<C-n>" : "<A-.>" 
+inoremap <expr> <A-p> pumvisible() ? "<C-p>" : "<A-p>" 
 
 " Fzf colors match colorscheme
 let g:fzf_colors =                                                                         
