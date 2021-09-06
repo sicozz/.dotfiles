@@ -6,12 +6,14 @@ call plug#begin('~/.config/nvim/plugged')
 
 "Plug 'overcache/NeoSolarized'
 Plug 'tpope/vim-fugitive'                   " Git from vim
-Plug 'vim-utils/vim-man'
+"Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'                      " File history
 Plug 'christoomey/vim-tmux-navigator'       " Vim/tmux navigation fusion
 Plug 'rust-lang/rust.vim'                   " Rustlang support
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimfiler.vim'
+
+Plug 'arcticicestudio/nord-vim'
 
 if has("nvim")
     Plug 'neovim/nvim-lspconfig'

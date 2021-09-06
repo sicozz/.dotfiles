@@ -289,7 +289,7 @@ bindsym $mod+Shift+x exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/black_beach.jpg; sleep 1; picom -b --experimental-backends
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/astronaut.jpg; sleep 1; picom -b --experimental-backends
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
@@ -334,7 +334,7 @@ set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
-set $stlBg    #002b36
+set $stlBg    #001b22
 set $stlFBg   #b58900
 set $stlUBg   #dc322f
 set $stlBor   #839496

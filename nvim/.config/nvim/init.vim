@@ -1,10 +1,9 @@
 " Sets "{{{
 " ---------------------------------------------------------------------
-syntax on
 set noerrorbells                        " Disables the bell sound on error
 set mouse=a				                " Enables mouse integration
-set tabstop=4 softtabstop=4             " Sets tabs to 4 spaces
-set shiftwidth=4                        " Sets shifs indent to 4 spaces
+set tabstop=2 softtabstop=2             " Sets tabs to 4 spaces
+set shiftwidth=2                        " Sets shifs indent to 4 spaces
 set expandtab                           " Enables real copy and paste
 set nu                                  " Puts the line numbers at the left
 set number relativenumber               " Line numbers are relative
@@ -23,7 +22,9 @@ set completeopt=menuone,noinsert,noselect " Shows completion even if there is on
 set shortmess+=c                        " Silences completion menu messages  
 set signcolumn=yes                      " Left column for special messages
 set path+=**                            " Fuzzy finding vim source
-set foldmethod=marker
+set foldmethod=marker                   " Folds con caracteres
+set sidescrolloff=999                   " Cursor en mitad de pantalla
+"set scrolloff=999
 "}}}
 
 " Status line function{{{
@@ -50,19 +51,36 @@ autocmd BufNewFile  *.bib	0r ~/.config/nvim/templates/skeleton.bib"}}}
 
 " Syntax theme " {{{
 if exists("&termguicolors") && exists("&winblend")
+    syntax enable
     set termguicolors
     set winblend=0
     set wildoptions=pum
     set pumblend=5
     set background=dark
+
     " Use NeoSolarized
     let g:neosolarized_termtrans=1
     let g:neosolarized_contrast="normal"
     " let g:neosolarized_visibility="normal"
     runtime .colors/NeoSolarized.vim
     colorscheme NeoSolarized
+
+    " Use Lumiere
+    runtime .colors/lumiere.vim
 endif
 " }}}
+
+" Highlights "{{{
+" ---------------------------------------------------------------------
+set cursorline
+"set cursorcolumn
+
+" Set cursor line color on visual mode
+highlight LineNr cterm=NONE ctermfg=240 guifg=#586e75 guibg=#002b36
+highlight CursorLineNr cterm=NONE ctermfg=240 guifg=#93a1a1 guibg=#002b36
+highlight CursorLine ctermbg=0 guibg=#002b36 guisp=#93a1a1
+
+"}}}
 
 " Plugins
 runtime ./plug.vim

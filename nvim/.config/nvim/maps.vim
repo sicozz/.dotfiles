@@ -34,6 +34,9 @@ nmap sk <C-w>k
 nmap sl <C-w>l
 "}}}
 
+" Last buffer
+nnoremap <leader><leader> <C-^>
+
 " Jumplist mutations
 nnoremap <expr> k (v:count > 5 ? "m'" . v:count: "") . 'k'
 nnoremap <expr> j (v:count > 5 ? "m'" . v:count: "") . 'j'
@@ -42,8 +45,8 @@ nnoremap <expr> j (v:count > 5 ? "m'" . v:count: "") . 'j'
 vnoremap <leader>p "_dP
 
 " Tab moves
-nmap <Tab> :tabnext<Return>
-nmap <S-Tab> :tabprev<Return>
+nmap <leader><Tab> :tabnext<Return>
+nmap <leader><S-Tab> :tabprev<Return>
 
 " Terminal
 nnoremap <leader>t :terminal<CR>
