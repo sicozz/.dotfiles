@@ -4,7 +4,7 @@ if (not status) then return end
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = 'solarized_dark',
+    theme = 'nord',
     section_separators = {'', ''},
     component_separators = {'', ''},
     disabled_filetypes = {}
@@ -15,10 +15,9 @@ lualine.setup {
     lualine_c = {'filename'},
     lualine_x = {
       { 'diagnostics', sources = {"nvim_lsp"}, symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '} },
-      'encoding',
-      'filetype'
+      'encoding'
     },
-    lualine_y = {},
+    lualine_y = {'filetype'},
     lualine_z = {'location'}
   },
   inactive_sections = {

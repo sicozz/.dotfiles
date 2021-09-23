@@ -49,6 +49,9 @@ autocmd BufNewFile  *.html	0r ~/.config/nvim/templates/skeleton.html
 autocmd BufNewFile  *.tex	0r ~/.config/nvim/templates/skeleton.tex
 autocmd BufNewFile  *.bib	0r ~/.config/nvim/templates/skeleton.bib"}}}
 
+" Plugins
+runtime ./plug.vim
+
 " Syntax theme " {{{
 if exists("&termguicolors") && exists("&winblend")
     syntax enable
@@ -63,10 +66,15 @@ if exists("&termguicolors") && exists("&winblend")
     let g:neosolarized_contrast="normal"
     " let g:neosolarized_visibility="normal"
     runtime .colors/NeoSolarized.vim
-    colorscheme NeoSolarized
+    " colorscheme NeoSolarized
 
     " Use Lumiere
+    let g:nord_cursor_line_number_background = 1
+    let g:nord_bold_vertical_split_line = 1
     runtime .colors/lumiere.vim
+
+    " Use Nord
+    colorscheme nord
 endif
 " }}}
 
@@ -76,14 +84,11 @@ set cursorline
 "set cursorcolumn
 
 " Set cursor line color on visual mode
-highlight LineNr cterm=NONE ctermfg=240 guifg=#586e75 guibg=#002b36
-highlight CursorLineNr cterm=NONE ctermfg=240 guifg=#93a1a1 guibg=#002b36
-highlight CursorLine ctermbg=0 guibg=#002b36 guisp=#93a1a1
+" highlight LineNr cterm=NONE ctermfg=240 guifg=#586e75 guibg=#002b36
+" highlight CursorLineNr cterm=NONE ctermfg=240 guifg=#93a1a1 guibg=#002b36
+" highlight CursorLine ctermbg=0 guibg=#002b36 guisp=#93a1a1
 
 "}}}
-
-" Plugins
-runtime ./plug.vim
 
 " Variables
 let mapleader = " "

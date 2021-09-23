@@ -12,7 +12,8 @@ bindkey -v
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="logic"
+# ZSH_THEME="logic"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -108,6 +109,7 @@ source $ZSH/oh-my-zsh.sh
 alias myip="curl http://ipecho.net/plain; echo"
 alias vim="nvim"
 alias xclipcp="xclip -selection clipboard"
+alias kb="setxkbmap -layout us -variant dvorak -option caps:escape"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export EDITOR=/usr/bin/nvim
