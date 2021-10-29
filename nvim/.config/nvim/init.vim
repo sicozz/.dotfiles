@@ -62,19 +62,19 @@ if exists("&termguicolors") && exists("&winblend")
     set background=dark
 
     " Use NeoSolarized
-    let g:neosolarized_termtrans=1
-    let g:neosolarized_contrast="normal"
+    " let g:neosolarized_termtrans=1
+    " let g:neosolarized_contrast="normal"
     " let g:neosolarized_visibility="normal"
-    runtime .colors/NeoSolarized.vim
+    " runtime .colors/NeoSolarized.vim
     " colorscheme NeoSolarized
 
-    " Use Lumiere
-    let g:nord_cursor_line_number_background = 1
-    let g:nord_bold_vertical_split_line = 1
-    runtime .colors/lumiere.vim
-
     " Use Nord
-    colorscheme nord
+    " let g:nord_cursor_line_number_background = 1
+    " let g:nord_bold_vertical_split_line = 1
+    " colorscheme nord
+
+    runtime .colors/hilal.vim
+    colorscheme hilal
 endif
 " }}}
 

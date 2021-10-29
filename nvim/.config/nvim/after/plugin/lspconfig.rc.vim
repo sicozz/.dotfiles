@@ -44,7 +44,4 @@ nvim_lsp.rls.setup {
 
 nvim_lsp.jedi_language_server.setup {
 }
-
-nvim_lsp.ccls.setup{
-}
 EOF

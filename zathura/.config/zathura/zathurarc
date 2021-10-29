@@ -1,35 +1,36 @@
-set completion-group-bg         "#3B4252"
-set completion-group-fg         "#D2D4DE"
-set completion-bg               "#3B4252"
-set completion-fg               "#D2D4DE"
-set completion-highlight-bg     "#161821"
-set completion-highlight-fg     "#E2A478"
+set completion-group-bg         "#181d22"
+set completion-group-fg         "#e9d5c1"
+set completion-bg               "#181d22"
+set completion-fg               "#e9d5c1"
+set completion-highlight-bg     "#103050"
+set completion-highlight-fg     "#e9d5c1"
 
-set notification-error-bg       "#161821"
-set notification-error-fg       "#E2A478"
-set notification-warning-bg     "#3B4252"
-set notification-warning-fg     "#D2D4DE"
-set notification-bg             "#3B4252"
-set notification-fg             "#D2D4DE"
+set notification-error-bg       "#181d22"
+set notification-error-fg       "#ea4d45"
+set notification-warning-bg     "#181d22"
+set notification-warning-fg     "#d8a200"
+set notification-bg             "#181d22"
+set notification-fg             "#379d48"
 
-set index-bg                    "#161821"
-set index-fg                    "#D2D4DE"
+set index-bg                    "#14171a"
+set index-fg                    "#c0c6cb"
 set index-active-bg             "#3B4252" 
-set index-active-fg             "#D2D4DE" 
+set index-active-fg             "#c0c6cb" 
 
-set inputbar-bg                 "#3B4252"
-set inputbar-fg                 "#D2D4DE"
+set inputbar-bg                 "#103050"
+set inputbar-fg                 "#e9d5c1"
 
-set statusbar-bg                "#161821"
-set statusbar-fg                "#D2D4DE"
+set statusbar-bg                "#103050"
+set statusbar-fg                "#e9d5c1"
 
-set highlight-color             "#536984"
-set highlight-active-color      "#415367"
+set highlight-color             "#103050"
+set highlight-active-color      "#e9d5c1"
 
-set default-bg                  "#161821"
-set default-fg                  "#D2D4DE"
-set recolor-lightcolor          "#161821"
-set recolor-darkcolor           "#D2D4DE"
+set default-bg                  "#14171a"
+set default-fg                  "#c0c6cb"
+set recolor-lightcolor          "#14171a"
+set recolor-darkcolor           "#c0c6cb"
+set recolor                     true
 
 set statusbar-h-padding 0
 set statusbar-v-padding 0
@@ -42,4 +43,3 @@ map R rotate
 map K zoom in
 map J zoom out
 map i recolor
-set recolor                     true

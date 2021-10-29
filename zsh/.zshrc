@@ -12,8 +12,9 @@ bindkey -v
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
+# ZSH_THEME="agnoster"
 # ZSH_THEME="logic"
-ZSH_THEME="agnoster"
+ZSH_THEME="speed"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -77,6 +78,8 @@ plugins=(
     git
     vi-mode
     safe-paste
+    zsh-syntax-highlighting
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,11 +109,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# Quick commands
 alias myip="curl http://ipecho.net/plain; echo"
 alias vim="nvim"
 alias xclipcp="xclip -selection clipboard"
 alias kb="setxkbmap -layout us -variant dvorak -option caps:escape"
 
+# Global variables
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export EDITOR=/usr/bin/nvim
 export DISABLE_AUTO_TITLE='true'            # tmuxp requires it idk why
