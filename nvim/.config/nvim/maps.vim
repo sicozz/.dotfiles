@@ -45,8 +45,8 @@ nnoremap <expr> j (v:count > 5 ? "m'" . v:count: "") . 'j'
 vnoremap <leader>p "_dP
 
 " Tab moves
-nmap <leader><Tab> :tabnext<Return>
-nmap <leader><S-Tab> :tabprev<Return>
+nmap <Tab> :tabnext<Return>
+nmap <S-Tab> :tabprev<Return>
 
 " Terminal
 nnoremap <leader>t :terminal<CR>

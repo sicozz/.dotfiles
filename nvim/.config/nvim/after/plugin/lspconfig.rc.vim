@@ -5,6 +5,9 @@ let g:LanguageClient_autoStart = 1
 
 lua << EOF
 --vim.lsp.set_log_level("debug")
+EOF
+
+lua << EOF
 local nvim_lsp = require('lspconfig')
 local protocol = require('vim.lsp.protocol')
 
@@ -13,6 +16,9 @@ local protocol = require('vim.lsp.protocol')
 local on_attach = function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
     local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+
+    --Enable completion triggered by <c-x><c-o>
+    buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
     -- Mappings.
     local opts = { noremap=true, silent=true }
@@ -29,7 +35,10 @@ local on_attach = function(client, bufnr)
         vim.api.nvim_command [[augroup END]]
     end
 
-    require 'completion'.on_attach(client, bufnr)
+    -- Set up completion using nvim_cmp with LSP source
+    local capabilities = require('cmp_nvim_lsp').update_capabilities(
+      vim.lsp.protocol.make_client_capabilities()
+    )
 end
 
 nvim_lsp.tsserver.setup {
@@ -40,8 +49,5 @@ nvim_lsp.tsserver.setup {
 nvim_lsp.rls.setup {
     on_attach = on_attach,
     filetypes = { "rustup", "run", "rls", "rust" }
-}
-
-nvim_lsp.jedi_language_server.setup {
 }
 EOF

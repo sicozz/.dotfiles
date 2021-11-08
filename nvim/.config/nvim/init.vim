@@ -49,34 +49,29 @@ autocmd BufNewFile  *.html	0r ~/.config/nvim/templates/skeleton.html
 autocmd BufNewFile  *.tex	0r ~/.config/nvim/templates/skeleton.tex
 autocmd BufNewFile  *.bib	0r ~/.config/nvim/templates/skeleton.bib"}}}
 
-" Plugins
-runtime ./plug.vim
-
 " Syntax theme " {{{
 if exists("&termguicolors") && exists("&winblend")
-    syntax enable
-    set termguicolors
-    set winblend=0
-    set wildoptions=pum
-    set pumblend=5
-    set background=dark
+  syntax enable
+  set termguicolors
+  set winblend=0
+  set wildoptions=pum
+  set pumblend=5
+  set background=dark
 
-    " Use NeoSolarized
-    " let g:neosolarized_termtrans=1
-    " let g:neosolarized_contrast="normal"
-    " let g:neosolarized_visibility="normal"
-    " runtime .colors/NeoSolarized.vim
-    " colorscheme NeoSolarized
+  " Use NeoSolarized
+  " let g:neosolarized_termtrans=1
+  " let g:neosolarized_contrast="normal"
+  " let g:neosolarized_visibility="normal"
+  " runtime .colors/NeoSolarized.vim
+  " colorscheme NeoSolarized
 
-    " Use Nord
-    " let g:nord_cursor_line_number_background = 1
-    " let g:nord_bold_vertical_split_line = 1
-    " colorscheme nord
-
-    runtime .colors/hilal.vim
-    colorscheme hilal
+  runtime .colors/hilal.vim
+  colorscheme hilal
 endif
 " }}}
+
+" Plugins
+runtime ./plug.vim
 
 " Highlights "{{{
 " ---------------------------------------------------------------------
@@ -92,6 +87,7 @@ set cursorline
 
 " Variables
 let mapleader = " "
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 let g:tmux_navigator_disable_when_zoomed = 1            " Prevent vim-tmux-navigator to get out of zoomed pane
 let g:tmux_navigator_no_mappings = 1

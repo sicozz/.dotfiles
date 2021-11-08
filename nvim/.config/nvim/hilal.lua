@@ -2,10 +2,11 @@
 -- LuaFormatter off
 local colors = {
   color0   = '#14171a',
-  color2   = '#379d48',
+  color2   = '#369d47',
+  color3   = '#d8a200',
   color4   = '#103050',
   color6   = '#1f4f8a',
-  color7   = '#c0c6cb',
+  color7   = '#e9d5c1',
   color8   = '#181d22',
   color15  = '#ffffff',
   grey     = '#68788a',
@@ -31,7 +32,7 @@ return {
     b = {fg = colors.grey, bg = colors.color0}
   },
   insert = {
-    a = {fg = colors.color15, bg = colors.color6, gui = 'bold'},
+    a = {fg = colors.color0, bg = colors.color3, gui = 'bold'},
     b = {fg = colors.grey, bg = colors.color0}
   }
 }

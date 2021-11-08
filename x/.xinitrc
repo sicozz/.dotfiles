@@ -61,12 +61,8 @@ fi
 #	echo "dbus-launch ${dbus_args[*]}"
 #}
 
-# dwm status
-#dwmstatus 2>&1 >/dev/null &
-/home/sicoz/Dev/C/suckless/dwm-bar/dwm_bar.sh &
-
 # compositor
-picom -b --experimental-backends &
+picom -b &
 
 # wallpaper
 ~/.fehbg &
@@ -75,4 +71,4 @@ picom -b --experimental-backends &
 # while true; do
 #   dwm >/dev/null 2>&1
 # done
-exec dwm
+exec i3
