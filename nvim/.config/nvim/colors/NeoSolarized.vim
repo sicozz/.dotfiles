@@ -93,7 +93,7 @@
 " cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
 " green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
 "
-" --------------------------------------------------------------------
+" ---------------------------------------------------------------------
 " COLORSCHEME HACKING
 " ---------------------------------------------------------------------
 "
@@ -522,7 +522,9 @@ exe "hi! PmenuSbar"      .s:fmt_none   .s:fg_base2  .s:bg_base0   .s:fmt_revbb
 exe "hi! PmenuThumb"     .s:fmt_none   .s:fg_base0  .s:bg_base03  .s:fmt_revbb
 exe "hi! TabLine"        .s:fmt_none   .s:fg_base0  .s:bg_base02  .s:sp_base0
 exe "hi! TabLineFill"    .s:fmt_none   .s:fg_base0  .s:bg_base02  .s:sp_base0
-exe "hi! TabLineSel"     .s:fmt_none   .s:fg_base01  .s:bg_base2  .s:sp_base0  .s:fmt_revr
+exe "hi! TabLineSel"     .s:fmt_none   .s:fg_base01 .s:bg_base2   .s:sp_base0  .s:fmt_revr
+exe "hi! TabLineSep"     .s:fmt_none   .s:fg_base02 .s:bg_base01  .s:sp_base0  .s:fmt_revr
+exe "hi! TabLineSep2"    .s:fmt_none   .s:fg_base02 .s:bg_base01  .s:sp_base0
 exe "hi! CursorColumn"   .s:fmt_none   .s:fg_none   .s:bg_base02
 exe "hi! CursorLine"     .s:fmt_uopt   .s:fg_none   .s:bg_base02  .s:sp_base1
 exe "hi! CursorLineNr"   .s:fmt_uopt   .s:fg_none   .s:bg_base02  .s:sp_base1
@@ -945,4 +947,4 @@ autocmd GUIEnter * if (has('gui_running')) | exe "colorscheme " . g:colors_name 
 " THE SOFTWARE.
 "
 " vim: set foldmethod=marker foldlevel=0:
-"}}}-
+"}}}

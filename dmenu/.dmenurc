@@ -3,19 +3,19 @@
 #
 
 ## define the font for dmenu to be used
-DMENU_FN="Noto-11"
+DMENU_FN="JetBrainsMono-10.5"
 
 ## background colour for unselected menu-items
-DMENU_NB="#103050"
+DMENU_NB="#073642"
 
 ## textcolour for unselected menu-items
-DMENU_NF="#c0c6cb"
+DMENU_NF="#839496"
 
 ## background colour for selected menu-items
-DMENU_SB="#14171a"
+DMENU_SB="#839496"
 
 ## textcolour for selected menu-items
-DMENU_SF="#c0c6cb"
+DMENU_SF="#073642"
 
 ## command for the terminal application to be used:
 TERMINAL_CMD="kitty -e"

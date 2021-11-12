@@ -27,12 +27,14 @@ nnoremap <C-q> :bd<CR>
 nmap ss :split<Return>
 nmap sv :vsplit<Return>
 nmap sq :q<Return>
-nmap sf :VimFilerBufferDir<Return>
 nmap sh <C-w>h
 nmap sj <C-w>j
 nmap sk <C-w>k
 nmap sl <C-w>l
 "}}}
+
+" Select all
+nmap <C-a> gg<S-v>G
 
 " Last buffer
 nnoremap <leader><leader> <C-^>
@@ -45,8 +47,10 @@ nnoremap <expr> j (v:count > 5 ? "m'" . v:count: "") . 'j'
 vnoremap <leader>p "_dP
 
 " Tab moves
-nmap <Tab> :tabnext<Return>
-nmap <S-Tab> :tabprev<Return>
+" " Open current directory
+nmap te :tabedit
+nmap <leader><Tab> :tabnext<Return>
+nmap <leader><S-Tab> :tabprev<Return>
 
 " Terminal
 nnoremap <leader>t :terminal<CR>
