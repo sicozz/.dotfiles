@@ -36,9 +36,6 @@ nmap sl <C-w>l
 " Select all
 nmap <C-a> gg<S-v>G
 
-" Last buffer
-nnoremap <leader><leader> <C-^>
-
 " Jumplist mutations
 nnoremap <expr> k (v:count > 5 ? "m'" . v:count: "") . 'k'
 nnoremap <expr> j (v:count > 5 ? "m'" . v:count: "") . 'j'
@@ -49,8 +46,8 @@ vnoremap <leader>p "_dP
 " Tab moves
 " " Open current directory
 nmap te :tabedit
-nmap <leader><Tab> :tabnext<Return>
-nmap <leader><S-Tab> :tabprev<Return>
+nmap st :tabnext<Return>
+nmap sT :tabprev<Return>
 
 " Terminal
 nnoremap <leader>t :terminal<CR>
@@ -61,6 +58,9 @@ vnoremap K :m '<-2<CR>gv=gv
 
 " Undo tree
 nnoremap <leader>u :UndotreeShow<CR>
+
+" Prevent s
+map s <Nop>
 
 " Vim presentations " {{{
 " ---------------------------------------------------------------------

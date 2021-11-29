@@ -59,7 +59,7 @@ if exists("&termguicolors") && exists("&winblend")
   set background=dark
 
   " Use NeoSolarized
-  let g:neosolarized_termtrans=1
+  " let g:neosolarized_termtrans=1
   let g:neosolarized_contrast="normal"
   let g:neosolarized_visibility="normal"
   runtime .colors/NeoSolarized.vim
