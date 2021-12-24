@@ -47,7 +47,9 @@ set sidescrolloff=999                   " Cursor en mitad de pantalla
 " ---------------------------------------------------------------------
 autocmd BufNewFile  *.html	0r ~/.config/nvim/templates/skeleton.html
 autocmd BufNewFile  *.tex	0r ~/.config/nvim/templates/skeleton.tex
-autocmd BufNewFile  *.bib	0r ~/.config/nvim/templates/skeleton.bib"}}}
+autocmd BufNewFile  *.bib	0r ~/.config/nvim/templates/skeleton.bib
+autocmd BufNewFile  *lib.rs	0r ~/.config/nvim/templates/skeleton.rs
+"}}}
 
 " Syntax theme " {{{
 if exists("&termguicolors") && exists("&winblend")
