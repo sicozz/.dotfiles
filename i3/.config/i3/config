@@ -28,7 +28,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+r exec --no-startup-id dmenu_run -fn JetBrainsMono-10.5 -nb "#002b36" -nf "#839496" -sb "#839496" -sf "#002b36"
+bindsym $mod+r exec --no-startup-id dmenu_run -fn JetBrainsMono-10.5 -nb "#192330" -nf "#cdcecf" -sb "#719cd6" -sf "#393b44"
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -276,10 +276,10 @@ mode "resize" {
 exec --no-startup-id brightnessctl -q s 50%
 
 set $stlBg    #192330
-set $stlFBg   #3b4261
+set $stlFBg   #719cd6
 set $stlUBg   #c94f6d
 set $stlBor   #073642
-set $stl0T    #719cd6
+set $stl0T    #393b44
 set $stl1T    #cdcecf
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {

@@ -6,16 +6,16 @@
 DMENU_FN="JetBrainsMono-10.5"
 
 ## background colour for unselected menu-items
-DMENU_NB="#002b36"
+DMENU_NB="#192330"
 
 ## textcolour for unselected menu-items
-DMENU_NF="#839496"
+DMENU_NF="#cdcecf"
 
 ## background colour for selected menu-items
-DMENU_SB="#839496"
+DMENU_SB="#3b4261"
 
 ## textcolour for selected menu-items
-DMENU_SF="#002b36"
+DMENU_SF="#719cd6"
 
 ## command for the terminal application to be used:
 TERMINAL_CMD="kitty -e"
