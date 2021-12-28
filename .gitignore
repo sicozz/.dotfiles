@@ -1,3 +1,6 @@
 nvim/.config/nvim/plugged
 nvim/.config/nvim/undodir/*
 nvim/.config/nvim/.netrwhist
+luanvim/.config/nvim/plugged
+luanvim/.config/nvim/undodir/*
+luanvim/.config/nvim/.netrwhist

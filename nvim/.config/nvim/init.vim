@@ -27,22 +27,6 @@ set sidescrolloff=999                   " Cursor en mitad de pantalla
 "set scrolloff=999
 "}}}
 
-" Status line function{{{
-" ---------------------------------------------------------------------
-"   function! s:statusline_expr()
-"     let mod = "%{&modified ? '[+] ' : !&modifiable ? '[x] ' : ''}"
-"     let ro  = "%{&readonly ? '[RO] ' : ''}"
-"     let ft  = "%{len(&filetype) ? '['.&filetype.'] ' : ''}"
-"     let fug = "%{exists('g:loaded_fugitive') ? fugitive#statusline() : ''}"
-"     let sep = ' %= '
-"     let pos = ' %-12(%l : %c%V%) '
-"     let pct = ' %P'
-
-"     return '[%n] %f %<'.mod.ro.ft.fug.sep.pos.'%*'.pct
-"   endfunction
-
-"let &statusline = s:statusline_expr()"}}}
-
 " Templates{{{
 " ---------------------------------------------------------------------
 autocmd BufNewFile  *.html	0r ~/.config/nvim/templates/skeleton.html
