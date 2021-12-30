@@ -90,13 +90,11 @@ _G.packer_plugins = {
     url = "https://github.com/tami5/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
-    config = { "require('plugins/lualine-conf')" },
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nightfox.nvim"] = {
-    config = { "require('nightfox').load()" },
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
@@ -164,14 +162,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require('plugins/lualine-conf')
-time([[Config for lualine.nvim]], false)
--- Config for: nightfox.nvim
-time([[Config for nightfox.nvim]], true)
-require('nightfox').load()
-time([[Config for nightfox.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
