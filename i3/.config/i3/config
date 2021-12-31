@@ -41,8 +41,10 @@ bindsym $mod+Shift+m exec pavucontrol
 ################################################################################################
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+## Volume up
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+## Volume down notify-send "Volume: $(pactl list sinks | grep '^[[:space:]]Volume:' | \ head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')%" 
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Screen brightness controls
@@ -51,8 +53,11 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym XF86MonBrightnessDown exec "brightnessctl -q s 5%-"
 bindsym XF86MonBrightnessUp exec "brightnessctl -q s +5%"
 
+# Network
+exec --no-startup-id nm-applet --sm-disable
+
 # Start Applications
-bindsym $mod+Ctrl+b exec chromium
+bindsym $mod+Ctrl+b exec firefox
 bindsym $mod+Ctrl+e exec pcmanfm
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
@@ -181,7 +186,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 # Terminal
 # assign [class="Alacritty"] $ws1
 # Web browser
-assign [class="Chromium"] $ws2
+assign [class="firefox"] $ws2
 # Chats and social
 assign [class="discord"] $ws3
 assign [class="zoom"] $ws3
@@ -201,8 +206,6 @@ for_window [class="GParted"] floating enable border normal
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Manjaro-hello"] floating enable
-for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
@@ -273,7 +276,7 @@ mode "resize" {
 # exec --no-startup-id ~/.fehbg; sleep 1; picom -b
 # exec --no-startup-id xautolock -time 10 -locker blurlock
 # exec_always --no-startup-id setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
-exec --no-startup-id brightnessctl -q s 50%
+# exec --no-startup-id brightnessctl -q s 50%
 
 set $stlBg    #192330
 set $stlFBg   #719cd6
