@@ -9,32 +9,34 @@ local colors = {
   color7   = '#e9d5c1',
   color8   = '#d4d4d5',
   color15  = '#18151c',
-  grey     = '#d4d4d5',
+  dark   = '#18151c',
+  grey    = '#2b2b2b',
   lime    = '#d6ebc7',
-  black   = '#18151c',
+  red     = "#f87070",
+  yellow  = '#ffe59e',
 }
 -- LuaFormatter on
 return {
   visual = {
-    a = {fg = colors.color0, bg = colors.color7, gui = 'bold'},
-    b = {fg = colors.grey, bg = colors.color0}
+    a = {fg = colors.dark, bg = colors.red, gui = 'bold'},
+    b = {fg = colors.lime, bg = colors.dark}
   },
   replace = {
-    a = {fg = colors.color15, bg = colors.color2, gui = 'bold'},
-    b = {fg = colors.grey, bg = colors.color0}
+    a = {fg = colors.dark, bg = colors.yellow, gui = 'bold'},
+    b = {fg = colors.lime, bg = colors.dark}
   },
   inactive = {
-    c = {fg = colors.grey, bg = colors.color0},
-    a = {fg = colors.color15, bg = colors.color4, gui = 'bold'},
-    b = {fg = colors.grey, bg = colors.color0}
+    c = {fg = colors.lime, bg = colors.grey},
+    a = {fg = colors.lime, bg = colors.grey, gui = 'bold'},
+    b = {fg = colors.lime, bg = colors.grey}
   },
   normal = {
-    c = {fg = colors.lime, bg = colors.black},
-    a = {fg = colors.black, bg = colors.lime, gui = 'bold'},
-    b = {fg = colors.lime, bg = colors.black}
+    c = {fg = colors.lime, bg = colors.dark},
+    a = {fg = colors.lime, bg = colors.dark, gui = 'bold'},
+    b = {fg = colors.lime, bg = colors.dark}
   },
   insert = {
-    a = {fg = colors.color0, bg = colors.color3, gui = 'bold'},
-    b = {fg = colors.grey, bg = colors.color0}
+    a = {fg = colors.lime, bg = colors.dark, gui = 'bold'},
+    b = {fg = colors.lime, bg = colors.dark}
   }
 }
