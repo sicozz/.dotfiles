@@ -4,6 +4,7 @@ return require('packer').startup(function()
   
   -- Colorschemes
   use 'EdenEast/nightfox.nvim'
+  use 'danishprakash/vim-yami'
 
   -- Vim things
   use 'tpope/vim-fugitive'
@@ -18,10 +19,16 @@ return require('packer').startup(function()
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
   use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'onsails/lspkind-nvim'
+  use {
+    'hrsh7th/nvim-cmp',
+    requires = {
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-buffer',
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
+      'onsails/lspkind-nvim'
+    }
+  }
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
@@ -33,4 +40,5 @@ return require('packer').startup(function()
         'kyazdani42/nvim-web-devicons',
       }
   }
+  use 'tomlion/vim-solidity'
 end)

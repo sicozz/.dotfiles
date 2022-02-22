@@ -28,7 +28,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+r exec --no-startup-id dmenu_run -fn JetBrainsMono-10.5 -nb "#192330" -nf "#cdcecf" -sb "#719cd6" -sf "#393b44"
+bindsym $mod+r exec --no-startup-id dmenu_run -fn JetBrainsMono-10.5 -nb "#151515" -nf "#848484" -sb "#bebebe" -sf "#454545"
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -52,13 +52,16 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 bindsym XF86MonBrightnessDown exec "brightnessctl -q s 5%-"
 bindsym XF86MonBrightnessUp exec "brightnessctl -q s +5%"
+bindsym XF86HomePage exec "brightnessctl -q s 5%-"
+bindsym XF86Mail exec "brightnessctl -q s +5%"
 
 # Network
 exec --no-startup-id nm-applet --sm-disable
 
-# Start Applications
-bindsym $mod+Ctrl+b exec firefox
-bindsym $mod+Ctrl+e exec pcmanfm
+# Applications shortcuts
+bindsym $mod+Shift+b exec firefox
+# bindsym $mod+Ctrl+e exec pcmanfm
+bindsym $mod+Shift+e exec kitty ranger
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -95,7 +98,7 @@ bindsym $mod+Shift+l move right
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
 bindsym $mod+Tab workspace back_and_forth
-bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
+# bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
 bindsym $mod+Ctrl+h split h;exec notify-send 'tile horizontally'
@@ -186,6 +189,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 # Terminal
 # assign [class="Alacritty"] $ws1
 # Web browser
+assign [class="Min"] $ws2
 assign [class="firefox"] $ws2
 # Chats and social
 assign [class="discord"] $ws3
@@ -225,7 +229,7 @@ bindsym $mod+Shift+r reload
 #bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Ctrl+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
@@ -278,12 +282,19 @@ mode "resize" {
 # exec_always --no-startup-id setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
 # exec --no-startup-id brightnessctl -q s 50%
 
-set $stlBg    #192330
-set $stlFBg   #719cd6
-set $stlUBg   #c94f6d
-set $stlBor   #073642
-set $stl0T    #393b44
-set $stl1T    #cdcecf
+# set $stlBg    #192330
+# set $stlFBg   #719cd6
+# set $stlUBg   #c94f6d
+# set $stlBor   #073642
+# set $stl0T    #393b44
+# set $stl1T    #cdcecf
+set $stlBg    #151515
+set $stlFBg   #bebebe
+set $stlUBg   #cc0000
+set $stlBor   #626262
+set $stl0T    #454545
+set $stl1T    #848484
+
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
@@ -306,10 +317,10 @@ bar {
 
 #                           border  backgr. text
         focused_workspace   $stlBor $stlFBg $stl0T
-        active_workspace    #595B5B #353836 #FDF6E3
+        active_workspace    #595B5B #353836 #fdf6e3
         inactive_workspace  $stlBor $stlBg  $stl1T
         binding_mode        $stlBor $stlFBg $stl0T
-        urgent_workspace    $stlBor $stlUBg $stl1T
+        urgent_workspace    $stlBor $stlUBg #ffffff
     }
 }
 

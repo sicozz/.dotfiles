@@ -1,7 +1,7 @@
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
 vim.g.nvim_tree_indent_markers = 1
 require'nvim-tree'.setup {
-  open_on_setup       = true,
+  open_on_setup       = false,
   ignore_ft_on_setup  = {},
   open_on_tab         = true,
   update_cwd          = false,

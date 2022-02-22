@@ -1,6 +1,13 @@
+-- Sets
 require('options')
-require('keybindings')
+
+-- Maps
+require('maps')
+
+-- Plugins
 require('plugins')
+
+-- Plugins Conf
 require('plugins/lualine-conf')
 require('plugins/treesitter-conf')
 require('plugins/lspconfig-conf')
@@ -9,4 +16,5 @@ require('plugins/lspkind-conf')
 require('plugins/telescope-conf')
 require('plugins/lspsaga-conf')
 require('plugins/tree-conf')
-require('nightfox').load()
+-- require('nightfox').load()
+vim.cmd("colorscheme yami")

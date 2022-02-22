@@ -46,3 +46,4 @@ picom -b &
 ~/.fehbg &
 
 exec i3
+# exec dwm
