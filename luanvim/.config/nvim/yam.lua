@@ -1,14 +1,6 @@
 -- Author: sicozz
 -- LuaFormatter off
 local colors = {
-  color0   = '#18151c',
-  color2   = '#79dcaa',
-  color3   = '#ffe59e',
-  color4   = '#52de97',
-  color6   = '#d6ebc7',
-  color7   = '#e9d5c1',
-  color8   = '#d4d4d5',
-  color15  = '#18151c',
   dark   = '#18151c',
   grey    = '#2b2b2b',
   lime    = '#d6ebc7',
