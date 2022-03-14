@@ -10,7 +10,6 @@ return require('packer').startup(function()
   -- Vim things
   use 'tpope/vim-fugitive'
   use 'mbbill/undotree'
-  use 'christoomey/vim-tmux-navigator'
   use 'rust-lang/rust.vim'
 
   -- Lua things

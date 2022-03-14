@@ -169,11 +169,6 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/vim-solidity",
     url = "https://github.com/tomlion/vim-solidity"
   },
-  ["vim-tmux-navigator"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
-    url = "https://github.com/christoomey/vim-tmux-navigator"
-  },
   ["vim-yami"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/vim-yami",

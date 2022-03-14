@@ -1,10 +1,5 @@
 vim.g.mapleader = ' '
 local map = vim.api.nvim_set_keymap
-map('n', '<A-h>', ':TmuxNavigateLeft<Return>', {noremap = true, silent = true})
-map('n', '<A-j>', ':TmuxNavigateDown<Return>', {noremap = true, silent = true})
-map('n', '<A-k>', ':TmuxNavigateUp<Return>', {noremap = true, silent = true})
-map('n', '<A-l>', ':TmuxNavigateRight<Return>', {noremap = true, silent = true})
-
 map('n', 'ss', ':split<Return>', {noremap = false, silent = false})
 map('n', 'sv', ':vsplit<Return>', {noremap = false, silent = false})
 map('n', 'sq', ':q<Return>', {noremap = false, silent = false})
