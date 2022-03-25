@@ -16,5 +16,6 @@ require('plugins/lspkind-conf')
 require('plugins/telescope-conf')
 require('plugins/lspsaga-conf')
 require('plugins/tree-conf')
--- require('nightfox').load()
-vim.cmd("colorscheme nord")
+
+-- Colorscheme
+vim.cmd("colorscheme nightfox")

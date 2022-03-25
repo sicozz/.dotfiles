@@ -77,7 +77,6 @@ plugins=(
     vi-mode
     safe-paste
     zsh-syntax-highlighting
-    zsh-autosuggestions
     zsh-aliases-exa
 )
 

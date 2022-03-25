@@ -28,7 +28,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+r exec --no-startup-id dmenu_run -fn JetBrainsMono-10.5 -nb "#2e3440" -nf "#eceff4" -sb "#d8dee9" -sf "#4c566a"
+bindsym $mod+r exec --no-startup-id dmenu_run -fn JetBrainsMono-10.5 -nb "#192330" -nf "#63cdcf" -sb "#63cdcf" -sf "#192330"
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -282,12 +282,12 @@ mode "resize" {
 # exec_always --no-startup-id setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
 # exec --no-startup-id brightnessctl -q s 50%
 
-set $stlBg    #2e3440
-set $stlFBg   #d8dee9
-set $stlUBg   #bf616a
-set $stlBor   #4c566a
-set $stl0T    #4c566a
-set $stl1T    #eceff4
+set $stlBg    #192330
+set $stlFBg   #63cdcf
+set $stlUBg   #c94f6d
+set $stlBor   #475072
+set $stl0T    #192330
+set $stl1T    #63cdcf
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
@@ -314,7 +314,7 @@ bar {
         active_workspace    #595B5B #353836 #fdf6e3
         inactive_workspace  $stlBor $stlBg  $stl1T
         binding_mode        $stlBor $stlFBg $stl0T
-        urgent_workspace    $stlBor $stlUBg #ffffff
+        urgent_workspace    $stlBor $stlUBg $stl0T
     }
 }
 
