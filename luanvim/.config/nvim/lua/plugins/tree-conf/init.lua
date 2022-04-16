@@ -1,5 +1,4 @@
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
-vim.g.nvim_tree_indent_markers = 1
 require'nvim-tree'.setup {
   open_on_setup       = false,
   ignore_ft_on_setup  = {},
@@ -30,6 +29,16 @@ require'nvim-tree'.setup {
     enable = true,
     ignore = true,
     timeout = 500,
+  },
+  renderer = {
+    indent_markers = {
+      enable = false,
+      icons = {
+        corner = "└ ",
+        edge = "│ ",
+        none = "  ",
+      },
+    },
   },
   view = {
     width = 30,

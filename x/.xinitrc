@@ -40,7 +40,7 @@ fi
 setxkbmap -layout us -variant real-prog-dvorak -option caps:escape &
 
 # compositor
-picom -b &
+# picom -b &
 
 # wallpaper
 ~/.fehbg &
