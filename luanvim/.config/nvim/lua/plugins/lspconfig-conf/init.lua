@@ -78,11 +78,6 @@ nvim_lsp.rls.setup {
   filetypes = { "rustup", "run", "rls", "rust" },
 }
 
--- nvim_lsp.pylsp.setup {
---   on_attach = on_attach,
---   filetypes = { "python" },
--- }
-
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
   filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc' },

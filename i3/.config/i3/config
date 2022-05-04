@@ -278,9 +278,9 @@ mode "resize" {
 # bindsym $mod+Shift+x exec --no-startup-id blurlock
 
 # Autostart applications
-# exec --no-startup-id ~/.fehbg; sleep 1; picom -b
+exec --no-startup-id setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
+exec --no-startup-id ~/.fehbg; sleep 1; picom -b
 # exec --no-startup-id xautolock -time 10 -locker blurlock
-# exec_always --no-startup-id setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
 # exec --no-startup-id brightnessctl -q s 50%
 
 set $stlBg    #192330

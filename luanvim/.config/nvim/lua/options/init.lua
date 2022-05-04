@@ -16,7 +16,7 @@ vim.o.shiftwidth = 2
 vim.o.expandtab = true
 
 vim.o.completeopt = "menuone,noinsert,noselect"
-vim.o.shortmess = vim.o.shortmess .. 'c'
+--vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.path = vim.o.path .. "**"
 
 vim.cmd('filetype plugin indent on')
