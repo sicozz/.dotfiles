@@ -23,9 +23,9 @@
 
 # Global variables
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export EDITOR=/usr/bin/nvim
-export DISABLE_AUTO_TITLE='true'            # tmuxp requires it idk why
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export EDITOR=/usr/local/bin/nvim
+# export DISABLE_AUTO_TITLE='true'            # tmuxp requires it idk why
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # startx
 if [ -z "$DISPLAY" ] && [ $(tty) = /dev/tty1 ]; then

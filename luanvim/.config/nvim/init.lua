@@ -16,6 +16,4 @@ require('plugins/cmp-conf')
 require('plugins/telescope-conf')
 require('plugins/lspsaga-conf')
 require('plugins/tree-conf')
-
--- Colorscheme
-vim.cmd("colorscheme nightfox")
+require('plugins/nightfox-conf')

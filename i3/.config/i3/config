@@ -22,13 +22,13 @@ font pango:Hack 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec st
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+r exec --no-startup-id dmenu_run -fn JetBrainsMono-10.5 -nb "#192330" -nf "#63cdcf" -sb "#63cdcf" -sf "#192330"
+bindsym $mod+r exec --no-startup-id dmenu_run -fn Hack-11 -nb "#192330" -nf "#63cdcf" -sb "#63cdcf" -sf "#192330"
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -61,7 +61,7 @@ exec --no-startup-id nm-applet --sm-disable
 # Applications shortcuts
 bindsym $mod+Shift+b exec firefox
 # bindsym $mod+Ctrl+e exec pcmanfm
-bindsym $mod+Shift+e exec "kitty lf"
+bindsym $mod+Shift+e exec "st lf"
 bindsym $mod+Shift+p exec zathura
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+t exec --no-startup-id pkill picom
@@ -194,6 +194,7 @@ assign [class="Min"] $ws2
 assign [class="firefox"] $ws2
 # Chats and social
 assign [class="discord"] $ws3
+assign [class="Microsoft Teams - Preview"] $ws3
 assign [class="zoom"] $ws3
 # Video recording
 assign [class="obs"] $ws8
@@ -290,34 +291,35 @@ set $stlBor   #475072
 set $stl0T    #192330
 set $stl1T    #63cdcf
 
+exec_always --no-startup-id ~/.config/polybar/launch.sh &
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar
-	status_command i3status -c /home/sicoz/.config/i3/i3status.conf
-	position bottom
-
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
-
-	bindsym button4 nop
-	bindsym button5 nop
-#   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
-
-    colors {
-        background $stlBg
-        statusline #F9FAF9
-        separator  #454947
-
-#                           border  backgr. text
-        focused_workspace   $stlBor $stlFBg $stl0T
-        active_workspace    #595B5B #353836 #fdf6e3
-        inactive_workspace  $stlBor $stlBg  $stl1T
-        binding_mode        $stlBor $stlFBg $stl0T
-        urgent_workspace    $stlBor $stlUBg $stl0T
-    }
-}
+# bar {
+# 	i3bar_command i3bar
+# 	status_command i3status -c /home/sicoz/.config/i3/i3status.conf
+# 	position bottom
+# 
+# ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+# #	tray_output primary
+# #	tray_output eDP1
+# 
+# 	bindsym button4 nop
+# 	bindsym button5 nop
+# #   font xft:URWGothic-Book 11
+# 	strip_workspace_numbers yes
+# 
+#     colors {
+#         background $stlBg
+#         statusline #F9FAF9
+#         separator  #454947
+# 
+# #                           border  backgr. text
+#         focused_workspace   $stlBor $stlFBg $stl0T
+#         active_workspace    #595B5B #353836 #fdf6e3
+#         inactive_workspace  $stlBor $stlBg  $stl1T
+#         binding_mode        $stlBor $stlFBg $stl0T
+#         urgent_workspace    $stlBor $stlUBg $stl0T
+#     }
+# }
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
