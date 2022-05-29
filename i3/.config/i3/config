@@ -284,42 +284,42 @@ exec --no-startup-id ~/.fehbg; sleep 1; picom -b
 # exec --no-startup-id xautolock -time 10 -locker blurlock
 # exec --no-startup-id brightnessctl -q s 50%
 
-set $stlBg    #192330
-set $stlFBg   #63cdcf
-set $stlUBg   #c94f6d
-set $stlBor   #475072
-set $stl0T    #192330
-set $stl1T    #63cdcf
+set $stlBg    #011627
+set $stlFBg   #7fae36
+set $stlUBg   #fc514e
+set $stlBor   #69778f
+set $stl0T    #011627
+set $stl1T    #7fdbca
 
-exec_always --no-startup-id ~/.config/polybar/launch.sh &
+# exec_always --no-startup-id ~/.config/polybar/launch.sh &
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-# bar {
-# 	i3bar_command i3bar
-# 	status_command i3status -c /home/sicoz/.config/i3/i3status.conf
-# 	position bottom
-# 
-# ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-# #	tray_output primary
-# #	tray_output eDP1
-# 
-# 	bindsym button4 nop
-# 	bindsym button5 nop
-# #   font xft:URWGothic-Book 11
-# 	strip_workspace_numbers yes
-# 
-#     colors {
-#         background $stlBg
-#         statusline #F9FAF9
-#         separator  #454947
-# 
-# #                           border  backgr. text
-#         focused_workspace   $stlBor $stlFBg $stl0T
-#         active_workspace    #595B5B #353836 #fdf6e3
-#         inactive_workspace  $stlBor $stlBg  $stl1T
-#         binding_mode        $stlBor $stlFBg $stl0T
-#         urgent_workspace    $stlBor $stlUBg $stl0T
-#     }
-# }
+bar {
+	i3bar_command i3bar
+	status_command i3status -c /home/sicoz/.config/i3/i3status.conf
+	position bottom
+
+## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+#	tray_output primary
+#	tray_output eDP1
+
+	bindsym button4 nop
+	bindsym button5 nop
+#   font xft:URWGothic-Book 11
+	strip_workspace_numbers yes
+
+    colors {
+        background $stlBg
+        statusline #F9FAF9
+        separator  #454947
+
+#                           border  backgr. text
+        focused_workspace   $stlBor $stlFBg $stl0T
+        active_workspace    #595B5B #353836 #fdf6e3
+        inactive_workspace  $stlBor $stlBg  $stl1T
+        binding_mode        $stlBor $stlFBg $stl0T
+        urgent_workspace    $stlBor $stlUBg $stl0T
+    }
+}
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle

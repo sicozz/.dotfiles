@@ -1,4 +1,7 @@
 local cmp = require'cmp'
+local winhighlight = {
+  winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel",
+}
 
   cmp.setup({
     snippet = {
