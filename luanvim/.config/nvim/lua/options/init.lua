@@ -37,6 +37,11 @@ vim.wo.signcolumn = "yes"
 vim.wo.cursorline = true
 vim.o.guicursor = ''
 
+-- Global statusbar
+vim.o.laststatus = 3
+-- Window statusbar
+-- vim.wo.winbar = "%=%m\\ %f"
+
 -- Disable various builtin plugins in Vim that bog down speed
 vim.g.loaded_matchparen = 1
 vim.g.loaded_matchit = 1

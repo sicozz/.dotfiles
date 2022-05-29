@@ -4,6 +4,7 @@ return require('packer').startup(function()
   
   -- Colorschemes
   use 'EdenEast/nightfox.nvim'
+  use 'bluz71/vim-nightfly-guicolors'
   -- use 'arcticicestudio/nord-vim'
   use 'danishprakash/vim-yami'
 
