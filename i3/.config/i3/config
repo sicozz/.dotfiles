@@ -28,7 +28,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+r exec --no-startup-id dmenu_run -fn Hack-11 -nb "#192330" -nf "#63cdcf" -sb "#63cdcf" -sf "#192330"
+bindsym $mod+r exec --no-startup-id dmenu_run -fn Hack-11 -nb "#011627" -nf "#d6deeb" -sb "#d6deeb" -sf "#011627"
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -285,11 +285,11 @@ exec --no-startup-id ~/.fehbg; sleep 1; picom -b
 # exec --no-startup-id brightnessctl -q s 50%
 
 set $stlBg    #011627
-set $stlFBg   #7fae36
+set $stlFBg   #d6deeb
 set $stlUBg   #fc514e
 set $stlBor   #69778f
 set $stl0T    #011627
-set $stl1T    #7fdbca
+set $stl1T    #a1aab8
 
 # exec_always --no-startup-id ~/.config/polybar/launch.sh &
 # Start i3bar to display a workspace bar (plus the system information i3status if available)

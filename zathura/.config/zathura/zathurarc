@@ -9,7 +9,7 @@ set completion-highlight-fg     "#acb4c2"
 
 
 set notification-bg             "#011627"
-set notification-fg             "#7fdbca"
+set notification-fg             "#acb4c2"
 
 set notification-warning-bg     "#011627"
 set notification-warning-fg     "#e3d18a"
@@ -26,10 +26,10 @@ set index-active-fg             "#acb4c2"
 
 
 set inputbar-bg                 "#011627"
-set inputbar-fg                 "#7fdbca"
+set inputbar-fg                 "#acb4c2"
 
 set statusbar-bg                "#011627"
-set statusbar-fg                "#7fdbca"
+set statusbar-fg                "#acb4c2"
 
 set highlight-color             "#224562"
 set highlight-active-color      "#eceff4"
