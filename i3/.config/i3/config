@@ -4,6 +4,11 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
+# Your preferred terminal emulator
+set $term kitty
+# Your preferred application launcher
+set $menu dmenu_run -fn Hack-11 -nb "#192330" -nf "#cdcecf" -sb "#63cdcf" -sf "#192330" | xargs swaymsg exec --
+
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
@@ -22,13 +27,13 @@ font pango:Hack 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+r exec --no-startup-id dmenu_run -fn Hack-11 -nb "#011627" -nf "#d6deeb" -sb "#d6deeb" -sf "#011627"
+bindsym $mod+r exec --no-startup-id $menu
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -61,7 +66,6 @@ exec --no-startup-id nm-applet --sm-disable
 # Applications shortcuts
 bindsym $mod+Shift+b exec firefox
 # bindsym $mod+Ctrl+e exec pcmanfm
-bindsym $mod+Shift+e exec "st lf"
 bindsym $mod+Shift+p exec zathura
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+t exec --no-startup-id pkill picom
@@ -231,7 +235,7 @@ bindsym $mod+Shift+r reload
 #bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Ctrl+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
@@ -284,12 +288,12 @@ exec --no-startup-id ~/.fehbg; sleep 1; picom -b
 # exec --no-startup-id xautolock -time 10 -locker blurlock
 # exec --no-startup-id brightnessctl -q s 50%
 
-set $stlBg    #011627
-set $stlFBg   #d6deeb
-set $stlUBg   #fc514e
-set $stlBor   #69778f
-set $stl0T    #011627
-set $stl1T    #a1aab8
+set $stlBg    #192330
+set $stlFBg   #63cdcf
+set $stlUBg   #c94f6d
+set $stlBor   #192330
+set $stl0T    #192330
+set $stl1T    #cdcecf
 
 # exec_always --no-startup-id ~/.config/polybar/launch.sh &
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
