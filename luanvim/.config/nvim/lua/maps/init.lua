@@ -11,6 +11,8 @@ map('n', 'st', ':tabnext<Return>', {noremap = false, silent = false})
 map('n', 'sT', ':tabprev<Return>', {noremap = false, silent = false})
 map('n', 'te', ':tabedit ', {noremap = false, silent = false})
 
+map('n', '<C-q>', ':bdelete<Return>', {noremap = false, silent = false})
+
 map('n', '<C-a>', 'gg<S-v>G', {noremap = false, silent = false})
 map('n', '<leader>t', ':terminal<Return>', {noremap = true})
 map('n', '<leader>u', ':UndotreeShow<Return>', {noremap = true})

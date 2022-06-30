@@ -18,11 +18,16 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu -fn Hack-11 -nb "#192330" -nf "#cdcecf" -sb "#63cdcf" -sf "#192330" | xargs swaymsg exec --
-set $menu wofi --show=run
+set $menu bemenu-run \
+--fn "Hack 11" \
+--tb "#719cd6" --tf "#192330" \
+--hb "#28466f" --hf "#afb0b2" \
+--nb "#0b1016" --nf "#cdcecf" \
+--sb "#d6616b" --sf "#192330" \
+| xargs swaymsg exec --
 
 ### Font
-font pango:Hack 10
+font pango:Hack 11
 
 ### Startup programs
 exec --no-startup-id nm-applet --sm-disable
@@ -30,13 +35,12 @@ exec --no-startup-id nm-applet --sm-disable
 ### Application shortcuts
 # bindsym $mod+Ctrl+e exec pcmanfm
 bindsym $mod+t exec --no-startup-id pkill picom
-bindsym Print exec --no-startup-id "flameshot gui"
+bindsym Print exec --no-startup-id grim -g "$(slurp)" - | wl-copy
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+b exec firefox
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+Shift+m exec pavucontrol
 bindsym $mod+Shift+p exec zathura
-bindsym $mod+Ctrl+s exec "i3exit shutdown"
 
 ### Pulse Audio bindings
 ## Volume up
@@ -56,8 +60,8 @@ bindsym XF86Mail exec "brightnessctl -q s +5%"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output HDMI-A-1 bg /home/sicoz/Pictures/Wallpapers/Clearday.jpg fill
-output eDP-1 bg /home/sicoz/Pictures/Wallpapers/Clearday.jpg fill
+output HDMI-A-1 bg /home/sicoz/Pictures/Wallpapers/japanesse-waves.jpg fill
+output eDP-1 bg /home/sicoz/Pictures/Wallpapers/japanesse-waves.jpg fill
 #
 # Example configuration:
 #
@@ -79,15 +83,15 @@ output eDP-1 bg /home/sicoz/Pictures/Wallpapers/Clearday.jpg fill
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
-#
+
 # Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
+
+  input "1739:32183:SYNA7DB5:00_06CB:7DB7_Touchpad" {
 #       dwt enabled
-#       tap enabled
+       tap enabled
 #       natural_scroll enabled
 #       middle_emulation enabled
-#   }
+   }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -124,7 +128,15 @@ input * {
     bindsym $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Ctrl+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    # Shut down
+    bindsym $mod+Ctrl+s exec swaynag -t warning -m \
+    '                    Do you really want to poweroff?' -B 'POWEROFF' 'swaymsg exec poweroff'
+
+    # Reboot
+    bindsym $mod+Ctrl+r exec swaynag -t warning -m \
+    '                    Do you really want to reboot?' -B 'REBOOT' 'swaymsg exec reboot'
 #
 # Moving around:
 #
