@@ -18,11 +18,16 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu -fn Hack-11 -nb "#192330" -nf "#cdcecf" -sb "#63cdcf" -sf "#192330" | xargs swaymsg exec --
-set $menu wofi --show=run
+set $menu bemenu-run \
+--fn "Hack 11" \
+--tb "#81b29a" --tf "#192330" \
+--hb "#325141" --hf "#cdcecf" \
+--nb "#0b1016" --nf "#cdcecf" \
+--sb "#d6616b" --sf "#192330" \
+| xargs swaymsg exec --
 
 ### Font
-font pango:Hack 10
+font pango:Hack 11
 
 ### Startup programs
 exec --no-startup-id nm-applet --sm-disable
@@ -30,13 +35,12 @@ exec --no-startup-id nm-applet --sm-disable
 ### Application shortcuts
 # bindsym $mod+Ctrl+e exec pcmanfm
 bindsym $mod+t exec --no-startup-id pkill picom
-bindsym Print exec --no-startup-id "flameshot gui"
+bindsym Print exec --no-startup-id grim -g "$(slurp)" - | wl-copy
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+b exec firefox
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym $mod+Shift+m exec pavucontrol
 bindsym $mod+Shift+p exec zathura
-bindsym $mod+Ctrl+s exec "i3exit shutdown"
 
 ### Pulse Audio bindings
 ## Volume up
@@ -125,6 +129,14 @@ input * {
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    # Shut down
+    bindsym $mod+Ctrl+s exec swaynag -t warning -m \
+    '                    Do you really want to shutdown?' -B 'SHUTDOWN' 'swaymsg exec shutdown'
+
+    # Reboot
+    bindsym $mod+Ctrl+r exec swaynag -t warning -m \
+    '                    Do you really want to reboot?' -B 'REBOOT' 'swaymsg exec reboot'
 #
 # Moving around:
 #
