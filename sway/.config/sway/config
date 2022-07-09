@@ -271,12 +271,12 @@ gaps outer 0
 #
 # Colors
 #
-set $stlBg    #192330
-set $stlFBg   #63cdcf
-set $stlUBg   #c94f6d
-set $stlBor   #192330
-set $stl0T    #192330
-set $stl1T    #cdcecf
+set $stlBg    #0f111b
+set $stlFBg   #5ccc96
+set $stlUBg   #e33400
+set $stlBor   #ecf0c1
+set $stl0T    #0f111b
+set $stl1T    #ecf0c1
 
 #
 # Status Bar:
@@ -296,7 +296,7 @@ bar {
         statusline          $stl1T
         background          $stlBg
         #                   border  bg      fg
-        focused_workspace   $stlBg  $stlFBg  $stl0T
+        focused_workspace   $stlFBg  $stlFBg $stl0T
         active_workspace    $stlBg  $stlBg  $stl1T
         inactive_workspace  $stlBg  $stlBg  $stl1T
     }

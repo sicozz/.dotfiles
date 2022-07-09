@@ -1,7 +1,7 @@
 -- Default options
 require('nightfox').setup({
   options = {
-    transparent = false,    -- Disable setting background
+    transparent = true,    -- Disable setting background
     terminal_colors = true, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
     dim_inactive = false,   -- Non focused panes set to alternative background
     styles = {              -- Style to be applied to different syntax groups
@@ -28,4 +28,4 @@ require('nightfox').setup({
 })
 
 -- setup must be called before loading
-vim.cmd("colorscheme duskfox")
+vim.cmd("colorscheme nightfox")

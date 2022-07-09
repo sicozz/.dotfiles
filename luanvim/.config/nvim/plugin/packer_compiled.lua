@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
+  spaceduck = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/spaceduck",
+    url = "https://github.com/pineapplegiant/spaceduck"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -173,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-material"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/vim-material",
+    url = "https://github.com/hzchirs/vim-material"
   },
   ["vim-solidity"] = {
     loaded = true,

@@ -6,7 +6,11 @@ export PATH=$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 export ZSH="/home/sicoz/.oh-my-zsh"
 
 # SHELL for tmux sessions
-export SHELL="/usr/bin/zsh"
+# export SHELL="/usr/bin/zsh"
+
+# DENO
+export DENO_INSTALL="/home/sicoz/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

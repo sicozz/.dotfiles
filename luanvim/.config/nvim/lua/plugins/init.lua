@@ -3,8 +3,8 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   
   -- Colorschemes
-  use 'EdenEast/nightfox.nvim'
-  -- use 'arcticicestudio/nord-vim'
+  use 'pineapplegiant/spaceduck'
+  -- use 'EdenEast/nightfox.nvim'
   use 'danishprakash/vim-yami'
 
   -- Vim things
