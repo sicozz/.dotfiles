@@ -20,9 +20,9 @@ set $term kitty
 # on the original workspace that the command was run on.
 set $menu bemenu-run \
 --fn "Hack 11" \
---tb "#719cd6" --tf "#192330" \
---hb "#28466f" --hf "#afb0b2" \
---nb "#0b1016" --nf "#cdcecf" \
+--tb "#686f9a" --tf "#000000" \
+--hb "#30365F" --hf "#f0f1ce" \
+--nb "#0f111b" --nf "#ecf0c1" \
 --sb "#d6616b" --sf "#192330" \
 | xargs swaymsg exec --
 
