@@ -18,7 +18,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="clean"
 # ZSH_THEME="agnoster"
-ZSH_THEME="logic"
+# ZSH_THEME="logic"
 # ZSH_THEME="speed"
 
 # Set list of themes to pick from when loading at random
@@ -103,4 +103,4 @@ alias xclipcp="xclip -selection clipboard"
 
 source $ZSH/oh-my-zsh.sh
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
