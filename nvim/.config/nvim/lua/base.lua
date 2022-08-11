@@ -3,13 +3,18 @@ vim.cmd("autocmd!")
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
+vim.opt.backup = false
+vim.opt.swapfile = false
+vim.opt.guicursor = ''
 
 vim.wo.number = true
+vim.wo.relativenumber = true
+vim.wo.cursorline = true
 
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.hlsearch = true
+vim.opt.hlsearch = false
 vim.opt.backup = false
 vim.opt.showcmd = true
 vim.opt.cmdheight = 1
@@ -41,3 +46,19 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
+
+-- Disable various builtin plugins in Vim that bog down speed
+vim.g.loaded_matchparen = 1
+vim.g.loaded_matchit = 1
+vim.g.loaded_logiPat = 1
+vim.g.loaded_rrhelper = 1
+vim.g.loaded_tarPlugin = 1
+vim.g.loaded_gzip = 1
+vim.g.loaded_zipPlugin = 1
+vim.g.loaded_2html_plugin = 1
+vim.g.loaded_shada_plugin = 1
+vim.g.loaded_spellfile_plugin = 1
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_tutor_mode_plugin = 1
+vim.g.loaded_remote_plugins = 1
