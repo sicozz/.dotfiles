@@ -6,6 +6,7 @@ vim.opt.fileencoding = 'utf-8'
 vim.opt.backup = false
 vim.opt.swapfile = false
 vim.opt.guicursor = ''
+vim.opt.undodir = "/home/sicoz/.config/nvim/undodir"
 
 vim.wo.number = true
 vim.wo.relativenumber = true

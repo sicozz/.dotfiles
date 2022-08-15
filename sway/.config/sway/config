@@ -20,10 +20,15 @@ set $term kitty
 # on the original workspace that the command was run on.
 set $menu bemenu-run \
 --fn "Hack 11" \
---tb "#686f9a" --tf "#000000" \
---hb "#30365F" --hf "#f0f1ce" \
---nb "#0f111b" --nf "#ecf0c1" \
---sb "#d6616b" --sf "#192330" \
+--tb "#a57705" --tf "#e9e2cb" \
+--fb "#002731" --ff "#e9e2cb" \
+--nb "#001e26" --nf "#708183" \
+--hb "#259185" --hf "#001e26" \
+--fbb "#001e26" --fbf "#708183" \
+--sb "#728905" --sf "#708183" \
+--ab "#001e26" --af "#708183" \
+--scb "#001e26" --scf "#708183" \
+--bdr "#d01b24" \
 | xargs swaymsg exec --
 
 ### Font
@@ -60,8 +65,8 @@ bindsym XF86Mail exec "brightnessctl -q s +5%"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output HDMI-A-1 bg /home/sicoz/Pictures/Wallpapers/japanesse-waves.jpg fill
-output eDP-1 bg /home/sicoz/Pictures/Wallpapers/japanesse-waves.jpg fill
+output HDMI-A-1 bg /home/sicoz/Pictures/Wallpapers/cowboy-bebop.jpg fill
+output eDP-1 bg /home/sicoz/Pictures/Wallpapers/cowboy-bebop.jpg fill
 #
 # Example configuration:
 #
@@ -284,7 +289,7 @@ set $stlBor   #e9e2cb
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position bottom
-    # font pango:3270Medium Nerd Font 11
+    # font pango:Hack 11
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
