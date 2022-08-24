@@ -79,6 +79,12 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.rls.setup {
+  on_attach = on_attach,
+  filetypes = { "rustup", "run", "rls", "rust" },
+  capabilities = capabilities
+}
+
 nvim_lsp.sourcekit.setup {
   on_attach = on_attach,
 }
