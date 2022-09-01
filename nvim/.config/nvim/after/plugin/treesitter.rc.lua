@@ -19,7 +19,8 @@ ts.setup {
     "html",
     "lua",
     "rust",
-    "python"
+    "python",
+    "javascript"
   },
   autotag = {
     enable = true,
