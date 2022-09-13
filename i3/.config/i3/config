@@ -23,11 +23,14 @@
   # Application launcher
   set $menu dmenu_run \
   -fn "JetBrains Mono-10" \
-  -nb "#002731" -nf "#708183" \
-  -sb "#a57705" -sf "#fcf4dc"
+  -nb "#000f12" -nf "#eceff4" \
+  -sb "#00edbd" -sf "#000f12"
+
+  # i3exit
+  set $i3exit ~/.config/i3/i3exit
 
   # File Manager
-  set $fileManager dolphin
+  set $fileManager pcmanfm
 
   # Browser
   set $browser firefox
@@ -35,8 +38,8 @@
   # Compositor
   set $compositor picom
 
-  # i3exit
-  set $i3exit ~/.config/i3/i3exit
+  # Screenshot tool
+  set $screenshotTool flameshot gui
   
   # Monitors
   set $mon0 HDMI-1
@@ -74,19 +77,19 @@
   default_floating_border normal
 
 ### Colors
-set $colBg    #002731
-set $colFg    #fcf4dc
-set $colFBg   #a57705
-set $colFFg   #ecf0c1
-set $colUBg   #bd3612
-set $colBor   #e9e2cb
+set $colBg    #000f12
+set $colFg    #eceff4
+set $colFBg   #00edbd
+set $colFFg   #000f12
+set $colUBg   #ed2c2c
+set $colBor   #eceff4
 
 ### Status Bar:
 bar {
   position bottom
   # font pango:Hack 11
   
-  # When the status_command prints a new line to stdout, swaybar updates.
+  # When the status_command prints a new line to stdout, i3bar updates.
   # The default just shows the current date and time.
   # status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
   # status_command while date +'%Y-%m-%d %I:%M'; do sleep 1; done
@@ -281,17 +284,18 @@ bar {
   bindsym XF86Mail exec "brightnessctl -q s +5%"
 
 # Applications shortcuts
-  # bindsym $mod+Ctrl+e exec $fileManager
+  bindsym $mod+Shift+e exec $fileManager
   bindsym $mod+t exec --no-startup-id pkill $compositor
   bindsym Print exec --no-startup-id $screenshotTool
-  bindsym $mod+Ctrl+t exec --no-startup-id $compositor -b
+  bindsym $mod+Shift+t exec --no-startup-id $compositor -b
   bindsym $mod+Shift+b exec $browser
   bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
   bindsym $mod+Shift+p exec zathura
 
 ### Startup programs
-  # Network manager applet
-  exec --no-startup-id nm-applet --sm-disable
+
+  # Set status bar
+  # exec --no-startup-id ~/.config/polybar/launch.sh
 
   # Sound server
   exec --no-startup-id start-pulseaudio-x11
@@ -301,12 +305,17 @@ bar {
 
   # Multiple monitors
   exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --left-of $mon1 &
-
   workspace $ws1 output HDMI-1
   workspace $ws9 output eDP-1
 
   # Set wallpaper and compositor
-  exec --no-startup-id ~/.fehbg; sleep 1; picom -b
+  exec --no-startup-id ~/.fehbg; sleep 1; $compositor -b
+
+  # Set notification daemon
+  exec --no-startup-id dunst &
+
+  # Network manager applet
+  exec --no-startup-id nm-applet --sm-disable
 
 ### Open applications on specific workspaces
   # Web browser
@@ -344,5 +353,10 @@ bar {
   for_window [class="Timeset-gui"] floating enable border normal
   for_window [class="Xfburn"] floating enable
 
-### Quick screen reload
-bindsym $mod+Ctrl+s exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --left-of $mon1 && ~/.fehbg && picom -b
+### Quick reloads
+# Screen
+bindsym $mod+Ctrl+s exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --left-of $mon1 && ~/.fehbg && $compositor -b
+
+# Keyboard
+bindsym $mod+Ctrl+k exec setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
+bindsym $mod+Ctrl+Shift+k exec setxkbmap latam
