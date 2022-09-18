@@ -77,12 +77,12 @@
   default_floating_border normal
 
 ### Colors
-set $colBg    #000f12
-set $colFg    #eceff4
-set $colFBg   #00edbd
-set $colFFg   #000f12
-set $colUBg   #ed2c2c
-set $colBor   #eceff4
+set $colBg    #161821
+set $colFg    #d2d4de
+set $colFBg   #84a0c6
+set $colFFg   #161821
+set $colUBg   #e27878
+set $colBor   #d2d4de
 
 ### Status Bar:
 bar {
@@ -102,6 +102,7 @@ bar {
     focused_workspace   $colFBg $colFBg $colFFg
     active_workspace    $colBg  $colBg  $colFg
     inactive_workspace  $colBg  $colBg  $colFg
+    urgent_workspace    $colBg  $colUBg $colFg
   }
 }
 
