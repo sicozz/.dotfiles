@@ -23,8 +23,8 @@
   # Application launcher
   set $menu dmenu_run \
   -fn "JetBrains Mono-10" \
-  -nb "#000f12" -nf "#eceff4" \
-  -sb "#00edbd" -sf "#000f12"
+  -nb "#1a1b26" -nf "#a9b1d6" \
+  -sb "#9ECE6A" -sf "#1a1b26"
 
   # i3exit
   set $i3exit ~/.config/i3/i3exit
@@ -77,12 +77,12 @@
   default_floating_border normal
 
 ### Colors
-set $colBg    #161821
-set $colFg    #d2d4de
-set $colFBg   #84a0c6
-set $colFFg   #161821
-set $colUBg   #e27878
-set $colBor   #d2d4de
+set $colBg    #1a1b26
+set $colFg    #a9b1d6
+set $colFBg   #7AA2F7
+set $colFFg   #1a1b26
+set $colUBg   #F7768E
+set $colBor   #acb0d0
 
 ### Status Bar:
 bar {
