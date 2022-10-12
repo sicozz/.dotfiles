@@ -77,12 +77,12 @@
   default_floating_border normal
 
 ### Colors
-set $colBg    #1a1b26
-set $colFg    #a9b1d6
-set $colFBg   #7AA2F7
-set $colFFg   #1a1b26
-set $colUBg   #F7768E
-set $colBor   #acb0d0
+set $colBg    #2E3440
+set $colFg    #D8DEE9
+set $colFBg   #88c0d0
+set $colFFg   #2E3440
+set $colUBg   #BF616A
+set $colBor   #D8DEE9
 
 ### Status Bar:
 bar {
