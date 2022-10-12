@@ -102,7 +102,7 @@ bar {
     focused_workspace   $colFBg $colFBg $colFFg
     active_workspace    $colBg  $colBg  $colFg
     inactive_workspace  $colBg  $colBg  $colFg
-    urgent_workspace    $colBg  $colUBg $colFg
+    urgent_workspace    $colUBg $colUBg $colBg
   }
 }
 
