@@ -82,7 +82,7 @@ set $colFg    #D8DEE9
 set $colFBg   #88c0d0
 set $colFFg   #2E3440
 set $colUBg   #BF616A
-set $colBor   #D8DEE9
+set $colBor   #8FBCBB
 
 ### Status Bar:
 bar {
