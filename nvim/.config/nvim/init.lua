@@ -20,3 +20,7 @@ require "user.indentline"
 require "user.alpha"
 require "user.lsp"
 require "user.dap"
+-- rust
+require "user.rust-tools"
+require "user.todo-comments"
+require "user.trouble"

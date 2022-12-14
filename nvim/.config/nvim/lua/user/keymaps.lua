@@ -78,3 +78,9 @@ keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opts)
 keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
 keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
+
+-- Rust tools (keymaps set in lua/user/rust-tools.lua)
+-- Hover actions
+-- keymap("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+-- Code action groups
+-- keymap("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
