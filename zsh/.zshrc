@@ -9,7 +9,7 @@ export ZSH="/home/sicoz/.oh-my-zsh"
 # export SHELL="/usr/bin/zsh"
 
 # JAVA
-export JAVA_HOME="/usr/lib/jvm/java-17-openjdk/bin/java"
+export JAVA_HOME="/usr/lib/jvm/jre"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
