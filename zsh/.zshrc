@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-export PATH=$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$JAVA_HOME:$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sicoz/.oh-my-zsh"
@@ -8,9 +8,8 @@ export ZSH="/home/sicoz/.oh-my-zsh"
 # SHELL for tmux sessions
 # export SHELL="/usr/bin/zsh"
 
-# DENO
-export DENO_INSTALL="/home/sicoz/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
+# JAVA
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk/bin/java"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

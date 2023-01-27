@@ -1,43 +1,43 @@
-set completion-bg               "#0f111b"
-set completion-fg               "#ecf0c1"
+set completion-bg               "#232136"
+set completion-fg               "#e0def4"
 
-set completion-group-bg         "#242941"
-set completion-group-fg         "#ecf0c1"
+set completion-group-bg         "#393552"
+set completion-group-fg         "#e0def4"
 
-set completion-highlight-bg     "#32395a"
-set completion-highlight-fg     "#ecf0c1"
-
-
-set notification-bg             "#0f111b"
-set notification-fg             "#5ccc96"
-
-set notification-warning-bg     "#0f111b"
-set notification-warning-fg     "#f2ce00"
-
-set notification-error-bg       "#0f111b"
-set notification-error-fg       "#e33400"
+set completion-highlight-bg     "#47407d"
+set completion-highlight-fg     "#e0def4"
 
 
-set index-bg                    "#0f111b"
-set index-fg                    "#ecf0c1"
+set notification-bg             "#232136"
+set notification-fg             "#a3be8c"
+
+set notification-warning-bg     "#232136"
+set notification-warning-fg     "#f6c177"
+
+set notification-error-bg       "#232136"
+set notification-error-fg       "#eb6f92"
+
+
+set index-bg                    "#232136"
+set index-fg                    "#e0def4"
 
 set index-active-bg             "#242941" 
-set index-active-fg             "#ecf0c1" 
+set index-active-fg             "#e0def4" 
 
 
-set inputbar-bg                 "#0f111b"
-set inputbar-fg                 "#ecf0c1"
+set inputbar-bg                 "#393552"
+set inputbar-fg                 "#e0def4"
 
-set statusbar-bg                "#0f111b"
-set statusbar-fg                "#ecf0c1"
+set statusbar-bg                "#393552"
+set statusbar-fg                "#e0def4"
 
 set highlight-color             "#32395a"
 set highlight-active-color      "#eceff4"
 
-set default-bg                  "#0f111b"
-set default-fg                  "#ecf0c1"
-set recolor-lightcolor          "#0f111b"
-set recolor-darkcolor           "#ecf0c1"
+set default-bg                  "#232136"
+set default-fg                  "#e0def4"
+set recolor-lightcolor          "#232136"
+set recolor-darkcolor           "#e0def4"
 set recolor                     true
 
 set statusbar-h-padding 0
