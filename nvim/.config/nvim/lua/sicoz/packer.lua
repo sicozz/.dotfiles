@@ -11,11 +11,12 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+	use('no-clown-fiesta/no-clown-fiesta.nvim')
 	use({
-		'no-clown-fiesta/no-clown-fiesta.nvim',
-		as = 'no-clown-fiesta',
+		'AlexvZyl/nordic.nvim',
+		as = 'nordic',
 		config = function()
-			vim.cmd('colorscheme no-clown-fiesta')
+			vim.cmd('colorscheme nordic')
 		end
 	})
 

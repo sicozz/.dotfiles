@@ -9,7 +9,8 @@ lsp.ensure_installed({
 	'tsserver',
     'html',
     'pylsp',
-	'rust_analyzer'
+	'rust_analyzer',
+    'jdtls'
 })
 
 lsp.set_preferences({

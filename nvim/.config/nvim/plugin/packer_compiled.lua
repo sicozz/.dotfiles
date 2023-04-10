@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/no-clown-fiesta",
     url = "https://github.com/no-clown-fiesta/no-clown-fiesta.nvim"
   },
+  ["nordic.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nordic.nvim",
+    url = "https://github.com/AlexvZyl/nordic.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nvim-cmp",
