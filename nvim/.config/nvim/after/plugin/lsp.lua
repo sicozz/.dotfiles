@@ -10,7 +10,6 @@ lsp.ensure_installed({
     'html',
     'pylsp',
 	'rust_analyzer',
-    'jdtls'
 })
 
 lsp.set_preferences({
