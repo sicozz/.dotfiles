@@ -10,6 +10,7 @@ lsp.ensure_installed({
     'html',
     'pylsp',
 	'rust_analyzer',
+    'gopls'
 })
 
 lsp.set_preferences({
