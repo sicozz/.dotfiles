@@ -102,6 +102,7 @@ plugins=(
 alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
 alias myip="curl http://ipecho.net/plain; echo"
 alias xclipcp="xclip -selection clipboard"
+alias cat=bat
 
 source $ZSH/oh-my-zsh.sh
 
