@@ -1,34 +1,39 @@
 # Functional programs
 [ ] pam_ssh
 [x] viewnior
-[ ] nerdfonts
-[ ] ranger
-[ ] fd
-[ ] sd
-[ ] dust
-[ ] dog
-[ ] xh
-[ ] ncdu
-[ ] duf
+[x] nerdfonts
+[x] ranger
+[x] fd
+[x] sd
+[x] dust
+[x] dog
+[x] xh
+[x] ncdu
+[x] duf
 [x] bat
+[x] powerlevel10k
+[ ] screenshot
 [ ] golang
 
 # Decoration
 [x] wallpaper
 [x] gtk
 [ ] hypr
+[ ] dunst
 [ ] waybar
+[ ] alacritty
 [x] kitty
 [x] nvim
 [ ] tmux
-[ ] ranger
-[ ] zsh
+[x] ranger
+[x] zsh
 [ ] wofi
 [ ] btop
 [ ] neofetch
 
-# Finish
+# Complete
 Check errors, bugs, logs, of every one of these programs and
 !! The amdgpu error showed at boot
 
+# Setup repo as a formal .dotfiles repo for future pc conf and sharing with community
 Write README.md for ricing porpuses
