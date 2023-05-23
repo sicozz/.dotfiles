@@ -1,5 +1,6 @@
 # Functional programs
-[ ] pam_ssh
+[x] xdg-user-dirs
+[x] pam_ssh
 [x] viewnior
 [x] nerdfonts
 [x] ranger
@@ -13,7 +14,9 @@
 [x] bat
 [x] powerlevel10k
 [ ] screenshot
-[ ] golang
+[x] recording
+[x] golang
+[ ] gimp
 
 # Decoration
 [x] wallpaper

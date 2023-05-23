@@ -84,6 +84,16 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["go.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/go.nvim",
+    url = "https://github.com/ray-x/go.nvim"
+  },
+  ["guihua.lua"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/guihua.lua",
+    url = "https://github.com/ray-x/guihua.lua"
+  },
   harpoon = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -104,15 +114,15 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["no-clown-fiesta"] = {
-    config = { "\27LJ\2\n?\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0 colorscheme no-clown-fiesta\bcmd\bvim\0" },
+  ["no-clown-fiesta.nvim"] = {
     loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/no-clown-fiesta",
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/no-clown-fiesta.nvim",
     url = "https://github.com/no-clown-fiesta/no-clown-fiesta.nvim"
   },
-  ["nordic.nvim"] = {
+  nordic = {
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\23colorscheme nordic\bcmd\bvim\0" },
     loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nordic.nvim",
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nordic",
     url = "https://github.com/AlexvZyl/nordic.nvim"
   },
   ["nvim-cmp"] = {
@@ -125,10 +135,20 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -145,6 +165,16 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["todo-comments.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
+    url = "https://github.com/folke/todo-comments.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/undotree",
@@ -158,10 +188,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: no-clown-fiesta
-time([[Config for no-clown-fiesta]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0 colorscheme no-clown-fiesta\bcmd\bvim\0", "config", "no-clown-fiesta")
-time([[Config for no-clown-fiesta]], false)
+-- Config for: nordic
+time([[Config for nordic]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\23colorscheme nordic\bcmd\bvim\0", "config", "nordic")
+time([[Config for nordic]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
