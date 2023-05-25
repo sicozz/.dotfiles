@@ -13,26 +13,22 @@
 [x] duf
 [x] bat
 [x] powerlevel10k
-[ ] screenshot
+[x] screenshot
 [x] recording
 [x] golang
-[ ] gimp
 
 # Decoration
 [x] wallpaper
 [x] gtk
-[ ] hypr
-[ ] dunst
-[ ] waybar
-[ ] alacritty
+[x] hypr
+[x] dunst
+[x] waybar
 [x] kitty
 [x] nvim
-[ ] tmux
+[x] tmux
 [x] ranger
 [x] zsh
 [ ] wofi
-[ ] btop
-[ ] neofetch
 
 # Complete
 Check errors, bugs, logs, of every one of these programs and
