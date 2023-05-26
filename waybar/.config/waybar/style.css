@@ -1,3 +1,5 @@
+@import "colors.css";
+
 * {
     border: none;
     border-radius: 0;
@@ -17,8 +19,8 @@ window#waybar {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: #8FBCBB;
-    color: #8FBCBB;
+    border-color: @cyan;
+    color: @cyan;
 }
 
 tooltip {
@@ -43,12 +45,12 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: #8FBCBB;
+    color: @cyan;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #F0780A;
+    color: @orange;
 }
 
 #workspaces button.focused {
@@ -64,7 +66,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-    background: #D8DEE9;
+    background: @fg;
     border-radius: 10px;
 }
 
@@ -90,7 +92,7 @@ tooltip {
 }
 
 #battery {
-    color: #A3BE8C;
+    color: @green;
     border-radius: 0 10px 10px 0;
     margin: 0 5px;
 }

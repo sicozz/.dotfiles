@@ -28,7 +28,7 @@
 [x] tmux
 [x] ranger
 [x] zsh
-[ ] wofi
+[x] wofi
 
 # Complete
 Check errors, bugs, logs, of every one of these programs and

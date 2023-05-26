@@ -1,0 +1,79 @@
+@import ".config/wofi/colors/nordic.css";
+
+* {
+    font-family: MesloLGS NF, FontAwesome;
+    font-size: 14px;
+}
+
+window {
+    margin: 0px;
+    background: @bg0;
+    color: @fg;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @cyan;
+}
+
+#outer-box {
+    margin: 0px;
+    background: @bg0;
+    color: @fg;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @cyan;
+}
+
+#inner-box {
+    margin: 0px 14px;
+    background: @bg0;
+    color: @fg;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @cyan;
+}
+
+#input {
+    margin: 14px;
+    background: @bg1;
+    color: @fg;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @cyan;
+
+    padding: 10px;
+}
+
+#scroll {
+    margin-bottom: 14px;
+    padding: 0px;
+    border: none;
+}
+
+#text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#entry {
+    margin: 0px;
+    background: @bg1;
+    color: @cyan;
+
+    padding: 10px;
+}
+
+#entry:selected {
+    background-color: @bg0;
+    color: @orange;
+
+    font-weigth: bold;
+}
+
+#entry:selected * {
+    background-color: @bg0;
+    color: @orange;
+}
