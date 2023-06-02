@@ -8,9 +8,9 @@ lsp.ensure_installed({
 	'lua_ls',
 	'tsserver',
     'html',
-    'pylsp',
 	'rust_analyzer',
-    'gopls'
+    'gopls',
+    'clangd'
 })
 
 lsp.set_preferences({

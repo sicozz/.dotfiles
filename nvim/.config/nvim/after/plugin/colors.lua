@@ -8,4 +8,5 @@ end
 
 ColorMyPencils()
 
+vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg=234, bg="#002b36" })
 -- vim.cmd.colorscheme("NeoSolarized")

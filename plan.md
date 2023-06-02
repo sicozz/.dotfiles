@@ -34,7 +34,7 @@
 # Complete
 Check errors, bugs, logs, of every one of these programs and
 !! The amdgpu error showed at boot
-[ ] modify default cursor /usr/share/icons/default/index.theme to enforce it on firefox
+[ ] Edit MIME types so "folder" is opened in ranger rather than just in ~/Downloas inside kitty
 
 # Setup repo as a formal .dotfiles repo for future pc conf and sharing with community
 Write README.md for ricing porpuses

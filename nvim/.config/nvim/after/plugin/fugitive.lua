@@ -1,5 +1,3 @@
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
-
 local sicoz_Fugitive = vim.api.nvim_create_augroup("sicoz_Fugitive", {})
 
 local autocmd = vim.api.nvim_create_autocmd
@@ -28,5 +26,6 @@ autocmd("BufWinEnter", {
     end,
 })
 
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 vim.keymap.set("n", "gu", "<cmd>diffget //2<CR>")
 vim.keymap.set("n", "gh", "<cmd>diffget //3<CR>")

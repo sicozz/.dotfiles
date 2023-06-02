@@ -105,9 +105,9 @@ plugins=(
 # Quick commands
 alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
 alias myip="xh http://ipecho.net/plain; echo"
-alias xclipcp="xclip -selection clipboard"
 alias cat=bat
 alias shdnow="shutdown now"
+alias man="man --pager=bat"
 
 source $ZSH/oh-my-zsh.sh
 
