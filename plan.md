@@ -16,6 +16,7 @@
 [x] screenshot
 [x] recording
 [x] golang
+[ ] Login script
 
 # Decoration
 [x] wallpaper
@@ -33,6 +34,7 @@
 # Complete
 Check errors, bugs, logs, of every one of these programs and
 !! The amdgpu error showed at boot
+[ ] modify default cursor /usr/share/icons/default/index.theme to enforce it on firefox
 
 # Setup repo as a formal .dotfiles repo for future pc conf and sharing with community
 Write README.md for ricing porpuses

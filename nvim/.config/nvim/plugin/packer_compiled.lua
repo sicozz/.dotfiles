@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["NeoSolarized.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/NeoSolarized.nvim",
+    url = "https://github.com/Tsuzat/NeoSolarized.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -113,11 +118,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["no-clown-fiesta.nvim"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/no-clown-fiesta.nvim",
-    url = "https://github.com/no-clown-fiesta/no-clown-fiesta.nvim"
   },
   nordic = {
     config = { "\27LJ\2\n6\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\23colorscheme nordic\bcmd\bvim\0" },

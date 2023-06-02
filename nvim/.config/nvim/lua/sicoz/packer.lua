@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use 'no-clown-fiesta/no-clown-fiesta.nvim'
+    use 'Tsuzat/NeoSolarized.nvim'
     use {
         'AlexvZyl/nordic.nvim',
         as = 'nordic',
