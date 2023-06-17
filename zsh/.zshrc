@@ -9,7 +9,9 @@ fi
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # GO
-export GO_HOME="/usr/local/go/bin"
+export GO_HOME="/usr/local/go"
+export GOPATH="/usr/local/go/pkg"
+export GOBIN="/usr/local/go/bin"
 
 export PATH=$GO_HOME:$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 

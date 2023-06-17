@@ -38,3 +38,6 @@ Check errors, bugs, logs, of every one of these programs and
 
 # Setup repo as a formal .dotfiles repo for future pc conf and sharing with community
 Write README.md for ricing porpuses
+
+Completly setup desktop theme:
+gsettings set org.gnome.desktop.interface gtk-theme 'Material-Black-Pistachio'

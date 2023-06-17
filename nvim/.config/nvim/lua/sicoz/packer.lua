@@ -4,21 +4,13 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
-        -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
     use 'Tsuzat/NeoSolarized.nvim'
-    use {
-        'AlexvZyl/nordic.nvim',
-        as = 'nordic',
-        config = function()
-            vim.cmd('colorscheme nordic')
-        end
-    }
+    use 'AlexvZyl/nordic.nvim'
 
     use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } }
     use 'theprimeagen/harpoon'
@@ -64,4 +56,12 @@ return require('packer').startup(function(use)
     -- Only Go
     use 'ray-x/go.nvim'
     use 'ray-x/guihua.lua' -- recommended if need floating window support
+
+    -- Extras
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = "cd app && npm install",
+        setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+        ft = { "markdown" },
+    })
 end)
