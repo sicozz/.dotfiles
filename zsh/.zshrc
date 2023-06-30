@@ -10,10 +10,10 @@ fi
 
 # GO
 export GO_HOME="/usr/local/go"
-export GOPATH="/usr/local/go/pkg"
+export GOPATH="/usr/local/go"
 export GOBIN="/usr/local/go/bin"
 
-export PATH=$GO_HOME:$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$GO_HOME/bin:$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sicoz/.oh-my-zsh"
@@ -105,11 +105,12 @@ plugins=(
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # Quick commands
-alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
-alias myip="xh http://ipecho.net/plain; echo"
 alias cat=bat
-alias shdnow="shutdown now"
+alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
 alias man="man --pager=bat"
+alias myip="xh http://ipecho.net/plain; echo"
+alias shdnow="shutdown now"
+alias v="vim ."
 
 source $ZSH/oh-my-zsh.sh
 

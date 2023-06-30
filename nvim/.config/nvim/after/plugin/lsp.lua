@@ -10,7 +10,8 @@ lsp.ensure_installed({
     'html',
     'rust_analyzer',
     'gopls',
-    'clangd'
+    'clangd',
+    'sqlls'
 })
 
 lsp.set_preferences({

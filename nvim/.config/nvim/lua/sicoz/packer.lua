@@ -41,9 +41,7 @@ return require('packer').startup(function(use)
 
     use {
         'folke/trouble.nvim',
-        requires = {
-            { 'nvim-tree/nvim-web-devicons' }
-        }
+        requires = { 'nvim-tree/nvim-web-devicons' }
     }
     use {
         'folke/todo-comments.nvim',
@@ -52,6 +50,13 @@ return require('packer').startup(function(use)
         }
     }
     use 'rcarriga/nvim-notify'
+
+    use {
+        'rcarriga/nvim-dap-ui',
+        requires = { 'mfussenegger/nvim-dap' }
+    }
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'leoluz/nvim-dap-go'
 
     -- Only Go
     use 'ray-x/go.nvim'
