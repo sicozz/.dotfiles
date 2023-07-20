@@ -9,14 +9,16 @@ fi
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # GO
-export GO_HOME="/usr/local/go"
+export GOROOT="/usr/lib/go"
 export GOPATH="/usr/local/go"
-export GOBIN="/usr/local/go/bin"
 
-export PATH=$GO_HOME/bin:$HOME/.cargo/bin/:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$GOROOT/bin:$HOME/.cargo/bin/:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sicoz/.oh-my-zsh"
+
+# Default editor (used by sudoedit)
+export EDITOR=$(which vim)
 
 # SHELL for tmux sessions
 # export SHELL="/usr/bin/zsh"
@@ -107,7 +109,6 @@ plugins=(
 # Quick commands
 alias cat=bat
 alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
-alias man="man --pager=bat"
 alias myip="xh http://ipecho.net/plain; echo"
 alias shdnow="shutdown now"
 alias v="vim ."
