@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use 'Tsuzat/NeoSolarized.nvim'
+    use 'sicozz/onieronaut.nvim'
     use 'AlexvZyl/nordic.nvim'
 
     use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } }

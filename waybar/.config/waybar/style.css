@@ -15,12 +15,12 @@
 }
 
 window#waybar {
-    background: rgba(00, 12, 17, 0.8);
+    background: rgba(00, 21, 21, 0.9);
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @cyan;
-    color: @cyan;
+    border-color: @fg;
+    color: @fg;
 }
 
 tooltip {
@@ -45,12 +45,12 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: @cyan;
+    color: @fg;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: @orange;
+    color: @green;
 }
 
 #workspaces button.focused {
@@ -76,7 +76,7 @@ tooltip {
 }
 
 #backlight {
-    background: #1e1e2e;
+    background: @bg;
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 10px;

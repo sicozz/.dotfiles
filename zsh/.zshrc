@@ -11,8 +11,9 @@ fi
 # GO
 export GOROOT="/usr/lib/go"
 export GOPATH="/usr/local/go"
+export GOBIN="$GOPATH/bin"
 
-export PATH=$GOROOT/bin:$HOME/.cargo/bin/:/usr/local/bin:$PATH
+export PATH=$GOBIN:$GOROOT/bin:$HOME/.cargo/bin/:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sicoz/.oh-my-zsh"

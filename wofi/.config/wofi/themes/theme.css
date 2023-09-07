@@ -1,4 +1,4 @@
-@import ".config/wofi/colors/solarized.css";
+@import ".config/wofi/colors/colors.css";
 
 * {
     font-family: MesloLGS NF, FontAwesome;
@@ -61,19 +61,19 @@ window {
 #entry {
     margin: 0px;
     background: @bg1;
-    color: @cyan;
+    color: @fg;
 
     padding: 10px;
 }
 
 #entry:selected {
     background-color: @bg0;
-    color: @orange;
+    color: @fg;
 
     font-weigth: bold;
 }
 
 #entry:selected * {
     background-color: @bg0;
-    color: @orange;
+    color: @cyan;
 }
