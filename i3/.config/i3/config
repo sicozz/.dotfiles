@@ -3,16 +3,16 @@
 
 ### Variables
   # Font
-  font pango:JetBrains Mono 11
+  font pango:MesloLGS NF 11
 
   # Set mod key (Mod1=<Alt>, Mod4=<Super>)
   set $mod Mod4
   
   # Home row direction keys, like vim
-  set $left h
-  set $down j
-  set $up k
-  set $right l
+  set $left   h
+  set $down   j
+  set $up     k
+  set $right  l
 
   # Status bar command
   set $statusCommand "i3status -c ~/.config/i3/i3status.conf"
@@ -22,15 +22,15 @@
   
   # Application launcher
   set $menu dmenu_run \
-  -fn "JetBrains Mono-10" \
-  -nb "#2E3440" -nf "#D8DEE9" \
-  -sb "#88c0d0" -sf "#2E3440"
+  -fn "MesloLGS NF-10" \
+  -nb "#001515" -nf "#008b8b" \
+  -sb "#008b8b" -sf "#001515"
 
   # i3exit
   set $i3exit ~/.config/i3/i3exit
 
   # File Manager
-  set $fileManager pcmanfm
+  set $fileManager dolphin
 
   # Browser
   set $browser firefox
@@ -68,8 +68,8 @@
   #for_window [urgent=latest] focus
 
 ### Gaps
-  gaps inner 7
-  gaps outer 0
+  # gaps inner 7
+  # gaps outer 0
   # smart_borders off
 
 ### Titlebars
@@ -77,12 +77,12 @@
   default_floating_border normal
 
 ### Colors
-set $colBg    #2E3440
-set $colFg    #D8DEE9
-set $colFBg   #88c0d0
-set $colFFg   #2E3440
-set $colUBg   #BF616A
-set $colBor   #8FBCBB
+set $colBg    #001515
+set $colFg    #008b8b
+set $colFBg   #008b8b
+set $colFFg   #001515
+set $colUBg   #dc336b
+set $colBor   #008b8b
 
 ### Status Bar:
 bar {
@@ -107,10 +107,10 @@ bar {
 }
 
 # class                   border  backgr. text    indic.   child_border
-  client.focused          $colBg  $colBg  $colFBg #FDF6E3  #93a1a1
+  client.focused          $colBg  $colBg  $colFBg #FDF6E3  $colBor
   client.focused_inactive $colBg  $colBg  $colFg  #454948
   client.unfocused        $colBg  $colBg  $colFg  #454948
-  client.urgent           $colUBg $colUBg $colFg  #268BD2
+  client.urgent           $colUBg #00c6c6 $colFg  #268BD2
   client.placeholder      #000000 #0C0C0C #FFFFFF #000000 
   client.background       $colBg
 
@@ -120,7 +120,7 @@ bar {
   bindsym $mod+Return exec $term
   
   # Kill focused window
-  bindsym $mod+Shift+q kill
+  bindsym $mod+q kill
   
   # Start your launcher
   bindsym $mod+r exec $menu
@@ -263,26 +263,20 @@ bar {
   bindsym $mod+Shift+m exec pavucontrol
 
   # Volume up
-  bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+  bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 
   # Volume down
-  bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+  bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 
   # Mute sound
-  bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+  bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Screen brightness
-  # Brightness up
   # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-  bindsym XF86MonBrightnessDown exec "brightnessctl -q s 5%-"
-
-  # Brightness down
   # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
-  bindsym XF86MonBrightnessUp exec "brightnessctl -q s +5%"
 
-  # For royal kludge keyboard
-  bindsym XF86HomePage exec "brightnessctl -q s 5%-"
-  bindsym XF86Mail exec "brightnessctl -q s +5%"
+  bindsym XF86MonBrightnessUp exec "brightnessctl -q s +5%"
+  bindsym XF86MonBrightnessDown exec "brightnessctl -q s 5%-"
 
 # Applications shortcuts
   bindsym $mod+Shift+e exec $fileManager
@@ -302,7 +296,7 @@ bar {
   exec --no-startup-id start-pulseaudio-x11
 
   # Set virtual keyboard
-  exec --no-startup-id setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
+  exec --no-startup-id setxkbmap -layout us -variant real-prog-dvorak
 
   # Multiple monitors
   exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --left-of $mon1 &
@@ -321,7 +315,7 @@ bar {
 ### Open applications on specific workspaces
   # Web browser
   assign [class="Min"] $ws2
-  assign [class="firefox"] $ws2
+  assign [class="Firefox-esr"] $ws2
 
   # Chats and social
   assign [class="discord"] $ws3
@@ -360,4 +354,4 @@ bindsym $mod+Ctrl+s exec --no-startup-id xrandr --output $mon0 --primary --mode 
 
 # Keyboard
 bindsym $mod+Ctrl+k exec setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
-bindsym $mod+Ctrl+Shift+k exec setxkbmap latam
+bindsym $mod+Ctrl+Shift+k exec setxkbmap us

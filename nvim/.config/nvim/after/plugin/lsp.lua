@@ -6,12 +6,9 @@ end)
 
 lsp.ensure_installed({
     'lua_ls',
-    'tsserver',
-    'html',
     'rust_analyzer',
     'gopls',
     'clangd',
-    'sqlls'
 })
 
 lsp.set_preferences({

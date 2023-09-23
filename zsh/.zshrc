@@ -9,7 +9,7 @@ fi
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # GO
-export GOROOT="/usr/lib/go"
+export GOROOT="/usr/local/go"
 export GOPATH="/usr/local/go"
 export GOBIN="$GOPATH/bin"
 
@@ -108,7 +108,7 @@ plugins=(
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # Quick commands
-alias cat=bat
+alias cat=batcat
 alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
 alias myip="xh http://ipecho.net/plain; echo"
 alias shdnow="shutdown now"
