@@ -8,7 +8,9 @@ require 'nvim-treesitter.configs'.setup {
         "query",
         "javascript",
         "typescript",
-        "rust"
+        "rust",
+        "bash",
+        "sql"
     },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)

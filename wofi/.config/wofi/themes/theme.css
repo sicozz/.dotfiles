@@ -12,7 +12,7 @@ window {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @cyan;
+    border-color: @fg;
 }
 
 #outer-box {
@@ -22,7 +22,7 @@ window {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @cyan;
+    border-color: @fg;
 }
 
 #inner-box {
@@ -32,7 +32,7 @@ window {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @cyan;
+    border-color: @fg;
 }
 
 #input {
@@ -42,7 +42,7 @@ window {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @cyan;
+    border-color: @fg;
 
     padding: 10px;
 }
