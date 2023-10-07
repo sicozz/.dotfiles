@@ -8,7 +8,7 @@ lsp.ensure_installed({
     'lua_ls',
     'rust_analyzer',
     'gopls',
-    'clangd',
+    -- 'clangd',
 })
 
 lsp.set_preferences({
@@ -91,3 +91,5 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+require('lspconfig').clangd.setup({})

@@ -7,7 +7,7 @@
 
   # Set mod key (Mod1=<Alt>, Mod4=<Super>)
   set $mod Mod4
-  
+
   # Home row direction keys, like vim
   set $left   h
   set $down   j
@@ -16,18 +16,21 @@
 
   # Status bar command
   set $statusCommand "i3status -c ~/.config/i3/i3status.conf"
-  
+
   # Terminal emulator
   set $term kitty
-  
+
   # Application launcher
   set $menu dmenu_run \
   -fn "MesloLGS NF-10" \
-  -nb "#001515" -nf "#008b8b" \
-  -sb "#008b8b" -sf "#001515"
+  -nb "#001510" -nf "#005740" \
+  -sb "#005740" -sf "#001510"
 
-  # i3exit
+  # Exit
   set $i3exit ~/.config/i3/i3exit
+
+  # Compositor
+  set $compositor picom
 
   # File Manager
   set $fileManager dolphin
@@ -35,16 +38,18 @@
   # Browser
   set $browser firefox
 
-  # Compositor
-  set $compositor picom
+  # Books reader
+  set $pdf_viewer zathura
+
+  # Music player
+  set $m_player spotify
 
   # Screenshot tool
   set $screenshotTool flameshot gui
-  
+
   # Monitors
-  set $mon0 HDMI-1
-  set $mon1 eDP-1
-  
+  set $mon0 HDMI-A-0
+  set $mon1 eDP
 
 ### Mouse follow
 #focus_follows_mouse no
@@ -77,24 +82,24 @@
   default_floating_border normal
 
 ### Colors
-set $colBg    #001515
-set $colFg    #008b8b
-set $colFBg   #008b8b
-set $colFFg   #001515
-set $colUBg   #dc336b
-set $colBor   #008b8b
+set $colBg    #001510
+set $colFg    #005740
+set $colFBg   #005740
+set $colFFg   #001510
+set $colUBg   #cad008
+set $colBor   #005740
 
 ### Status Bar:
 bar {
   position bottom
   # font pango:Hack 11
-  
+
   # When the status_command prints a new line to stdout, i3bar updates.
   # The default just shows the current date and time.
   # status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
   # status_command while date +'%Y-%m-%d %I:%M'; do sleep 1; done
   status_command $statusCommand
-  
+
   colors {
     statusline          $colFg
     background          $colBg
@@ -110,28 +115,28 @@ bar {
   client.focused          $colBg  $colBg  $colFBg #FDF6E3  $colBor
   client.focused_inactive $colBg  $colBg  $colFg  #454948
   client.unfocused        $colBg  $colBg  $colFg  #454948
-  client.urgent           $colUBg #00c6c6 $colFg  #268BD2
-  client.placeholder      #000000 #0C0C0C #FFFFFF #000000 
+  client.urgent           $colUBg $colUBG $colFg  #268BD2
+  client.placeholder      #000000 #0C0C0C #FFFFFF #000000
   client.background       $colBg
 
 ### Key bindings
 # Basics
   # Start a terminal
   bindsym $mod+Return exec $term
-  
+
   # Kill focused window
   bindsym $mod+q kill
-  
+
   # Start your launcher
   bindsym $mod+r exec $menu
-  
+
   # Drag floating windows by holding down $mod and left mouse button.
   # Resize them with right mouse button + $mod.
   # Despite the name, also works for non-floating windows.
   # Change normal to inverse to use left mouse button for resizing and right
   # mouse button for dragging.
   floating_modifier $mod
-  
+
   # Reload the configuration file
   bindsym $mod+Shift+r reload
 
@@ -149,7 +154,7 @@ bar {
   bindsym $mod+Down focus down
   bindsym $mod+Up focus up
   bindsym $mod+Right focus right
-  
+
   # Move the focused window with the same, but add Shift
   bindsym $mod+Shift+$left move left
   bindsym $mod+Shift+$down move down
@@ -228,13 +233,13 @@ bar {
     bindsym $down resize grow height 10px
     bindsym $up resize shrink height 10px
     bindsym $right resize grow width 10px
-    
+
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px
     bindsym Down resize grow height 10px
     bindsym Up resize shrink height 10px
     bindsym Right resize grow width 10px
-    
+
     # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -279,13 +284,14 @@ bar {
   bindsym XF86MonBrightnessDown exec "brightnessctl -q s 5%-"
 
 # Applications shortcuts
-  bindsym $mod+Shift+e exec $fileManager
-  bindsym $mod+t exec --no-startup-id pkill $compositor
   bindsym Print exec --no-startup-id $screenshotTool
-  bindsym $mod+Shift+t exec --no-startup-id $compositor -b
-  bindsym $mod+Shift+b exec $browser
+  bindsym $mod+F3 exec $fileManager
+  bindsym $mod+F4 exec $browser
+  bindsym $mod+F5 exec $pdf_viewer
+  bindsym $mod+F6 exec $m_player
+  bindsym $mod+t exec pkill $compositor
+  bindsym $mod+Shift+t exec $compositor -b
   bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-  bindsym $mod+Shift+p exec zathura
 
 ### Startup programs
 
@@ -300,8 +306,8 @@ bar {
 
   # Multiple monitors
   exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --left-of $mon1 &
-  workspace $ws1 output HDMI-1
-  workspace $ws9 output eDP-1
+  workspace $ws1 output $mon0
+  workspace $ws9 output $mon1
 
   # Set wallpaper and compositor
   exec --no-startup-id ~/.fehbg; sleep 1; $compositor -b
@@ -350,8 +356,8 @@ bar {
 
 ### Quick reloads
 # Screen
-bindsym $mod+Ctrl+s exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --left-of $mon1 && ~/.fehbg && $compositor -b
+bindsym $mod+Ctrl+s exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --right-of $mon1 && ~/.fehbg && $compositor -b
 
 # Keyboard
-bindsym $mod+Ctrl+k exec setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
+bindsym $mod+Ctrl+k exec setxkbmap -layout us -variant real-prog-dvorak # -option caps:escape
 bindsym $mod+Ctrl+Shift+k exec setxkbmap us

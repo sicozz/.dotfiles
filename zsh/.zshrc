@@ -9,7 +9,7 @@ fi
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # GO
-export GOROOT="/usr/local/go"
+# export GOROOT="/usr/local/go" # Not required
 export GOPATH="/usr/local/go"
 export GOBIN="$GOPATH/bin"
 

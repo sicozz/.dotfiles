@@ -1,42 +1,43 @@
-set completion-bg               "#001515"
+set completion-bg               "#001510"
 set completion-fg               "#f2f3f4"
 
-set completion-group-bg         "#002222"
+set completion-group-bg         "#003d2e"
 set completion-group-fg         "#f2f3f4"
 
-set completion-highlight-bg     "#003a4a"
+set completion-highlight-bg     "#003d2e"
 set completion-highlight-fg     "#f2f3f4"
 
 
-set notification-bg             "#001515"
-set notification-fg             "#00c6c6"
+set notification-bg             "#001510"
+set notification-fg             "#005740"
 
-set notification-warning-bg     "#001515"
+set notification-warning-bg     "#001510"
 set notification-warning-fg     "#cad008"
 
-set notification-error-bg       "#001515"
+set notification-error-bg       "#001510"
 set notification-error-fg       "#dc336b"
 
 
-set index-bg                    "#001515"
+set index-bg                    "#00291f"
 set index-fg                    "#f2f3f4"
 
-set index-active-bg             "#002222" 
+set index-active-bg             "#003d2e" 
 set index-active-fg             "#f2f3f4" 
 
 
-set inputbar-bg                 "#002222"
+set inputbar-bg                 "#00291f"
 set inputbar-fg                 "#f2f3f4"
 
-set statusbar-bg                "#002222"
+set statusbar-bg                "#001510"
+
 set statusbar-fg                "#f2f3f4"
 
 set highlight-color             "#32395a"
 set highlight-active-color      "#eceff4"
 
-set default-bg                  "#001515"
+set default-bg                  "#001510"
 set default-fg                  "#f2f3f4"
-set recolor-lightcolor          "#001515"
+set recolor-lightcolor          "#001510"
 set recolor-darkcolor           "#f2f3f4"
 set recolor                     true
 
