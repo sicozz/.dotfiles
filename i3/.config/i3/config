@@ -23,8 +23,8 @@
   # Application launcher
   set $menu dmenu_run \
   -fn "MesloLGS NF-10" \
-  -nb "#001510" -nf "#005740" \
-  -sb "#005740" -sf "#001510"
+  -nb "#161821" -nf "#d8dee9" \
+  -sb "#d8dee9" -sf "#161821"
 
   # Exit
   set $i3exit ~/.config/i3/i3exit
@@ -82,12 +82,12 @@
   default_floating_border normal
 
 ### Colors
-set $colBg    #001510
-set $colFg    #005740
-set $colFBg   #005740
-set $colFFg   #001510
-set $colUBg   #cad008
-set $colBor   #005740
+set $colBg    #161821
+set $colFg    #d8dee9
+set $colFBg   #d8dee9
+set $colFFg   #161821
+set $colUBg   #bf616a
+set $colBor   #d8dee9
 
 ### Status Bar:
 bar {
