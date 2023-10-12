@@ -23,8 +23,8 @@
   # Application launcher
   set $menu dmenu_run \
   -fn "MesloLGS NF-10" \
-  -nb "#161821" -nf "#d8dee9" \
-  -sb "#d8dee9" -sf "#161821"
+  -nb "#161821" -nf "#4c566a" \
+  -sb "#4c566a" -sf "#161821"
 
   # Exit
   set $i3exit ~/.config/i3/i3exit
@@ -83,11 +83,11 @@
 
 ### Colors
 set $colBg    #161821
-set $colFg    #d8dee9
-set $colFBg   #d8dee9
+set $colFg    #4c566a
+set $colFBg   #4c566a
 set $colFFg   #161821
 set $colUBg   #bf616a
-set $colBor   #d8dee9
+set $colBor   #4c566a
 
 ### Status Bar:
 bar {
