@@ -18,13 +18,13 @@
   set $statusCommand "i3status -c ~/.config/i3/i3status.conf"
 
   # Terminal emulator
-  set $term kitty
+  set $term wezterm
 
   # Application launcher
   set $menu dmenu_run \
-  -fn "MesloLGS NF-10" \
-  -nb "#161821" -nf "#4c566a" \
-  -sb "#4c566a" -sf "#161821"
+  -fn "MesloLGS NF-11" \
+  -nb "#000000" -nf "#c1c1c1" \
+  -sb "#5f8787" -sf "#000000"
 
   # Exit
   set $i3exit ~/.config/i3/i3exit
@@ -36,7 +36,7 @@
   set $fileManager dolphin
 
   # Browser
-  set $browser firefox
+  set $browser thorium-browser
 
   # Books reader
   set $pdf_viewer zathura
@@ -82,12 +82,12 @@
   default_floating_border normal
 
 ### Colors
-set $colBg    #161821
-set $colFg    #4c566a
-set $colFBg   #4c566a
-set $colFFg   #161821
-set $colUBg   #bf616a
-set $colBor   #4c566a
+set $colBg    #000000
+set $colFg    #c1c1c1
+set $colFBg   #5f8787
+set $colFFg   #000000
+set $colUBg   #e78a53
+set $colBor   #5f8787
 
 ### Status Bar:
 bar {
@@ -115,7 +115,7 @@ bar {
   client.focused          $colBg  $colBg  $colFBg #FDF6E3  $colBor
   client.focused_inactive $colBg  $colBg  $colFg  #454948
   client.unfocused        $colBg  $colBg  $colFg  #454948
-  client.urgent           $colUBg $colUBG $colFg  #268BD2
+  client.urgent           $colUBg $colUBg $colFg  $colUBg
   client.placeholder      #000000 #0C0C0C #FFFFFF #000000
   client.background       $colBg
 
@@ -322,6 +322,7 @@ bar {
   # Web browser
   assign [class="Min"] $ws2
   assign [class="Firefox-esr"] $ws2
+  assign [class="Thorium-browser"] $ws2
 
   # Chats and social
   assign [class="discord"] $ws3

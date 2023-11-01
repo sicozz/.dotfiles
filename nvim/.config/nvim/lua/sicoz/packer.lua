@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use 'cocopon/iceberg.vim'
+    use 'metalelf0/base16-black-metal-scheme'
 
     use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } }
     use 'theprimeagen/harpoon'
