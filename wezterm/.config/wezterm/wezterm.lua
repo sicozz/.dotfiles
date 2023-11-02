@@ -18,6 +18,8 @@ end
 config.font = wezterm.font 'MesloLGS NF'
 config.font_size = 11.0
 
+config.audible_bell = 'Disabled'
+
 config.color_scheme = 'Black Metal (Bathory) (base16)'
 
 config.enable_tab_bar = false
