@@ -23,8 +23,8 @@
   # Application launcher
   set $menu dmenu_run \
   -fn "MesloLGS NF-11" \
-  -nb "#000000" -nf "#c1c1c1" \
-  -sb "#5f8787" -sf "#000000"
+  -nb "#001e27" -nf "#708284" \
+  -sb "#738a05" -sf "#001e27"
 
   # Exit
   set $i3exit ~/.config/i3/i3exit
@@ -82,12 +82,15 @@
   default_floating_border normal
 
 ### Colors
-set $colBg    #000000
-set $colFg    #c1c1c1
-set $colFBg   #5f8787
-set $colFFg   #000000
-set $colUBg   #e78a53
-set $colBor   #5f8787
+set $colBarBg       #001e27
+set $colBarFg       #708284
+set $colFocusedBg   #738a05
+set $colFocusedFg   #001e27
+set $colInactiveFg  #9cc2c3
+set $colInactiveBg  #002831
+set $colUrgentFg    #fcf4dc
+set $colUrgentBg    #d11c24
+set $colBorder      #708284
 
 ### Status Bar:
 bar {
@@ -101,23 +104,23 @@ bar {
   status_command $statusCommand
 
   colors {
-    statusline          $colFg
-    background          $colBg
-    #                   border  bg      fg
-    focused_workspace   $colFBg $colFBg $colFFg
-    active_workspace    $colBg  $colBg  $colFg
-    inactive_workspace  $colBg  $colBg  $colFg
-    urgent_workspace    $colUBg $colUBg $colBg
+    statusline          $colBarFg
+    background          $colBarBg
+    # identificator     border          bg              fg
+    focused_workspace   $colFocusedBg   $colFocusedBg   $colFocusedFg
+    active_workspace    $colFocusedBg   $colFocusedBg   $colFocusedFg
+    inactive_workspace  $colInactiveBg  $colInactiveBg  $colInactiveFg
+    urgent_workspace    $colUrgentBg    $colUrgentBg    $colUrgentFg
   }
 }
 
-# class                   border  backgr. text    indic.   child_border
-  client.focused          $colBg  $colBg  $colFBg #FDF6E3  $colBor
-  client.focused_inactive $colBg  $colBg  $colFg  #454948
-  client.unfocused        $colBg  $colBg  $colFg  #454948
-  client.urgent           $colUBg $colUBg $colFg  $colUBg
-  client.placeholder      #000000 #0C0C0C #FFFFFF #000000
-  client.background       $colBg
+# class                    border        backgr        text         indic         child_border
+  client.focused           $colBarBg     $colBarBg     $colFocusBg  #FDF6E3       $colBorder
+  client.focused_inactive  $colBarBg     $colBarBg     $colBarFg    #454948
+  client.unfocused         $colBarBg     $colBarBg     $colBarFg    #454948
+  client.urgent            $colUrgentBg  $colUrgentBg  $colBarFg    $colUrgentBg
+  client.placeholder       #000000       #0C0C0C       #FFFFFF      #000000
+  client.background        $colBarBg
 
 ### Key bindings
 # Basics

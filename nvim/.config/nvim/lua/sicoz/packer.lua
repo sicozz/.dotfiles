@@ -9,7 +9,10 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use 'metalelf0/base16-black-metal-scheme'
+    -- Light theme
+    use 'yasukotelin/shirotelin'
+
+    use 'craftzdog/solarized-osaka.nvim'
 
     use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } }
     use 'theprimeagen/harpoon'

@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["base16-black-metal-scheme"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/base16-black-metal-scheme",
-    url = "https://github.com/metalelf0/base16-black-metal-scheme"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -180,6 +175,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  shirotelin = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/shirotelin",
+    url = "https://github.com/yasukotelin/shirotelin"
+  },
+  ["solarized-osaka.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/solarized-osaka.nvim",
+    url = "https://github.com/craftzdog/solarized-osaka.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
