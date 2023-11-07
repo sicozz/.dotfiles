@@ -108,7 +108,7 @@ bar {
     background          $colBarBg
     # identificator     border          bg              fg
     focused_workspace   $colFocusedBg   $colFocusedBg   $colFocusedFg
-    active_workspace    $colFocusedBg   $colFocusedBg   $colFocusedFg
+    active_workspace    $colBarFg       $colBarFg       $colBarBg
     inactive_workspace  $colInactiveBg  $colInactiveBg  $colInactiveFg
     urgent_workspace    $colUrgentBg    $colUrgentBg    $colUrgentFg
   }
