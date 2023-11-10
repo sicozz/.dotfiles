@@ -121,6 +121,11 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["modus-themes.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/modus-themes.nvim",
+    url = "https://github.com/miikanissi/modus-themes.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -180,11 +185,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/shirotelin",
     url = "https://github.com/yasukotelin/shirotelin"
-  },
-  ["solarized-osaka.nvim"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/solarized-osaka.nvim",
-    url = "https://github.com/craftzdog/solarized-osaka.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

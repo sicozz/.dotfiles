@@ -12,7 +12,8 @@ return require('packer').startup(function(use)
     -- Light theme
     use 'yasukotelin/shirotelin'
 
-    use 'craftzdog/solarized-osaka.nvim'
+    -- Dark theme
+    use 'miikanissi/modus-themes.nvim'
 
     use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } }
     use 'theprimeagen/harpoon'

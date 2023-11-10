@@ -21,10 +21,10 @@ config.font_size = 11.0
 config.audible_bell = 'Disabled'
 
 -- config.color_scheme = 'Black Metal (Bathory) (base16)'
-config.color_scheme = 'Solarized Dark - Patched'
+config.color_scheme = 'Modus-Vivendi'
 
 config.enable_tab_bar = false
-config.window_background_opacity = 0.80
+config.window_background_opacity = 0.90
 
 -- and finally, return the configuration to wezterm
 return config

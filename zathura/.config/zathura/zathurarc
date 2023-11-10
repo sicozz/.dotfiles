@@ -1,46 +1,36 @@
-set completion-bg               "#001e27"
-set completion-fg               "#708284"
-
-set completion-group-bg         "#003c4e"
-set completion-group-fg         "#708284"
-
-set completion-highlight-bg     "#003c4e"
-set completion-highlight-fg     "#708284"
-
-
-set notification-bg             "#003c4e"
-
-set notification-fg             "#738a05"
-
-set notification-warning-bg     "#003c4e"
-set notification-warning-fg     "#a57706"
-
-set notification-error-bg       "#003c4e"
-set notification-error-fg       "#d11c24"
-
-
-set index-bg                    "#001e27"
-set index-fg                    "#708284"
-
-set index-active-bg             "#003c4e"
-set index-active-fg             "#708284"
-
-
-set inputbar-bg                 "#001e27"
-set inputbar-fg                 "#708284"
-
-set statusbar-bg                "#001e27"
-
-set statusbar-fg                "#708284"
-
-set highlight-color             "#32395a"
-set highlight-active-color      "#eceff4"
-
-set default-bg                  "#001e27"
-set default-fg                  "#708284"
-set recolor-lightcolor          "#001e27"
-set recolor-darkcolor           "#708284"
-set recolor                     true
+set notification-error-bg "#9d1f1f"
+set notification-error-fg "#ffffff"
+set notification-warning-bg "#7a6100"
+set notification-warning-fg "#ffffff"
+set notification-bg "#2f822f"
+set notification-fg "#ffffff"
+set completion-bg "#000000"
+set completion-fg "#989898"
+set completion-group-bg "#000000"
+set completion-group-fg "#989898"
+set completion-highlight-bg "#1e1e1e"
+set completion-highlight-fg "#ffffff"
+set index-bg "#000000"
+set index-fg "#ffffff"
+set index-active-bg "#1e1e1e"
+set index-active-fg "#ffffff"
+set inputbar-bg "#000000"
+set inputbar-fg "#ffffff"
+set statusbar-bg "#505050"
+set statusbar-fg "#f0f0f0"
+set highlight-color "#d0bc00"
+set highlight-active-color "#44bc44"
+set default-bg "#000000"
+set default-fg "#ffffff"
+set render-loading true
+set render-loading-fg "#000000"
+set render-loading-bg "#ffffff"
+#
+# Recolor mode settings
+# <C-r> to switch modes
+#
+set recolor-lightcolor "#000000"
+set recolor-darkcolor "#ffffff"
 
 set statusbar-h-padding 0
 set statusbar-v-padding 0
