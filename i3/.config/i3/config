@@ -23,8 +23,8 @@
   # Application launcher
   set $menu dmenu_run \
   -fn "MesloLGS NF-11" \
-  -nb "#000000" -nf "#073642" \
-  -sb "#073642" -sf "#000000"
+  -nb "#001e27" -nf "#708284" \
+  -sb "#259286" -sf "#001e27"
 
   # Exit
   set $i3exit ~/.config/i3/i3exit
@@ -82,13 +82,13 @@
   default_floating_border normal
 
 ### Colors
-set $colBarBg       #002b36
-set $colBarFg       #93a1a1
-set $colFocusedBg   #2aa198
+set $colBarBg       #001e27
+set $colBarFg       #708284
+set $colFocusedBg   #259286
 set $colFocusedFg   #000000
 set $colInactiveBg  #000000
-set $colInactiveFg  #002b36
-set $colUrgentBg    #cb4b16
+set $colInactiveFg  #001e27
+set $colUrgentBg    #d11c24
 set $colUrgentFg    #000000
 set $colBorder      #708284
 
