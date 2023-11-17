@@ -113,6 +113,7 @@ alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
 alias myip="xh http://ipecho.net/plain; echo"
 alias shdnow="shutdown now"
 alias v="vim ."
+alias ranger=". ranger"
 
 source $ZSH/oh-my-zsh.sh
 

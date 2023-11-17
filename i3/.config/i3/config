@@ -82,14 +82,14 @@
   default_floating_border normal
 
 ### Colors
-set $colBarBg       #000000
-set $colBarFg       #989898
-set $colFocusedBg   #00d3d0
-set $colFocusedFg   #1e1e1e
-set $colInactiveFg  #989898
-set $colInactiveBg  #1e1e1e
-set $colUrgentFg    #fcf4dc
-set $colUrgentBg    #d11c24
+set $colBarBg       #002b36
+set $colBarFg       #93a1a1
+set $colFocusedBg   #2aa198
+set $colFocusedFg   #000000
+set $colInactiveBg  #000000
+set $colInactiveFg  #002b36
+set $colUrgentBg    #cb4b16
+set $colUrgentFg    #000000
 set $colBorder      #708284
 
 ### Status Bar:
@@ -328,12 +328,12 @@ bar {
   assign [class="Thorium-browser"] $ws2
 
   # Chats and social
-  assign [class="discord"] $ws3
+  assign [class="discord"] $ws8
   assign [class="Microsoft Teams - Preview"] $ws3
   assign [class="zoom"] $ws3
 
   # Video recording
-  assign [class="obs"] $ws8
+  assign [class="obsidian"] $ws9
 
   # Music
   for_window [class="Spotify"] move container to workspace $ws9
