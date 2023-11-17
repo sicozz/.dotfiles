@@ -23,8 +23,8 @@
   # Application launcher
   set $menu dmenu_run \
   -fn "MesloLGS NF-11" \
-  -nb "#000000" -nf "#989898" \
-  -sb "#00d3d0" -sf "#000000"
+  -nb "#000000" -nf "#073642" \
+  -sb "#073642" -sf "#000000"
 
   # Exit
   set $i3exit ~/.config/i3/i3exit
