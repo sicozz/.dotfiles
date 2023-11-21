@@ -6,7 +6,7 @@ end)
 
 lsp.ensure_installed({
     'lua_ls',
-    'rust_analyzer',
+    -- 'rust_analyzer',
     'gopls',
     -- 'pylsp'
     -- 'clangd',
@@ -94,3 +94,4 @@ end)
 lsp.setup()
 
 require('lspconfig').pylsp.setup({})
+require('lspconfig').rust_analyzer.setup({})

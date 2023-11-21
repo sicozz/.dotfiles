@@ -21,10 +21,10 @@ set statusbar-fg "#f0f0f0"
 set highlight-color "#d0bc00"
 set highlight-active-color "#44bc44"
 set default-bg "#000000"
-set default-fg "#708284"
+set default-fg "#003c4e"
 set render-loading true
 set render-loading-fg "#000000"
-set render-loading-bg "#708284"
+set render-loading-bg "#003c4e"
 #
 # Recolor mode settings
 # <C-r> to switch modes
