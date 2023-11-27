@@ -32,3 +32,9 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "70"
 
 vim.g.mapleader = " "
+
+vim.cmd([[
+    let c_space_errors=1
+    highlight RedundantSpaces ctermbg=red guibg=red
+    match RedundantSpaces /\s\+$\| \+\ze\t/
+]])
