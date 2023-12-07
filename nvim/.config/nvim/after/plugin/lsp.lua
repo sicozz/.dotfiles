@@ -95,3 +95,4 @@ lsp.setup()
 
 require('lspconfig').pylsp.setup({})
 require('lspconfig').rust_analyzer.setup({})
+require('lspconfig').clangd.setup({})

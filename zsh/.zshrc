@@ -109,7 +109,8 @@ plugins=(
 #
 # Quick commands
 alias cat=batcat
-alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
+# alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
+alias kb="setxkbmap -layout us -variant dvorak -option"
 alias myip="xh http://ipecho.net/plain; echo"
 alias shdnow="shutdown now"
 alias v="vim ."

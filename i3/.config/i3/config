@@ -305,7 +305,8 @@ bar {
   exec --no-startup-id start-pulseaudio-x11
 
   # Set virtual keyboard
-  exec --no-startup-id setxkbmap -layout us -variant real-prog-dvorak
+  # exec --no-startup-id setxkbmap -layout us -variant real-prog-dvorak
+  exec --no-startup-id setxkbmap -layout us -variant dvorak
 
   # Multiple monitors
   exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --left-of $mon1 &
@@ -363,5 +364,6 @@ bar {
 bindsym $mod+Ctrl+s exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --right-of $mon1 && ~/.fehbg && $compositor -b
 
 # Keyboard
-bindsym $mod+Ctrl+k exec setxkbmap -layout us -variant real-prog-dvorak # -option caps:escape
+# bindsym $mod+Ctrl+k exec setxkbmap -layout us -variant real-prog-dvorak -option caps:escape
+bindsym $mod+Ctrl+k exec setxkbmap -layout us -variant dvorak -option
 bindsym $mod+Ctrl+Shift+k exec setxkbmap us
