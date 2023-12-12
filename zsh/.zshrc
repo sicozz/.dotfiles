@@ -95,7 +95,6 @@ plugins=(
     vi-mode
     safe-paste
     zsh-syntax-highlighting
-    zsh-aliases-exa
 )
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -108,13 +107,23 @@ plugins=(
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # Quick commands
-alias cat=batcat
+alias cat=bat
 # alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
 alias kb="setxkbmap -layout us -variant dvorak -option"
 alias myip="xh http://ipecho.net/plain; echo"
 alias shdnow="shutdown now"
 alias v="vim ."
 alias ranger=". ranger"
+
+# Eza aliases
+alias ls='eza'                                                         # ls
+alias l='eza -lbF --git'                                               # list, size, type, git
+alias ll='eza -lbGF --git'                                             # long list
+alias llm='eza -lbGF --git --sort=modified'                            # long list, modified date sort
+alias la='eza -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
+alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
+alias lS='eza -1'                                                      # one column, just names
+alias lt='eza --tree --level=2'                                        # tree
 
 source $ZSH/oh-my-zsh.sh
 
