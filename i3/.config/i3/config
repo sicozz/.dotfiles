@@ -33,10 +33,10 @@
   set $compositor picom
 
   # File Manager
-  set $fileManager dolphin
+  set $fileManager nautilus
 
   # Browser
-  set $browser thorium-browser
+  set $browser firefox
 
   # Books reader
   set $pdf_viewer zathura

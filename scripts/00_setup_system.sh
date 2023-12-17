@@ -35,20 +35,22 @@ feh \
 xclip \
 picom \
 dunst \
+openvpn \
 wireshark-qt \
 tcpdump \
 lxappearance \
 mpv \
+bluez bluez-utils \
 flameshot \
 zathura \
 zathura-pdf-mupdf \
 wezterm \
-thorium-browser \
 spotify \
 discord \
 obsidian \
-virtualbox linux65-virtualbox-host-modules \
-docker
+virtualbox linux65-virtualbox-host-modules virtualbox-ext-oracle \
+docker docker-compose \
+timeshift
 
 sudo ufw limit 22/tcp
 sudo ufw allow 80/tcp
@@ -73,9 +75,5 @@ sudo systemctl enable docker
 sudo systemctl start docker
 
 sudo usermod -aG vboxusers $USER
-sudo modprobe vboxdrv
+sudo modprobe vboxdrv vboxguest vboxvideo vboxsf
 sudo vboxreload
-
-## Vbox extension pack
-#wget https://download.virtualbox.org/virtualbox/7.0.0_BETA1/Oracle_VM_VirtualBox_Extension_Pack-7.0.0_BETA1.vbox-extpack
-#sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.0_BETA1.vbox-extpack

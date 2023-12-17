@@ -20,11 +20,17 @@ config.font_size = 11.0
 
 config.audible_bell = 'Disabled'
 
--- config.color_scheme = 'Black Metal (Bathory) (base16)'
-config.color_scheme = 'Solarized Dark - Patched'
-config.colors = {
-    background = '#000000'
-}
+-- Monocromes
+-- ----------
+-- config.color_scheme = 'Green Screen (base16)'
+-- config.color_scheme = 'Icy Dark (base16)'
+-- config.color_scheme = 'Mono (terminal.sexy)'
+
+config.color_scheme = 'Dark Violet (base16)'
+-- config.color_scheme = 'Solarized Dark - Patched'
+-- config.colors = {
+--     background = '#000000'
+-- }
 
 config.enable_tab_bar = false
 -- config.window_background_opacity = 0.95
