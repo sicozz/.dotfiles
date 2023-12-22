@@ -15,7 +15,7 @@ export GOBIN="$GOPATH/bin"
 export PATH=$GOBIN:$GOROOT/bin:$HOME/.cargo/bin/:/usr/local/bin:$PATH
 
 # Default editor (used by sudoedit)
-export EDITOR=$(which vim)
+export EDITOR=$(which nvim)
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -149,22 +149,19 @@ source "$OSH"/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
-alias cat=batcat
-alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
-alias myip="xh http://ipecho.net/plain; echo"
-alias shdnow="shutdown now"
-alias v="vim ."
+alias cat=bat
+alias vim="nvim"
 alias ranger=". ranger"
 
-# Exa aliases
+# Eza aliases
 # general use
-alias ls='exa'                                                         # ls
-alias l='exa -lbF --git'                                               # list, size, type, git
-alias ll='exa -lbGF --git'                                             # long list
-alias llm='exa -lbGF --git --sort=modified'                            # long list, modified date sort
-alias la='exa -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
-alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
+alias ls='eza'                                                         # ls
+alias l='eza -lbF --git'                                               # list, size, type, git
+alias ll='eza -lbGF --git'                                             # long list
+alias llm='eza -lbGF --git --sort=modified'                            # long list, modified date sort
+alias la='eza -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
+alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
 
 # speciality views
-alias lS='exa -1'			                                                  # one column, just names
-alias lt='exa --tree --level=2'                                         # tree
+alias lS='eza -1'			                                                  # one column, just names
+alias lt='eza --tree --level=2'                                         # tree
