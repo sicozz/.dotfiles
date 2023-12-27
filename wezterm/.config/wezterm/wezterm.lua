@@ -26,7 +26,8 @@ config.audible_bell = 'Disabled'
 -- config.color_scheme = 'Icy Dark (base16)'
 -- config.color_scheme = 'Mono (terminal.sexy)'
 
-config.color_scheme = 'Dark Violet (base16)'
+config.color_scheme = 'Kanagawa (Gogh)'
+-- config.color_scheme = 'Dark Violet (base16)'
 -- config.color_scheme = 'Solarized Dark - Patched'
 -- config.colors = {
 --     background = '#000000'

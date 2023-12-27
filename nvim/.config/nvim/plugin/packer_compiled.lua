@@ -105,6 +105,11 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/inc-rename.nvim",
     url = "https://github.com/smjonas/inc-rename.nvim"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -186,11 +191,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/shirotelin",
     url = "https://github.com/yasukotelin/shirotelin"
-  },
-  ["solarized-osaka.nvim"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/solarized-osaka.nvim",
-    url = "https://github.com/craftzdog/solarized-osaka.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

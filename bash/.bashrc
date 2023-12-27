@@ -9,9 +9,10 @@ export OSH='/home/sicoz/.oh-my-bash'
 
 # GO
 # export GOROOT="/usr/local/go" # Not required
-export GOPATH="/usr/local/go"
-export GOBIN="$GOPATH/bin"
+#export GOPATH="/usr/local/go"
+#export GOBIN="$GOPATH/bin"
 
+#export PATH=$GOBIN:$GOROOT/bin:$HOME/.cargo/bin/:/usr/local/bin:$PATH
 export PATH=$GOBIN:$GOROOT/bin:$HOME/.cargo/bin/:/usr/local/bin:$PATH
 
 # Default editor (used by sudoedit)
