@@ -27,6 +27,9 @@ config.audible_bell = 'Disabled'
 -- config.color_scheme = 'Mono (terminal.sexy)'
 
 config.color_scheme = 'Kanagawa (Gogh)'
+config.colors = {
+    background = '#0E0E18'
+}
 -- config.color_scheme = 'Dark Violet (base16)'
 -- config.color_scheme = 'Solarized Dark - Patched'
 -- config.colors = {
@@ -34,7 +37,7 @@ config.color_scheme = 'Kanagawa (Gogh)'
 -- }
 
 config.enable_tab_bar = false
--- config.window_background_opacity = 0.95
+config.window_background_opacity = 0.95
 
 -- and finally, return the configuration to wezterm
 return config
