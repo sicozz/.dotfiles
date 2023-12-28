@@ -99,17 +99,23 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     pkgs.nvi
-    pkgs.neovim
     pkgs.gcc
+    pkgs.go
+    pkgs.delve
     pkgs.git
+    pkgs.gnumake
+    pkgs.jq
+    pkgs.neovim
     pkgs.stow
     pkgs.tmux
     pkgs.ranger
     pkgs.bat
     pkgs.eza
     pkgs.curl
+    pkgs.xh
     pkgs.ripgrep
     pkgs.fd
+    pkgs.lazygit
     pkgs.openvpn
     pkgs.wireshark
     pkgs.gnome.gnome-tweaks
@@ -128,6 +134,8 @@
     pkgs.flat-remix-icon-theme
     pkgs.graphite-cursors
     pkgs.gnome.gnome-shell-extensions
+    pkgs.anydesk
+    pkgs.steam
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
@@ -141,6 +149,12 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
 
   # List services that you want to enable:
   # Virtualbox
