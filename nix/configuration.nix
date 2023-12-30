@@ -100,8 +100,11 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     pkgs.nvi
     pkgs.gcc
+    pkgs.llvmPackages_9.clang-unwrapped
+    pkgs.python3
     pkgs.go
     pkgs.delve
+    pkgs.rustup
     pkgs.git
     pkgs.gnumake
     pkgs.jq
@@ -135,7 +138,6 @@
     pkgs.graphite-cursors
     pkgs.gnome.gnome-shell-extensions
     pkgs.anydesk
-    pkgs.steam
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
