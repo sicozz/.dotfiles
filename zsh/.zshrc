@@ -107,7 +107,7 @@ plugins=(
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # Quick commands
-alias cat=bat
+alias cat=batcat
 # alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
 alias kb="setxkbmap -layout us -variant dvorak -option"
 alias myip="xh http://ipecho.net/plain; echo"

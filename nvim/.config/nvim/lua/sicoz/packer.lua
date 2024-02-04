@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     use 'yasukotelin/shirotelin'
 
     -- Dark theme
+    use 'pineapplegiant/spaceduck'
     use 'rebelot/kanagawa.nvim'
     use 'craftzdog/solarized-osaka.nvim'
 
