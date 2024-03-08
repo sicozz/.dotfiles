@@ -23,8 +23,8 @@
   # Application launcher
   set $menu dmenu_run \
   -fn "JetBrains Mono" \
-  -nb "#16172d" -nf "#ecf0c1" \
-  -sb "#f2ce00" -sf "#16172d"
+  -nb "#0f1c1e" -nf "#6d7f8b" \
+  -sb "#040607" -sf "#59a1ac"
 
   # Exit
   set $i3exit ~/.config/i3/i3exit
@@ -82,15 +82,15 @@
   default_floating_border normal
 
 ### Colors
-set $colBarBg       #16172d
-set $colBarFg       #ecf0c1
-set $colFocusedBg   #f2ce00
-set $colFocusedFg   #0f111b
+set $colBarBg       #0f1c1e
+set $colBarFg       #6d7f8b
+set $colFocusedBg   #040607
+set $colFocusedFg   #59a1ac
 set $colInactiveBg  #0f111b
-set $colInactiveFg  #f2ce00
+set $colInactiveFg  #fda47f
 set $colUrgentBg    #e33400
-set $colUrgentFg    #ecf0c1
-set $colBorder      #ecf0c1
+set $colUrgentFg    #ebebeb
+set $colBorder      #ebebeb
 
 ### Status Bar:
 bar {
@@ -107,7 +107,7 @@ bar {
     statusline          $colBarFg
     background          $colBarBg
     # identificator     border          bg              fg
-    focused_workspace   $colFocusedBg   $colFocusedBg   $colBarBg
+    focused_workspace   $colFocusedBg   $colFocusedBg   $colFocusedFg
     active_workspace    $colBarFg       $colInactiveBg  $colInactiveFg
     inactive_workspace  $colBarBg       $colBarBg       $colBarFg
     urgent_workspace    $colUrgentBg    $colUrgentBg    $colUrgentFg
@@ -314,12 +314,11 @@ bar {
   workspace $ws9 output $mon1
 
   # Set wallpaper and compositor
-  exec --no-startup-id feh --bg-fill ~/Pictures/blossom_$(( $(date +%d) % 4 )).png; sleep 1; $compositor -b
-  # exec --no-startup-id ./fehbg; sleep 1; $compositor -b
+  # exec --no-startup-id feh --bg-fill ~/Pictures/blossom_$(( $(date +%d) % 3 )).png; sleep 1; $compositor -b
+  exec --no-startup-id ~/.fehbg; sleep 1; $compositor -b
 
   # Set notification daemon
   exec --no-startup-id dunst &
-  exec notify-send "Current goal position: Learn Django" -u critical
 
   # Network manager applet
   exec --no-startup-id nm-applet --sm-disable

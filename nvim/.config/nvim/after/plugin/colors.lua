@@ -7,6 +7,6 @@ function ColorMyPencils(color)
 end
 
 -- ColorMyPencils("base16-black-metal-bathory")
-vim.cmd.colorscheme("spaceduck")
+-- vim.cmd.colorscheme("terafox")
 
 vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 234, bg = "#16172d" })
