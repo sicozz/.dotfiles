@@ -8,7 +8,8 @@ lsp.ensure_installed({
     'lua_ls',
     -- 'rust_analyzer',
     'gopls',
-    -- 'solc',
+    'solidity_ls',
+    'tsserver',
     -- 'pylsp'
     -- 'clangd',
 })

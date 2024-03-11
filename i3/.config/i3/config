@@ -88,8 +88,8 @@ set $colFocusedBg   #040607
 set $colFocusedFg   #59a1ac
 set $colInactiveBg  #0f111b
 set $colInactiveFg  #fda47f
-set $colUrgentBg    #e33400
-set $colUrgentFg    #ebebeb
+set $colUrgentBg    #ad5c7c
+set $colUrgentFg    #0f1c1e
 set $colBorder      #6d7f8b
 
 ### Status Bar:
@@ -327,7 +327,7 @@ bar {
 ### Open applications on specific workspaces
   # Web browser
   assign [class="Min"] $ws2
-  assign [class="Firefox-esr"] $ws2
+  assign [class="firefox"] $ws2
 
   # Chats and social
   assign [class="discord"] $ws8

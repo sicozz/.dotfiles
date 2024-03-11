@@ -13,10 +13,10 @@ config.audible_bell = 'Disabled'
 -- config.colors = {
 --     background = "#0f111b",
 --     foreground = "#ecf0c1",
--- 
+--
 --     cursor_bg = "#ecf0c1",
 --     cursor_border = "#ecf0c1",
--- 
+--
 --     ansi = {
 --         "#000000", "#e33400", "#5ccc96", "#b3a1e6",
 --         "#00a3cc", "#f2ce00", "#7a5ccc", "#686f9a",

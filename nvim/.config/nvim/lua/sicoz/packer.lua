@@ -15,8 +15,8 @@ return require('packer').startup(function(use)
 
     -- Dark theme
     use 'EdenEast/nightfox.nvim'
-    -- use 'rebelot/kanagawa.nvim'
-    -- use 'craftzdog/solarized-osaka.nvim'
+    use 'rebelot/kanagawa.nvim'
+    use 'craftzdog/solarized-osaka.nvim'
 
     use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } }
     use 'mbbill/undotree'
