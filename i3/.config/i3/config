@@ -67,7 +67,7 @@
   set $ws9 9
 
   # Toggle last workspace
-  workspace_auto_back_and_forth yes
+  # workspace_auto_back_and_forth yes
 
   # switch to workspace with urgent window automatically
   #for_window [urgent=latest] focus
@@ -90,7 +90,7 @@ set $colInactiveBg  #0f111b
 set $colInactiveFg  #fda47f
 set $colUrgentBg    #e33400
 set $colUrgentFg    #ebebeb
-set $colBorder      #ebebeb
+set $colBorder      #6d7f8b
 
 ### Status Bar:
 bar {
@@ -306,7 +306,7 @@ bar {
 
   # Set virtual keyboard
   # exec --no-startup-id setxkbmap -layout us -variant real-prog-dvorak
-  exec --no-startup-id setxkbmap -layout us -variant dvorak
+  # exec --no-startup-id setxkbmap -layout us -variant dvorak
 
   # Multiple monitors
   exec --no-startup-id xrandr --output $mon0 --primary --mode 1920x1080 --left-of $mon1 &
@@ -315,7 +315,8 @@ bar {
 
   # Set wallpaper and compositor
   # exec --no-startup-id feh --bg-fill ~/Pictures/blossom_$(( $(date +%d) % 3 )).png; sleep 1; $compositor -b
-  exec --no-startup-id ~/.fehbg; sleep 1; $compositor -b
+  # exec --no-startup-id ~/.fehbg; sleep 1; $compositor -b
+  exec --no-startup-id ~/.fehbg
 
   # Set notification daemon
   exec --no-startup-id dunst &
@@ -327,7 +328,6 @@ bar {
   # Web browser
   assign [class="Min"] $ws2
   assign [class="Firefox-esr"] $ws2
-  assign [class="Thorium-browser"] $ws2
 
   # Chats and social
   assign [class="discord"] $ws8

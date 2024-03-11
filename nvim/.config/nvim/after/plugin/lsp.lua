@@ -8,6 +8,7 @@ lsp.ensure_installed({
     'lua_ls',
     -- 'rust_analyzer',
     'gopls',
+    -- 'solc',
     -- 'pylsp'
     -- 'clangd',
 })
@@ -93,6 +94,5 @@ end)
 
 lsp.setup()
 
-require('lspconfig').pylsp.setup({})
-require('lspconfig').rust_analyzer.setup({})
-require('lspconfig').clangd.setup({})
+-- require('lspconfig').rust_analyzer.setup({})
+-- require('lspconfig').clangd.setup({})
