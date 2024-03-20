@@ -18,7 +18,8 @@
   set $statusCommand "i3status -c ~/.config/i3/i3status.conf"
 
   # Terminal emulator
-  set $term wezterm
+  # set $term wezterm
+  set $term "flatpak run org.wezfurlong.wezterm"
 
   # Application launcher
   set $menu dmenu_run \
