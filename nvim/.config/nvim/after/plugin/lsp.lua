@@ -6,12 +6,16 @@ end)
 
 lsp.ensure_installed({
     'lua_ls',
-    -- 'rust_analyzer',
     'gopls',
     'solidity_ls',
     'tsserver',
-    -- 'pylsp'
-    -- 'clangd',
+    'tailwindcss',
+    'diagnosticls',
+    'eslint'
+    -- Formatters:
+    -- 'stylua',
+    -- 'shfmt',
+    -- 'prettier',
 })
 
 lsp.set_preferences({
@@ -95,5 +99,46 @@ end)
 
 lsp.setup()
 
--- require('lspconfig').rust_analyzer.setup({})
--- require('lspconfig').clangd.setup({})
+require'lspconfig'.tailwindcss.setup{}
+require('lspconfig').diagnosticls.setup {
+    filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+    init_options = {
+        linters = {
+            eslint = {
+                command = "eslint",
+                rootPatterns = { ".git" },
+                debounce = 100,
+                args = { "--stdin", "--stdin-filename", "%filepath", "--format", "json" },
+                sourceName = "eslint",
+                parseJson = {
+                    errorsRoot = "[0].messages",
+                    line = "line",
+                    column = "column",
+                    endLine = "endLine",
+                    endColumn = "endColumn",
+                    message = "${message} [${ruleId}]",
+                    security = "severity"
+                },
+                securities = { [2] = "error", [1] = "warning" }
+            }
+        },
+        filetypes = {
+            javascript = "eslint",
+            javascriptreact = "eslint",
+            typescript = "eslint",
+            typescriptreact = "eslint"
+        },
+        formatters = {
+            prettier = {
+                command = "prettier",
+                args = { "--stdin-filepath", "%filepath" }
+            }
+        },
+        formatFiletypes = {
+            javascript = "prettier",
+            javascriptreact = "prettier",
+            typescript = "prettier",
+            typescriptreact = "prettier"
+        }
+    }
+}
