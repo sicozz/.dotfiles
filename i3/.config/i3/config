@@ -19,7 +19,7 @@
 
   # Terminal emulator
   # set $term wezterm
-  set $term "flatpak run org.wezfurlong.wezterm"
+  set $term "wezterm"
 
   # Application launcher
   set $menu dmenu_run \
