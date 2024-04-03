@@ -7,6 +7,8 @@ end)
 lsp.ensure_installed({
     'lua_ls',
     'gopls',
+    'pylsp',
+    'rust_analyzer',
     'solidity_ls',
     'tsserver',
     'tailwindcss',

@@ -1,7 +1,6 @@
 #!/bin/bash
 
-sudo pacman -Rsu -y vim neovim
-sudo pacman -Syu base-devel cmake unzip ninja curl
+sudo dnf -y install ninja-build cmake gcc make unzip gettext curl glibc-gconv-extra
 
 cd /usr/local/src &&
 sudo git clone https://github.com/neovim/neovim
