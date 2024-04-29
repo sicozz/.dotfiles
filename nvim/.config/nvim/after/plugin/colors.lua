@@ -6,7 +6,7 @@ function ColorMyPencils(color)
     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
--- ColorMyPencils("base16-black-metal-bathory")
--- vim.cmd.colorscheme("terafox")
+-- ColorMyPencils("darkrose")
+vim.cmd.colorscheme("darkrose")
 
 vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 234, bg = "#16172d" })

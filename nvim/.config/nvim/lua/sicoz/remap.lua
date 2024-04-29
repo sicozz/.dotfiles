@@ -11,6 +11,11 @@ vim.g.mapleader = " "
 -- Navigator (netwr)
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- Tab navigation
+vim.keymap.set("n", "<C-w><C-t>", ":tabnew<CR>")
+vim.keymap.set("n", "<C-w>t", ":tabnext<CR>")
+vim.keymap.set("n", "<C-w>T", ":tabprevious<CR>")
+
 -- Resize with arrows
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>")
 vim.keymap.set("n", "<C-Down>", ":resize +2<CR>")
@@ -48,6 +53,8 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- Disable Q
 vim.keymap.set("n", "Q", "<nop>")
+-- Disable S
+vim.keymap.set("n", "s", "<nop>")
 
 -- Open tmux-sessionizer
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")

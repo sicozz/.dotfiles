@@ -9,24 +9,23 @@ config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 11.0
 config.audible_bell = 'Disabled'
 
--- Colorscheme: Spaceduck
--- config.colors = {
---     background = "#0f111b",
---     foreground = "#ecf0c1",
---
---     cursor_bg = "#ecf0c1",
---     cursor_border = "#ecf0c1",
---
---     ansi = {
---         "#000000", "#e33400", "#5ccc96", "#b3a1e6",
---         "#00a3cc", "#f2ce00", "#7a5ccc", "#686f9a",
---     },
---     brights = {
---         "#686f9a", "#e33400", "#5ccc96", "#b3a1e6",
---         "#00a3cc", "#f2ce00", "#7a5ccc", "#f0f1ce",
---     },
--- }
---
+-- Colorscheme: darkrose
+config.colors = {
+    background = "#000000",
+    foreground = "#c9c1c9",
+
+    cursor_bg = "#9f9f9f",
+    cursor_border = "#9f9f9f",
+
+    ansi = {
+        "#000000", "#f85149", "#429e44", "#f0883e",
+        "#3c6490", "#8b2950", "#6e9e9e", "#8b8b8b",
+    },
+    brights = {
+        "#101010", "#9e4244", "#6e9e42", "#a26b35",
+        "#44429e", "#b76e79", "#36d6d6", "#ededed",
+    },
+}
 
 -- Colorscheme: Kanagawa
 -- config.color_scheme = 'Kanagawa (Gogh)'
@@ -34,20 +33,8 @@ config.audible_bell = 'Disabled'
 --     background = '#0E0E18'
 -- }
 
--- Colorscheme: Solarized Osaka
--- config.color_scheme = 'Solarized Dark - Patched'
--- config.colors = {
---     background = '#000000'
--- }
-
--- Colorscheme: Terafox
-config.color_scheme = 'terafox'
-config.colors = {
-    background = '#040607'
-}
-
 config.enable_tab_bar = false
-config.window_background_opacity = 0.95
+-- config.window_background_opacity = 0.95
 
 -- Monocromes
 -- ----------
