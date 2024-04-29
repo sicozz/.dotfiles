@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
     use 'yasukotelin/shirotelin'
 
     -- Dark theme
-    use 'water-sucks/darkrose.nvim'
+    use 'craftzdog/solarized-osaka.nvim'
 
     use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } }
     use 'mbbill/undotree'
