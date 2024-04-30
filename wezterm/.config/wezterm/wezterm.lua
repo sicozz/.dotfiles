@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 local config = {}
 if wezterm.config_builder then
-  config = wezterm.config_builder()
+    config = wezterm.config_builder()
 end
 
 -- config.font = wezterm.font 'MesloLGS NF'
@@ -9,42 +9,26 @@ config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 11.0
 config.audible_bell = 'Disabled'
 
--- Colorscheme: Spaceduck
--- config.colors = {
---     background = "#0f111b",
---     foreground = "#ecf0c1",
---
---     cursor_bg = "#ecf0c1",
---     cursor_border = "#ecf0c1",
---
---     ansi = {
---         "#000000", "#e33400", "#5ccc96", "#b3a1e6",
---         "#00a3cc", "#f2ce00", "#7a5ccc", "#686f9a",
---     },
---     brights = {
---         "#686f9a", "#e33400", "#5ccc96", "#b3a1e6",
---         "#00a3cc", "#f2ce00", "#7a5ccc", "#f0f1ce",
---     },
--- }
---
-
--- Colorscheme: Kanagawa
--- config.color_scheme = 'Kanagawa (Gogh)'
--- config.colors = {
---     background = '#0E0E18'
--- }
-
--- Colorscheme: Terafox
--- config.color_scheme = 'terafox'
--- config.colors = {
---     background = '#040607'
--- }
 
 -- Colorscheme: Solarized Osaka
-config.color_scheme = 'Solarized Dark - Patched'
 config.colors = {
-    background = '#000000'
+    background = "#000304",
+    foreground = "#8f9ea0",
+
+    cursor_bg = "#708284",
+    cursor_border = "#708284",
+
+    ansi = {
+        "#002831", "#d11c24", "#738a05", "#a57706",
+        "#2176c7", "#c61c6f", "#259286", "#eae3cb"
+    },
+    brights = {
+        "#475b62", "#bd3613", "#475b62", "#536870",
+        "#259286", "#c61c6f", "#819090", "#fcf4dc"
+    },
 }
+
+-- config.color_scheme = 'Solarized Dark - Patched'
 
 config.enable_tab_bar = false
 config.window_background_opacity = 0.95

@@ -16,10 +16,10 @@
 
 window#waybar {
     background: rgba(00, 21, 21, 0.9);
-    border-radius: 10px;
+    border-radius: 8.5px;
     border-width: 2px;
     border-style: solid;
-    border-color: @fg;
+    border-color: @cyan;
     color: @fg;
 }
 
@@ -50,7 +50,7 @@ tooltip {
 }
 
 #workspaces button.active {
-    color: @green;
+    color: @cyan;
 }
 
 #workspaces button.focused {
@@ -92,8 +92,7 @@ tooltip {
 }
 
 #battery {
-    color: @green;
-    border-radius: 0 10px 10px 0;
+    color: @cyan;
     margin: 0 5px;
 }
 

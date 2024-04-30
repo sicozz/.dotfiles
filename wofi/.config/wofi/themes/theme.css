@@ -9,7 +9,7 @@ window {
     margin: 0px;
     background: @bg0;
     color: @fg;
-    border-radius: 10px;
+    border-radius: 8.5px;
     border-width: 2px;
     border-style: solid;
     border-color: @fg;
@@ -19,30 +19,30 @@ window {
     margin: 0px;
     background: @bg0;
     color: @fg;
-    border-radius: 10px;
+    border-radius: 8.5px;
     border-width: 2px;
     border-style: solid;
-    border-color: @fg;
+    border-color: @cyan;
 }
 
 #inner-box {
     margin: 0px 14px;
     background: @bg0;
     color: @fg;
-    border-radius: 10px;
+    border-radius: 8.5px;
     border-width: 2px;
     border-style: solid;
-    border-color: @fg;
+    border-color: @cyan;
 }
 
 #input {
     margin: 14px;
     background: @bg1;
     color: @fg;
-    border-radius: 10px;
+    border-radius: 8.5px;
     border-width: 2px;
     border-style: solid;
-    border-color: @fg;
+    border-color: @cyan;
 
     padding: 10px;
 }
