@@ -3,21 +3,21 @@
     "margin-left": 5,
     "margin-bottom": 0,
     "margin-right": 5,
-    "height": 40, 
+    "height": 40,
     "layer": "top",
     "position": "top",
     // "output": "eDP-1",
     "spacing": 15,
     "modules-left": ["custom/launcher", "clock", "clock#date"],
-    "modules-center": ["wlr/workspaces"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["tray", "pulseaudio", "network", "battery", "custom/powermenu"],
-    
-    "wlr/workspaces": {
+
+    "hyprland/workspaces": {
         "disable-scroll": true,
-        "all-outputs": false,
+        "all-outputs": true,
         "on-click": "activate",
-        "on-scroll-up": "hyprctl dispatch workspace e+1",
-        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        // "on-scroll-up": "hyprctl dispatch workspace e+1",
+        // "on-scroll-down": "hyprctl dispatch workspace e-1",
         "persistent_workspaces": {
             "1": [],
             "2": [],
@@ -27,8 +27,8 @@
             "6": [],
             "7": [],
             "8": [],
-            "9": []
-            // "10": []
+            "9": [],
+            "10": []
         },
         "format": "{icon}",
         "format-icons": {
@@ -45,7 +45,12 @@
             "urgent": "",
             "active": "",
             "default": ""
-          }
+        }
+    },
+    "hyprland/window": {
+        "format": "{}"
+        // "max-length": 200,
+        // "separate-outputs": true
     },
   
     "custom/launcher": {
