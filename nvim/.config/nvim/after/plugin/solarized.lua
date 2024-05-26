@@ -36,6 +36,4 @@ require("solarized-osaka").setup({
   end,
 })
 
-vim.cmd[[colorscheme solarized-osaka]]
--- vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 6, bg = "#063540" })
--- vim.api.nvim_set_hl(0, "CursorLine", { ctermbg = 6, bg = "#063540" })
+-- vim.cmd[[colorscheme solarized-osaka]]

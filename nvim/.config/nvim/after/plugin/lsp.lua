@@ -9,7 +9,6 @@ lsp.ensure_installed({
     'gopls',
     'pylsp',
     'rust_analyzer',
-    'solidity_ls',
     'tsserver',
     'tailwindcss',
     'diagnosticls',

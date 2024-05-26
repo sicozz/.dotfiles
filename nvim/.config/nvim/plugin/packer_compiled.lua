@@ -79,40 +79,15 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["ayu-vim"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/ayu-vim",
-    url = "https://github.com/ayu-theme/ayu-vim"
-  },
-  ["blue-moon"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/blue-moon",
-    url = "https://github.com/kyazdani42/blue-moon"
-  },
-  ["blue-screen"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/blue-screen",
-    url = "https://github.com/ok-ryoko/blue-screen"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["darkrose.nvim"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/darkrose.nvim",
-    url = "https://github.com/water-sucks/darkrose.nvim"
-  },
   ["go.nvim"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/go.nvim",
     url = "https://github.com/ray-x/go.nvim"
-  },
-  gruvbox = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
   },
   ["guihua.lua"] = {
     loaded = true,
@@ -145,10 +120,10 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["no-clown-fiesta.nvim"] = {
+  ["neofusion.nvim"] = {
     loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/no-clown-fiesta.nvim",
-    url = "https://github.com/no-clown-fiesta/no-clown-fiesta.nvim"
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/neofusion.nvim",
+    url = "https://github.com/diegoulloao/neofusion.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -169,11 +144,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
-  ["oldbook-vim"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/oldbook-vim",
-    url = "https://github.com/karoliskoncevicius/oldbook-vim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -215,25 +185,10 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-fahrenheit"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/vim-fahrenheit",
-    url = "https://github.com/fcpg/vim-fahrenheit"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["vim-sunbather"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/vim-sunbather",
-    url = "https://github.com/nikolvs/vim-sunbather"
-  },
-  ["yash.nvim"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/yash.nvim",
-    url = "https://github.com/kihachi2000/yash.nvim"
   }
 }
 

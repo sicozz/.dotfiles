@@ -41,8 +41,8 @@
             "7": "",
             "8": "",
             "9": "",
-            "10": "󰣇",
-            "urgent": "",
+            "10": "",
+            "urgent": "",
             "active": "",
             "default": ""
         }
@@ -54,7 +54,7 @@
     },
   
     "custom/launcher": {
-        "format": "󰣇",
+        "format": "",
         "tooltip": false
     },
 
