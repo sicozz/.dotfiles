@@ -13,7 +13,6 @@ export GOROOT="/usr/local/go"
 export GOPATH="/usr/local/src/go"
 export GOBIN="$GOPATH/bin"
 
-# export PATH=$GOBIN:$HOME/.local/bin/:/usr/local/bin:$PATH
 export PATH=$GOROOT/bin:$GOBIN:$PATH
 
 # Path to your oh-my-zsh installation.
