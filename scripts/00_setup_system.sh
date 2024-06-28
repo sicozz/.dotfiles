@@ -12,6 +12,10 @@ bat \
 eza \
 curl \
 xh \
+hyprland \
+wl-copy \
+sway-bg \
+waybar \
 # ufw \
 # fail2ban \
 nodejs \
