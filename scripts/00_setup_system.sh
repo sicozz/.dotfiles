@@ -6,25 +6,24 @@ git \
 stow \
 tmux \
 zsh \
+fzf \
 ranger \
 dmenu \
 bat \
 eza \
 curl \
-xh \
 hyprland \
-wl-copy \
-sway-bg \
+jetbrains-mono-nl-fonts \
+wl-clipboard \
+swaybg \
 waybar \
-# ufw \
-# fail2ban \
 nodejs \
 i3 \
 feh \
 xclip \
 dunst \
 openvpn \
-wireshark-qt \
+wireshark \
 tcpdump \
 lxappearance \
 mpv \
