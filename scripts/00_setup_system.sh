@@ -6,6 +6,7 @@ git \
 stow \
 tmux \
 zsh \
+kitty \
 fzf \
 ranger \
 dmenu \
@@ -34,7 +35,6 @@ zathura-pdf-mupdf \
 timeshift
 
 # flatpak install
-# wezterm \
 # spotify \
 # discord \
 # obsidian \
