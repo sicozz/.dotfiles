@@ -7,11 +7,11 @@ end)
 lsp.ensure_installed({
     'lua_ls',
     'gopls',
-    'pylsp',
-    'rust_analyzer',
+    -- 'pylsp',
+    -- 'rust_analyzer',
     'bufls',
     'tsserver',
-    'tailwindcss',
+    -- 'tailwindcss',
     'diagnosticls',
     'eslint'
     -- Formatters:

@@ -84,10 +84,20 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["darkrose.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/darkrose.nvim",
+    url = "https://github.com/water-sucks/darkrose.nvim"
+  },
   ["go.nvim"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/go.nvim",
     url = "https://github.com/ray-x/go.nvim"
+  },
+  ["gruvbox-darker.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/gruvbox-darker.nvim",
+    url = "https://github.com/kanenorman/gruvbox-darker.nvim"
   },
   ["guihua.lua"] = {
     loaded = true,

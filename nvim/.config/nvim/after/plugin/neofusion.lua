@@ -23,4 +23,4 @@ require("neofusion").setup({
     transparent_mode = true,
 })
 
-vim.cmd([[ colorscheme neofusion ]])
+-- vim.cmd([[ colorscheme neofusion ]])
