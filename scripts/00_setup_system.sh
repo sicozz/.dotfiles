@@ -3,6 +3,7 @@
 # Add programs
 sudo dnf install -y \
 git \
+ncdu \
 stow \
 tmux \
 zsh \
