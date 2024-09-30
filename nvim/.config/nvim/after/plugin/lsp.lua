@@ -10,7 +10,7 @@ lsp.ensure_installed({
     -- 'pylsp',
     -- 'rust_analyzer',
     'bufls',
-    'tsserver',
+    -- 'tsserver',
     -- 'tailwindcss',
     'diagnosticls',
     'eslint'

@@ -3,6 +3,9 @@
 # Add programs
 sudo dnf install -y \
 git \
+delve \
+protobuf-compiler \
+grpcurl \
 ncdu \
 stow \
 tmux \
@@ -22,6 +25,7 @@ waybar \
 nodejs \
 i3 \
 feh \
+pavucontrol \
 xclip \
 dunst \
 openvpn \
@@ -33,7 +37,10 @@ bluez \
 flameshot \
 zathura \
 zathura-pdf-mupdf \
-timeshift
+timeshift \
+htop \
+neofetch \
+cmatrix
 
 # flatpak install
 # spotify \
