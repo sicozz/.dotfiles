@@ -101,7 +101,7 @@ end)
 
 lsp.setup()
 
-require'lspconfig'.tailwindcss.setup{}
+-- require'lspconfig'.tailwindcss.setup{}
 require('lspconfig').diagnosticls.setup {
     filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
     init_options = {

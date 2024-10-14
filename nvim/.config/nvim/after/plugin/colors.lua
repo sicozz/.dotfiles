@@ -7,6 +7,6 @@ function ColorMyPencils(color)
 end
 
 -- ColorMyPencils("darkrose")
-vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("yugen")
 
 -- vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 234, bg = "#16172d" })

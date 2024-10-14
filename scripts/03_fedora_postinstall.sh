@@ -7,5 +7,5 @@ sudo dnf install gnome-tweak-tool -y
 flatpak remote-modify --enable flathub
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install spotify -y
-sudo hostnamectl set-hostname grid
+sudo hostnamectl set-hostname grid00
 sudo dnf groupupdate sound-and-video
