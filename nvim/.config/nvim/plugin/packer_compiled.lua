@@ -198,7 +198,7 @@ _G.packer_plugins = {
   ["yugen.nvim"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/yugen.nvim",
-    url = "https://github.com/bettervim/yugen.nvim"
+    url = "https://github.com/sicozz/yugen.nvim"
   }
 }
 
