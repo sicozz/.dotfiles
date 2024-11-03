@@ -41,6 +41,6 @@ luac.out
 
 
 **/__pycache__/
-**/packer_compiled.lua
+nvim/.config/nvim/plugin/packer_compiled.lua
 java-debug/
 vscode-java-test/

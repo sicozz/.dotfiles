@@ -12,7 +12,6 @@ local hover = "#141400"
 local hover_deep = "#020200"
 
 -- Functional Colors
-local hint = "#006200"
 local error = "#890000"
 local warning = "#4e4e00"
 local info = "#006262"
@@ -57,7 +56,7 @@ require('darkvoid').setup({
         },
 
         -- gitsigns colors
-        added = hint,
+        added = info,
         changed = warning,
         removed = error,
 
@@ -79,7 +78,7 @@ require('darkvoid').setup({
         -- LSP diagnostics colors
         error = error,
         warning = warning,
-        hint = hint,
+        hint = info,
         info = info,
     }
 })
@@ -92,11 +91,13 @@ vim.api.nvim_set_hl(0, "CursorColumn", { bg = hover })
 vim.api.nvim_set_hl(0, "ColorColumn", { bg = hover })
 vim.api.nvim_set_hl(0, "StatusLine", { bg = hover_deep, fg = accent_mild })
 vim.api.nvim_set_hl(0, "StatusLineNc", { bg = hover_deep, fg = base01 })
+vim.api.nvim_set_hl(0, "MsgArea", { bg = "none", fg = base11 })
+vim.api.nvim_set_hl(0, "ModeMsg", { bg = "none", fg = secondary })
 -- Tab
 vim.api.nvim_set_hl(0, "TabLine", { bg = "none", fg = base00 })
 vim.api.nvim_set_hl(0, "TabLineSel", { bg = "none", fg = base11 })
 -- Search
-vim.api.nvim_set_hl(0, "Search", { bg = hint, fg = accent })
+vim.api.nvim_set_hl(0, "Search", { bg = accent, fg = accent })
 vim.api.nvim_set_hl(0, "IncSearch", { bg = accent, fg = "#000000" })
 -- Netwr
 vim.api.nvim_set_hl(0, "Directory", { bg = "none", fg = base01 })
