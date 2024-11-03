@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["darkvoid.nvim"] = {
+    loaded = true,
+    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/darkvoid.nvim",
+    url = "https://github.com/aliqyan-21/darkvoid.nvim"
+  },
   ["go.nvim"] = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/go.nvim",
@@ -194,11 +199,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["yugen.nvim"] = {
-    loaded = true,
-    path = "/home/sicoz/.local/share/nvim/site/pack/packer/start/yugen.nvim",
-    url = "https://github.com/sicozz/yugen.nvim"
   }
 }
 

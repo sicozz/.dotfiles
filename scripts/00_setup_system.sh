@@ -2,6 +2,8 @@
 
 # Add programs
 sudo dnf install -y \
+gcc-c++ \
+libstdc++-devel \
 git \
 delve \
 protobuf-compiler \
@@ -41,6 +43,8 @@ timeshift \
 htop \
 neofetch \
 cmatrix
+
+sudo dnf groupinstall -y "Development Tools"
 
 # flatpak install
 # spotify \

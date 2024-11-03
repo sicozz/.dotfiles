@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
     use 'yasukotelin/shirotelin'
 
     -- Dark theme
-    use 'sicozz/yugen.nvim'
+    use 'aliqyan-21/darkvoid.nvim'
     use 'kanenorman/gruvbox-darker.nvim'
     use 'craftzdog/solarized-osaka.nvim'
     use 'diegoulloao/neofusion.nvim'

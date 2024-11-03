@@ -1,5 +1,5 @@
 @define-color fg #fafafa;
 @define-color bg0 #000000;
 @define-color bg1 #000000;
-@define-color red #ffff00;
-@define-color cyan #fafafa;
+@define-color accent #ffff00;
+@define-color border #fafafa;

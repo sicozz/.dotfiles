@@ -131,3 +131,9 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Quick reminder trick
+# reminder='\t+++++ REMINDER +++++\n\t[ ] Get ready for going out: basketball clothes, bag, basketball, water\n\t[ ] Brown noise background\n\t[ ] Dev until 7:00'
+# echo -n -e '\033[1m\033[1;33m'
+# echo ${reminder}
+# echo -n -e '\033[0m'
