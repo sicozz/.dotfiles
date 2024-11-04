@@ -84,6 +84,8 @@ require('darkvoid').setup({
 })
 
 vim.cmd.colorscheme("darkvoid")
+-- Matching braces
+vim.api.nvim_set_hl(0, "MatchParen", { bg = accent, fg = "#000000" })
 -- Cursor line
 vim.api.nvim_set_hl(0, "CursorLine", { bg = hover })
 vim.api.nvim_set_hl(0, "CursorLineNr", { bg = hover })
