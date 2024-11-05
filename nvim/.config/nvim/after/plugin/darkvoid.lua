@@ -8,7 +8,8 @@ local base11 = "#fafafa"
 local accent = "#ffff00"
 local accent_mild = "#767600"
 local secondary = "#907b00"
-local hover = "#141400"
+local visual = "#3b3b00"
+local hover = "#282800"
 local hover_deep = "#020200"
 
 -- Functional Colors
@@ -26,7 +27,7 @@ require('darkvoid').setup({
         bg = "#000000",
         cursor = accent_mild,
         line_nr = base00,
-        visual = hover,
+        visual = visual,
         comment = base00,
         string = base01,
         func = accent,
@@ -86,9 +87,11 @@ require('darkvoid').setup({
 vim.cmd.colorscheme("darkvoid")
 -- Matching braces
 vim.api.nvim_set_hl(0, "MatchParen", { bg = accent, fg = "#000000" })
+-- Visual
+vim.api.nvim_set_hl(0, "Visual", { bg = visual, fg = base11 })
 -- Cursor line
-vim.api.nvim_set_hl(0, "CursorLine", { bg = hover })
-vim.api.nvim_set_hl(0, "CursorLineNr", { bg = hover })
+vim.api.nvim_set_hl(0, "CursorLine", { bg = "none" })
+vim.api.nvim_set_hl(0, "CursorLineNr", { bg = visual, fg = accent })
 vim.api.nvim_set_hl(0, "CursorColumn", { bg = hover })
 vim.api.nvim_set_hl(0, "ColorColumn", { bg = hover })
 vim.api.nvim_set_hl(0, "StatusLine", { bg = hover_deep, fg = accent_mild })
