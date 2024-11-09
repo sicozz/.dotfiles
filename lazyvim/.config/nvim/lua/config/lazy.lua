@@ -26,6 +26,8 @@ require("lazy").setup({
 			},
 		},
 		-- import any extras modules here
+        { import = "lazyvim.plugins.extras.editor.inc-rename" },
+        { import = "lazyvim.plugins.extras.util.gitui" },
 		{ import = "lazyvim.plugins.extras.lang.go" },
 		{ import = "lazyvim.plugins.extras.lang.typescript" },
 		{ import = "lazyvim.plugins.extras.lang.json" },

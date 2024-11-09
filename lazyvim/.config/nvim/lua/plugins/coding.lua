@@ -29,4 +29,15 @@ return {
 			table.insert(opts.sources, { name = "emoji" })
 		end,
 	},
+    --
+    -- Auto pairs
+    {
+    "echasnovski/mini.pairs",
+            enabled = false,
+    },
+
+    {
+    "echasnovski/mini.ai",
+            enabled = false,
+    },
 }

@@ -7,18 +7,13 @@ return {
 		},
 		config = true,
 		keys = {
-			{ "<leader>ha", "<cmd>lua require('harpoon.mark').add_file()<cr>", desc = "Mark file with harpoon" },
-			{ "<leader>he", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", desc = "Toggle quick menu" },
-			{ "<leader>hh", "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", desc = "Open file 1" },
-			{ "<leader>ht", "<cmd>lua require('harpoon.ui').nav_file(2)<cr>", desc = "Open file 2" },
-			{ "<leader>hn", "<cmd>lua require('harpoon.ui').nav_file(3)<cr>", desc = "Open file 3" },
-			{ "<leader>hs", "<cmd>lua require('harpoon.ui').nav_file(4)<cr>", desc = "Open file 4" },
+			{ "<leader>H", "<cmd>lua require('harpoon.mark').add_file()<cr>", desc = "Mark file with harpoon" },
+			{ "<leader>h", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", desc = "Toggle quick menu" },
+			{ "<leader>1", "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", desc = "Open file 1" },
+			{ "<leader>2", "<cmd>lua require('harpoon.ui').nav_file(2)<cr>", desc = "Open file 2" },
+			{ "<leader>3", "<cmd>lua require('harpoon.ui').nav_file(3)<cr>", desc = "Open file 3" },
+			{ "<leader>4", "<cmd>lua require('harpoon.ui').nav_file(4)<cr>", desc = "Open file 4" },
 		},
-	},
-
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		enabled = false,
 	},
 
 	{
@@ -202,4 +197,14 @@ return {
 			require("telescope").load_extension("file_browser")
 		end,
 	},
+
+	{
+		"nvim-neo-tree/neo-tree.nvim",
+		enabled = false,
+	},
+
+    {
+        "folke/persistence.nvim",
+        enabled = false,
+    },
 }

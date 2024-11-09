@@ -1,3 +1,4 @@
+vim.opt.clipboard = ""
 vim.g.autoformat = false
 vim.opt.confirm = false
 vim.opt.encoding = "utf-8"
@@ -32,3 +33,6 @@ vim.opt.mouse = ""
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
+
+-- One status line per split
+vim.opt.laststatus = 2

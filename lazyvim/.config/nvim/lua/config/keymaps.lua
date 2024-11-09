@@ -1,6 +1,9 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
+-- Edit plugins
+keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/sicoz/packer.lua<CR>");
+
 -- Do things without affecting the registers
 keymap.set("n", "x", '"_x')
 keymap.set("n", "<Leader>p", '"0p')
@@ -33,6 +36,12 @@ keymap.set("n", "<C-w><left>", "<C-w><")
 keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
+
+-- Close file buffer
+vim.keymap.set("n", "<leader>q", "<cmd>bdelete<CR>")
+
+-- Press jk fast to escape
+vim.keymap.set("i", "jk", "<ESC>")
 
 -- Better join maintains cursor in position
 keymap.set("n", "J", "mzJ`z")
