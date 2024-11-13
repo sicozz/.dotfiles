@@ -2,7 +2,7 @@ local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
 -- Edit plugins
-keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/sicoz/packer.lua<CR>");
+keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/lazyvim/.config/nvim/lua/config/lazy.lua<CR>");
 
 -- Do things without affecting the registers
 keymap.set("n", "x", '"_x')
@@ -62,6 +62,7 @@ keymap.set("n", "<C-j>", function()
 end, opts)
 
 -- Source
-keymap.set("n", "<leader><leader>", function()
-	vim.cmd("so")
-end)
+-- Better to just use :so<CR>
+-- keymap.set("n", "<leader><leader>", function()
+-- 	vim.cmd("so")
+-- end)
