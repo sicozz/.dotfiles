@@ -41,10 +41,9 @@ zathura \
 zathura-pdf-mupdf \
 timeshift \
 htop \
-neofetch \
 cmatrix
 
-sudo dnf groupinstall -y "Development Tools"
+sudo dnf group install development-tools -y
 
 # flatpak install
 # spotify \
