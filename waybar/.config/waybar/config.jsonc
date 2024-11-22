@@ -130,7 +130,7 @@
     "custom/powermenu": {
         "format": "",
         "on-click": "pkill wofi || sh .config/wofi/scripts/powermenu.sh",
-        "on-click-right": "systemctl poweroff -i",
+        "on-click-right": "sync; systemctl poweroff",
         "tooltip": false
     }
 }
