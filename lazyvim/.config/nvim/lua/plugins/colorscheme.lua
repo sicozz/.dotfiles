@@ -48,7 +48,7 @@ return {
 					neutral_purple = "#ec30ac",
 					neutral_aqua = "#ffff14",
 					neutral_orange = "#897400",
-					faded_red = "#00ff00", -- Dont know what this is for
+					faded_red = "#d24141",
 					faded_green = "#004e4e",
 					faded_yellow = "#008080",
 					faded_blue = "#c4c400",
