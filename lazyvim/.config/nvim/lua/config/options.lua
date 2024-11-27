@@ -13,15 +13,11 @@ vim.opt.smartindent = true
 vim.opt.hlsearch = true
 vim.opt.backup = false
 vim.opt.showcmd = true
-vim.opt.expandtab = true
 vim.opt.scrolloff = 10
 vim.opt.shell = "zsh"
 vim.opt.backupskip = { "/tmp/*", "/private/tmp/*" }
 vim.opt.inccommand = "split"
-vim.opt.smarttab = true
 vim.opt.breakindent = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
 vim.opt.wrap = false -- No Wrap lines
 vim.opt.backspace = { "start", "eol", "indent" }
 vim.opt.path:append({ "**" }) -- Finding files - Search down into subfolders
@@ -32,8 +28,18 @@ vim.opt.splitkeep = "cursor"
 vim.opt.mouse = ""
 vim.opt.swapfile = false
 
+-- Use tabs instead of spaces
+vim.opt.expandtab = false -- Use tabs instead of spaces
+vim.opt.tabstop = 4 -- Number of spaces that a <Tab> in the file counts for
+vim.opt.shiftwidth = 4 -- Number of spaces to use for each step of (auto)indent
+vim.opt.softtabstop = 4 -- Number of spaces a <Tab> counts for while editing
+vim.opt.smarttab = true -- Insert the correct number of spaces or tabs when tabbing
+
 -- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
+
+-- Disable clipboard sharing
+vim.opt.clipboard = ""
 
 -- One status line per split
 vim.opt.laststatus = 2
