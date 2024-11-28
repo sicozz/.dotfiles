@@ -24,11 +24,11 @@ return {
 				invert_intend_guides = false,
 				inverse = true, -- invert background for search, diffs, statuslines and errors
 				palette_overrides = {
-					dark0 = "#0a0a00",
-					dark1 = "#141400",
-					dark2 = "#272700",
-					dark3 = "#3b3b00",
-					dark4 = "#4e4e00",
+					dark0 = "#141400",
+					dark1 = "#272700",
+					dark2 = "#3b3b00",
+					dark3 = "#4e4e00",
+					dark4 = "#626200",
 					light0 = "#ffff14",
 					light1 = "#ffff14",
 					light2 = "#ebeb00",
@@ -64,8 +64,8 @@ return {
 					gray = "#808044",
 				},
 				overrides = {
-					StatusLine = { fg = "#fafafa", bg = "#272700", reverse = false },
-					StatusLineNC = { fg = "#fafafa", bg = "#0a0a00", reverse = false },
+					StatusLine = { fg = "#fafafa", bg = "#4e4e00", reverse = false },
+					StatusLineNC = { fg = "#fafafa", bg = "#141400", reverse = false },
 				},
 				dim_inactive = false,
 				transparent_mode = true,
