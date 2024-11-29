@@ -14,7 +14,6 @@ tmux \
 zsh \
 kitty \
 fzf \
-ranger \
 dmenu \
 bat \
 eza \
