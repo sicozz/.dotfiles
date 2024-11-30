@@ -293,8 +293,8 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#000000"
-    foreground = "#fafafa"
-    frame_color = "#4e4e00"
+    foreground = "#fbfbfb"
+    frame_color = "#ffff14"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
