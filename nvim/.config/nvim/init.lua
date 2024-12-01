@@ -1,1 +1,1 @@
-require("sicoz")
+require("config.lazy")
