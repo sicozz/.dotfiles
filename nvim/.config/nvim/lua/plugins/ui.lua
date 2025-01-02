@@ -48,7 +48,7 @@ return {
 
 	-- statusline
 	{
-		enabled = false,
+		-- enabled = false,
 		"nvim-lualine/lualine.nvim",
 		opts = function(_, opts)
 			local LazyVim = require("lazyvim.util")
@@ -64,9 +64,5 @@ return {
 				}),
 			}
 		end,
-	},
-	{
-		"MunifTanjim/nui.nvim",
-		enabled = false,
 	},
 }

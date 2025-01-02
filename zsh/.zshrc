@@ -8,6 +8,8 @@ fi
 # If you come from bash you might have to change your $PATH.
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+export PATH=~/.local/bin:$PATH
+
 # Go
 export GOROOT="/usr/local/go"
 export GOPATH="/usr/local/src/go"
@@ -15,21 +17,25 @@ export GOBIN="$GOPATH/bin"
 
 export PATH=$GOROOT/bin:$GOBIN:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/sicoz/.oh-my-zsh"
+# Intellij IDEA
+export INTELLIJBIN="/opt/idea-IC-243.22562.218/bin"
+export PATH=$INTELLIJBIN:$PATH
+
+# Maven
+export MAVEN_HOME="/opt/apache-maven-3.8.6"
+export PATH=$MAVEN_HOME/bin:$PATH
 
 # Default editor (used by sudoedit)
 export EDITOR=$(which vim)
 
+# Path to your oh-my-zsh installation.
+export ZSH="/home/sicoz/.oh-my-zsh"
+
 # SHELL for tmux sessions
 # export SHELL="/usr/bin/zsh"
 
+export AIRFLOW_HOME=~/.local/share/airflow
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
