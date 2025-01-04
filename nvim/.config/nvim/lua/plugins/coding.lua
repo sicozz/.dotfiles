@@ -33,11 +33,11 @@ return {
     -- Auto pairs
     {
     "echasnovski/mini.pairs",
-            enabled = false,
+            enabled = true,
     },
 
     {
     "echasnovski/mini.ai",
-            enabled = false,
+            enabled = true,
     },
 }

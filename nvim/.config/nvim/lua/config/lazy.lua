@@ -20,8 +20,8 @@ require("lazy").setup({
 			opts = {
 				colorscheme = "solarized-osaka",
 				news = {
-					lazyvim = true,
-					neovim = true,
+					lazyvim = false,
+					neovim = false,
 				},
 			},
 		},
