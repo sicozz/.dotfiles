@@ -7,5 +7,9 @@ sudo dnf install gnome-tweak-tool -y
 flatpak remote-modify --enable flathub
 flatpak install flathub com.mattjakeman.ExtensionManager -y
 flatpak install spotify -y
+flatpak install app/com.discordapp.Discord/x86_64/stable -y
 sudo hostnamectl set-hostname grid00
 sudo dnf group install sound-and-video
+
+git config --global user.email "simozuluaga@gmail.com"
+git config --global user.name "Simon Zuluaga"

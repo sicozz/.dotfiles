@@ -40,7 +40,8 @@ zathura \
 zathura-pdf-mupdf \
 timeshift \
 htop \
-cmatrix
+cmatrix \
+fastfetch
 
 sudo dnf group install development-tools -y
 
