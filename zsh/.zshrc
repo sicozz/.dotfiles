@@ -17,6 +17,9 @@ export GOBIN="$GOPATH/bin"
 
 export PATH=$GOROOT/bin:$GOBIN:$PATH
 
+# Deno
+. "/home/sicoz/.deno/env"
+
 # Intellij IDEA
 export INTELLIJBIN="/opt/idea-IC-243.22562.218/bin"
 export PATH=$INTELLIJBIN:$PATH

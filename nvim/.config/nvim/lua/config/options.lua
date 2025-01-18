@@ -43,3 +43,6 @@ vim.opt.clipboard = ""
 
 -- One status line per split
 vim.opt.laststatus = 2
+
+-- For Denols
+vim.g.markdown_fenced_languages = { "ts=typescript" }

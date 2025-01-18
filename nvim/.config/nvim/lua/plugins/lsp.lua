@@ -21,16 +21,26 @@ return {
 			---@type lspconfig.options
 			servers = {
 				gopls = {},
+				denols = {
+					on_attach = on_attach,
+					root_dir = require("lspconfig.util").root_pattern("deno.json", "deno.jsonc"),
+				},
+				lua_ls = {},
+				eslint = {
+					on_attach = function(client, bufnr)
+						vim.api.nvim_create_autocmd("BufWritePre", {
+							buffer = bufnr,
+							command = "EslintFixAll",
+						})
+					end,
+				},
 				cssls = {},
 				tailwindcss = {
 					root_dir = function(...)
 						return require("lspconfig.util").root_pattern(".git")(...)
 					end,
 				},
-				tsserver = {
-					root_dir = function(...)
-						return require("lspconfig.util").root_pattern(".git")(...)
-					end,
+				ts_ls = {
 					single_file_support = false,
 					settings = {
 						typescript = {
@@ -57,7 +67,6 @@ return {
 						},
 					},
 				},
-				lua_ls = {},
 			},
 			setup = {},
 		},
