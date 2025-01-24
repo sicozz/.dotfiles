@@ -139,7 +139,7 @@ return {
 				--- You can override specific color groups to use other groups or a hex color
 				--- function will be called with a ColorScheme table
 				---@param colors ColorScheme
-				on_colors = function(colors) 
+				on_colors = function(colors)
 					colors.bg = "#000000"
 				end,
 
@@ -150,6 +150,22 @@ return {
 				-- on_highlights = function(highlights, colors) end,
 			})
 		end,
+	},
+
+	{
+		"jackplus-xyz/binary.nvim",
+		opts = {
+			style = "light",
+			colors = {
+				fg = "#00cece",
+				bg = "#000a0a",
+			},
+			-- Customize the reversed groups
+			reversed_group = {
+				Title = true, -- Add a new reversed group
+				Search = false, -- Disable a default reversed group
+			},
+		},
 	},
 
 	{
