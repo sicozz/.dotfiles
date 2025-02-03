@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo dnf -y install ninja-build cmake gcc make unzip gettext curl glibc-gconv-extra
+sudo dnf -y install ninja-build cmake gcc make unzip gettext curl glibc-gconv-extra luarocks
 
 cd /usr/local/src &&
 sudo git clone https://github.com/neovim/neovim

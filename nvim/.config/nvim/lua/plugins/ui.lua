@@ -6,7 +6,7 @@ return {
 			plugins = {
 				gitsigns = true,
 				tmux = true,
-				kitty = { enabled = false, font = "+2" },
+				kitty = { enabled = true, font = "+2" },
 			},
 		},
 		keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen Mode" } },
@@ -44,7 +44,7 @@ return {
 	-- buffer line
 	{
 		"akinsho/bufferline.nvim",
-		enabled = false,
+		enabled = true,
 		event = "VeryLazy",
 		keys = {
 			{ "<Tab>", "<Cmd>BufferLineCycleNext<CR>", desc = "Next tab" },
