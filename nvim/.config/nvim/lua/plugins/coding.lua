@@ -6,9 +6,18 @@ return {
 		config = true,
 	},
 
+	{
+		"nvim-cmp",
+		dependencies = { "hrsh7th/cmp-emoji" },
+		opts = function(_, opts)
+			table.insert(opts.sources, { name = "emoji" })
+		end,
+	},
+
 	-- Go forward/backward with square brackets
 	{
 		"echasnovski/mini.bracketed",
+		enabled = false,
 		event = "BufReadPost",
 		config = function()
 			local bracketed = require("mini.bracketed")
@@ -21,14 +30,6 @@ return {
 			})
 		end,
 	},
-
-	{
-		"nvim-cmp",
-		dependencies = { "hrsh7th/cmp-emoji" },
-		opts = function(_, opts)
-			table.insert(opts.sources, { name = "emoji" })
-		end,
-	},
  
     -- Auto pairs
     {
@@ -38,6 +39,6 @@ return {
 
     {
     "echasnovski/mini.ai",
-            enabled = true,
+            enabled = false,
     },
 }
