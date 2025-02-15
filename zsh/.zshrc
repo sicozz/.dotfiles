@@ -21,7 +21,7 @@ export PATH=$GOROOT/bin:$GOBIN:$PATH
 . "/home/sicoz/.deno/env"
 
 # Intellij IDEA
-export INTELLIJBIN="/opt/idea-IC-243.22562.218/bin"
+export INTELLIJBIN="/opt/idea/bin"
 export PATH=$INTELLIJBIN:$PATH
 
 # Maven
