@@ -4,6 +4,8 @@
 sudo dnf install -y \
 gcc-c++ \
 libstdc++-devel \
+java-latest-openjdk \
+java-latest-openjdk-devel \
 git \
 delve \
 protobuf-compiler \

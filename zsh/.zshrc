@@ -20,6 +20,14 @@ export PATH=$GOROOT/bin:$GOBIN:$PATH
 # Deno
 . "/home/sicoz/.deno/env"
 
+# Java
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Gradle
+export GRADLE_HOME=/opt/gradle/gradle-8.12.1
+export PATH=$GRADLE_HOME/bin:$PATH
+
 # Intellij IDEA
 export INTELLIJBIN="/opt/idea/bin"
 export PATH=$INTELLIJBIN:$PATH
