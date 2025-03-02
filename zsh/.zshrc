@@ -25,7 +25,7 @@ export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Gradle
-export GRADLE_HOME=/opt/gradle/gradle-8.12.1
+export GRADLE_HOME=/opt/gradle/gradle-8.13
 export PATH=$GRADLE_HOME/bin:$PATH
 
 # Intellij IDEA

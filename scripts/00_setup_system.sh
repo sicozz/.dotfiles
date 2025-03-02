@@ -2,8 +2,17 @@
 
 # Add programs
 sudo dnf install -y \
+# For Rust-Bevy devel:start
 gcc-c++ \
 libstdc++-devel \
+libX11-devel \
+libxkbcommon-devel \
+alsa-lib-devel \
+systemd-devel \
+wayland-devel \
+lld \
+clang \
+# For Rust-Bevy devel:end
 java-latest-openjdk \
 java-latest-openjdk-devel \
 git \
