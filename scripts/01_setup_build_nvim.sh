@@ -8,7 +8,7 @@ sudo chown -R $USER:$USER /usr/local/src/neovim
 
 cd neovim
 git checkout stable
-make CMAKE_BUILD_TYPE=RelWithDebInfo
+make CMAKE_BUILD_TYPE=Release
 sudo make install
 sudo ln -s /usr/local/bin/nvim /usr/local/bin/vim
 
