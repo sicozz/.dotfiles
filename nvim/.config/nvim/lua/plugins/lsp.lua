@@ -20,6 +20,16 @@ return {
 			inlay_hints = { enabled = false },
 			---@type lspconfig.options
 			servers = {
+				-- jdtls = {
+				-- 	-- Configure Java LSP to work with the formatter
+				-- 	settings = {
+				-- 		java = {
+				-- 			format = {
+				-- 				enabled = false, -- Disable LSP formatting in favor of null-ls
+				-- 			},
+				-- 		},
+				-- 	},
+				-- },
 				gopls = {},
 				denols = {
 					on_attach = on_attach,
@@ -71,6 +81,7 @@ return {
 			setup = {},
 		},
 	},
+
 	{
 		"neovim/nvim-lspconfig",
 		opts = function()
@@ -87,5 +98,14 @@ return {
 				},
 			})
 		end,
+	},
+
+	{
+		"stevearc/conform.nvim",
+		opts = {
+			formatters_by_ft = {
+				java = { "google-java-format" },
+			},
+		},
 	},
 }
