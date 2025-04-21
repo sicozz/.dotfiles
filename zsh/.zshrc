@@ -29,8 +29,12 @@ export GRADLE_HOME=/opt/gradle/gradle-8.13
 export PATH=$GRADLE_HOME/bin:$PATH
 
 # Intellij IDEA
-export INTELLIJBIN="/opt/idea/bin"
-export PATH=$INTELLIJBIN:$PATH
+export IDEABIN="/opt/idea/bin"
+export PATH=$IDEABIN:$PATH
+
+# Intellij RustRover
+export RUSTROVERBIN="/opt/rustrover/bin"
+export PATH=$RUSTROVERBIN:$PATH
 
 # Maven
 export MAVEN_HOME="/opt/apache-maven-3.8.6"
@@ -154,3 +158,7 @@ source $ZSH/oh-my-zsh.sh
 # echo -n -e '\033[1m\033[1;33m'
 # echo ${reminder}
 # echo -n -e '\033[0m'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

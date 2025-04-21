@@ -1,5 +1,23 @@
 return {
 	{
+		"aktersnurra/no-clown-fiesta.nvim",
+		priority = 1000,
+		config = function()
+			local plugin = require("no-clown-fiesta")
+			plugin.setup({
+				transparent = true,
+				styles = {
+					type = { bold = true },
+					lsp = { underline = false },
+					match_paren = { underline = true },
+				},
+			})
+			return plugin.load()
+		end,
+		lazy = false,
+	},
+
+	{
 		"sicozz/conqueror.nvim",
 		priority = 1000,
 		config = true,
