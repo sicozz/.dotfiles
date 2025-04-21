@@ -44,7 +44,7 @@ export PATH=$MAVEN_HOME/bin:$PATH
 export EDITOR=$(which vim)
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/sicoz/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # SHELL for tmux sessions
 # export SHELL="/usr/bin/zsh"
