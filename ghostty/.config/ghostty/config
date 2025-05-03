@@ -1,0 +1,29 @@
+# Basic Ghostty Configuration
+
+# Theme - load the custom theme we created
+theme = no-clown-fiesta.conf
+
+# Font settings
+font-family = "JetBrains Mono"
+font-size = 11
+# font-feature = liga, calt # Enable ligatures and contextual alternates
+
+# Window settings
+window-width = 100
+window-height = 30
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = none
+
+# Terminal behavior
+shell-integration = zsh
+cursor-style = block
+cursor-style-blink = true
+cursor-invert-fg-bg = true
+mouse-hide-while-typing = true
+
+# Performance settings
+window-colorspace = display-p3
+
+# background-opacity = 0.95
+# adjust-cell-height = 120% # Increase line spacing (uncomment to enable)
