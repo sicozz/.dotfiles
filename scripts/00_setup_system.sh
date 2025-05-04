@@ -24,7 +24,6 @@ zsh \
 fzf \
 dmenu \
 bat \
-eza \
 curl \
 hyprland \
 jetbrains-mono-nl-fonts \
