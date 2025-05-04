@@ -21,7 +21,6 @@ ncdu \
 stow \
 tmux \
 zsh \
-kitty \
 fzf \
 dmenu \
 bat \
@@ -55,6 +54,9 @@ fd-find \
 fastfetch
 
 sudo dnf group install development-tools -y
+
+sudo dnf copr enable pgdev/ghostty -y
+sudo dnf install ghostty -y
 
 # flatpak install
 # spotify \
