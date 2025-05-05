@@ -21,9 +21,13 @@ cursor-style = block
 cursor-style-blink = true
 cursor-invert-fg-bg = true
 mouse-hide-while-typing = true
+# background-opacity = 0.95
+# adjust-cell-height = 120% # Increase line spacing (uncomment to enable)
 
 # Performance settings
 window-colorspace = display-p3
 
-# background-opacity = 0.95
-# adjust-cell-height = 120% # Increase line spacing (uncomment to enable)
+# Keybindings
+
+keybind = super+shift+plus=increase_font_size:1
+keybind = super+shift+minus=decrease_font_size:1
