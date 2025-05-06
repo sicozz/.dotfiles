@@ -5,7 +5,7 @@ theme = no-clown-fiesta.conf
 
 # Font settings
 font-family = "JetBrains Mono"
-font-size = 11
+font-size = 10
 # font-feature = liga, calt # Enable ligatures and contextual alternates
 
 # Window settings

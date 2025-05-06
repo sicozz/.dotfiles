@@ -1,46 +1,54 @@
-set notification-error-bg "#ff4600"
-set notification-error-fg "#fbfbfb"
-set notification-warning-bg "#f5f50a"
-set notification-warning-fg "#fbfbfb"
-set notification-bg "#f5f50a"
-set notification-fg "#fbfbfb"
-set completion-bg "#004e3d"
-set completion-fg "#fbfbfb"
-set completion-group-bg "#004e3d"
-set completion-group-fg "#fbfbfb"
-set completion-highlight-bg "#00140f"
-set completion-highlight-fg "#fbfbfb"
-set index-bg "#004e3d"
-set index-fg "#fbfbfb"
-set index-active-bg "#00140f"
-set index-active-fg "#fbfbfb"
-set inputbar-bg "#002b36"
-set inputbar-fg "#fbfbfb"
-set statusbar-bg "#002b36"
-set statusbar-fg "#f0f0f0"
-set highlight-color "#00271e"
-set highlight-active-color "#00d8a7"
-set default-bg "#000000"
-set default-fg "#fbfbfb"
-set render-loading true
-set render-loading-fg "#000000"
-set render-loading-bg "#fbfbfb"
-#
-# Recolor mode settings
-# <C-r> to switch modes
-#
-set recolor-lightcolor "#000a07"
-set recolor-darkcolor "#fbfbfb"
+set notification-error-bg       "#151515" # bg
+set notification-error-fg       "#b46958" # bright:red
+set notification-warning-bg     "#151515" # bg
+set notification-warning-fg     "#F4BF75" # bright:yellow
+set notification-bg             "#151515" # bg
+set notification-fg             "#90A959" # bright:green
+
+set completion-bg               "#202020" # bg2
+set completion-fg               "#E1E1E1" # fg
+set completion-group-bg         "#171717" # bg1
+set completion-group-fg         "#373737" # gray
+set completion-highlight-bg     "#A2B5C1" # bright:blue
+set completion-highlight-fg     "#202020" # bg2
+
+# Define the color in index mode
+set index-bg                    "#202020" # bg2
+set index-fg                    "#E1E1E1" # fg
+set index-active-bg             "#A2B5C1" # bright:blue
+set index-active-fg             "#202020" # bg2
+
+set inputbar-bg                 "#151515" # bg
+set inputbar-fg                 "#E1E1E1" # fg
+
+set statusbar-bg                "#202020" # bg2
+set statusbar-fg                "#E1E1E1" # fg
+
+set highlight-color             "#F4BF75" # bright:yellow
+set highlight-active-color      "#FFA557" # bright:orange
+
+set default-bg                  "#151515" # bg
+set default-fg                  "#E1E1E1" # fg
+set render-loading              true
+set render-loading-bg           "#151515" # bg
+set render-loading-fg           "#E1E1E1" # fg
+
+# Recolor book content's color
+# <C-r> to switch color modes
+set recolor-lightcolor          "#151515" # bg
+set recolor-darkcolor           "#E1E1E1" # fg
+set recolor                     "true"
+# set recolor-keephue             true      # keep original color
 
 set statusbar-h-padding 0
 set statusbar-v-padding 0
 set page-padding 1
 
-map u scroll half-up
-map d scroll half-down
+# map u scroll half-up
+# map d scroll half-down
 map D toggle_page_mode
 map r reload
 map R rotate
-map K zoom in
-map J zoom out
+map + zoom in
+map - zoom out
 map i recolor
