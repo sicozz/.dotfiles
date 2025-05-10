@@ -2,7 +2,7 @@ local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
 -- Edit plugins
-keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/lazyvim/.config/nvim/lua/config/lazy.lua<CR>");
+keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/lazyvim/.config/nvim/lua/config/lazy.lua<CR>")
 
 -- Do things without affecting the registers
 keymap.set("n", "x", '"_x')
@@ -55,11 +55,6 @@ keymap.set("n", "N", "Nzzzv")
 -- Disable key
 keymap.set("n", "Q", "<nop>")
 keymap.set("n", "s", "<nop>")
-
--- Diagnostics
-keymap.set("n", "<C-j>", function()
-	vim.diagnostic.goto_next()
-end, opts)
 
 -- Source
 -- Better to just use :so<CR>
