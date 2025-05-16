@@ -12,7 +12,6 @@ vim.opt.confirm = false
 vim.opt.encoding = "utf-8"
 vim.opt.expandtab = true
 vim.opt.fileencoding = "utf-8"
--- vim.opt.formatoptions:append({ "r" })
 vim.opt.hlsearch = true
 vim.opt.inccommand = "split"
 vim.opt.laststatus = 2
