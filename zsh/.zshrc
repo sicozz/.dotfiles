@@ -18,7 +18,7 @@ export GOBIN="$GOPATH/bin"
 export PATH=$GOROOT/bin:$GOBIN:$PATH
 
 # Deno
-. "/home/sicoz/.deno/env"
+# . "/home/sicoz/.deno/env"
 
 # Java
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
