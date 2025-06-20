@@ -1,7 +1,10 @@
 # Basic Ghostty Configuration
 
 # Theme - load the custom theme we created
-theme = no-clown-fiesta.conf
+# Dark theme:
+theme = kanso-zen.conf
+ # Light theme:
+# theme = kanso-pearl.conf
 
 # Font settings
 font-family = "JetBrains Mono"
