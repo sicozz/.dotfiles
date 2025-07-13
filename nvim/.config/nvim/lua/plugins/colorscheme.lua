@@ -1,6 +1,6 @@
 return {
   {
-    "webhooked/kanso.nvim",
+    "sicozz/kanso.nvim",
     lazy = false,
     priority = 1000,
     opts = function()
@@ -17,8 +17,8 @@ return {
         },
         statementStyle = {},
         typeStyle = { bold = true },
-        transparent = false, -- do not set background color
-        dimInactive = true, -- dim inactive window `:h hl-NormalNC`
+        transparent = true, -- do not set background color
+        dimInactive = false, -- dim inactive window `:h hl-NormalNC`
         terminalColors = true, -- define vim.g.terminal_color_{0,17}
         -- colors = { -- add/modify theme and palette colors
         --   palette = {},
