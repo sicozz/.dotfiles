@@ -1,0 +1,25 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/.cache/JetBrains/IdeaIC2025.1/demo/IdeaLearningProject" value="true" />
+        <entry key="$USER_HOME$/dev/online_judges/leetcode" value="true" />
+        <entry key="$USER_HOME$/dev/online_judges/leetcode/303_range_sum_query" value="true" />
+        <entry key="$USER_HOME$/dev/online_judges/leetcode/525_contiguous_array" value="true" />
+        <entry key="$USER_HOME$/dev/online_judges/leetcode/560_suarrays_sum_k" value="true" />
+        <entry key="$USER_HOME$/dev/open_source/Flink/flink" value="true" />
+        <entry key="$USER_HOME$/dev/open_source/Flink/tutorials/flink-playgrounds/docker/data-generator" value="true" />
+        <entry key="$USER_HOME$/dev/open_source/Flink/tutorials/flink-playgrounds/table-walkthrough" value="true" />
+        <entry key="$USER_HOME$/dev/open_source/Flink/tutorials/try_flink/frauddetection" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/dev/open_source/Flink/tutorials/try_flink" />
+        <option value="$USER_HOME$/dev/open_source/Flink/tutorials/flink-playgrounds" />
+      </list>
+    </option>
+  </component>
+</application>

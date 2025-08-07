@@ -11,12 +11,10 @@ systemd-devel \
 wayland-devel \
 lld \
 clang \
-java-latest-openjdk \
-java-latest-openjdk-devel \
+java-21-openjdk \
+java-21-openjdk-devel \
 git \
 delve \
-protobuf-compiler \
-grpcurl \
 ncdu \
 stow \
 tmux \

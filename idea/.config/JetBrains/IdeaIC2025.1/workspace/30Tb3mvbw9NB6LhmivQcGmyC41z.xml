@@ -1,0 +1,1063 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="flink" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="swkoajetdus4" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/DeliveryGuarantee.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="537">
+              <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"DeliveryGuarantee.java","foregroundColor":-9922629,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"6897bb"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,80,10,31,102,105,108,101,84,121,112,101,115,47,106,97,118,97,79,117,116,115,105,100,101,83,111,117,114,99,101,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,106,97,118,97,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-11,-102,-33,91,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Markdown": {
+      "usageCount": 9,
+      "lastUsed": 1753756430884
+    },
+    "XML": {
+      "usageCount": 6,
+      "lastUsed": 1753755928456
+    },
+    "PLAIN_TEXT": {
+      "usageCount": 2,
+      "lastUsed": 1753755928705
+    },
+    "JAVA": {
+      "usageCount": 6,
+      "lastUsed": 1753756613403
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find />
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/sicoz/.config/JetBrains/IdeaIC2025.1/idea64.vmoptions&quot;,
+    &quot;/home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/DeliveryGuarantee.java&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="6" lastUsage="1753756613404" />
+    </language>
+    <language id="Markdown">
+      <summary usageCount="9" lastUsage="1753756430884" />
+    </language>
+    <language id="TEXT">
+      <summary usageCount="2" lastUsage="1753755928706" />
+    </language>
+    <language id="XML">
+      <summary usageCount="6" lastUsage="1753755928463" />
+    </language>
+  </component>
+  <component name="MavenProjectNavigator">
+    <option name="groupStructurally" value="true" />
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="flink" />
+            <item name="flink" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink" />
+              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.github" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".github" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/.github}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".idea" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/.idea}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.mvn" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".mvn" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/.mvn}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/docs" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="docs" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/docs}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-annotations" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-annotations" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-annotations}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-architecture-tests" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-architecture-tests" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-architecture-tests}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-clients" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-clients" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-clients}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-connectors" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-connectors" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-connector-base" />
+                  <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/archunit-violations" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="archunit-violations" />
+                    <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/archunit-violations}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="src" />
+                    <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main" />
+                        </map>
+                      </attributes>
+                      <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="main" />
+                      <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main}" type="462c0819:PsiDirectoryNode" />
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="java" />
+                        <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java}" type="462c0819:PsiDirectoryNode" />
+                        <presentation>
+                          <attributes>
+                            <map>
+                              <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org" />
+                            </map>
+                          </attributes>
+                          <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="org" />
+                          <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org}" type="462c0819:PsiDirectoryNode" />
+                          <presentation>
+                            <attributes>
+                              <map>
+                                <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache" />
+                              </map>
+                            </attributes>
+                            <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="apache" />
+                            <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache}" type="462c0819:PsiDirectoryNode" />
+                            <presentation>
+                              <attributes>
+                                <map>
+                                  <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache/flink" />
+                                </map>
+                              </attributes>
+                              <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="flink" />
+                              <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink}" type="462c0819:PsiDirectoryNode" />
+                              <presentation>
+                                <attributes>
+                                  <map>
+                                    <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector" />
+                                  </map>
+                                </attributes>
+                                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="connector" />
+                                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector}" type="462c0819:PsiDirectoryNode" />
+                                <presentation>
+                                  <attributes>
+                                    <map>
+                                      <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base" />
+                                    </map>
+                                  </attributes>
+                                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="base" />
+                                  <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base}" type="462c0819:PsiDirectoryNode" />
+                                  <presentation>
+                                    <attributes>
+                                      <map>
+                                        <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/sink" />
+                                      </map>
+                                    </attributes>
+                                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="sink" />
+                                    <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/sink}" type="462c0819:PsiDirectoryNode" />
+                                  </presentation>
+                                  <presentation>
+                                    <attributes>
+                                      <map>
+                                        <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/source" />
+                                      </map>
+                                    </attributes>
+                                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="source" />
+                                    <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/source}" type="462c0819:PsiDirectoryNode" />
+                                  </presentation>
+                                  <presentation>
+                                    <attributes>
+                                      <map>
+                                        <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/table" />
+                                      </map>
+                                    </attributes>
+                                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="table" />
+                                    <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/table}" type="462c0819:PsiDirectoryNode" />
+                                  </presentation>
+                                  <presentation>
+                                    <attributes>
+                                      <map>
+                                        <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/DeliveryGuarantee.java" />
+                                      </map>
+                                    </attributes>
+                                    <data iconPath="expui/fileTypes/java.svg" iconPlugin="com.intellij" isLeaf="true" text="DeliveryGuarantee.java" />
+                                    <item name="DeliveryGuarantee.java" type="ab9368bb:PsiFileNode" />
+                                  </presentation>
+                                </presentation>
+                              </presentation>
+                            </presentation>
+                          </presentation>
+                        </presentation>
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/resources" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="resources" />
+                        <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/main/resources}" type="462c0819:PsiDirectoryNode" />
+                      </presentation>
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/src/test" />
+                        </map>
+                      </attributes>
+                      <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="test" />
+                      <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-base/src/test}" type="462c0819:PsiDirectoryNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-base/pom.xml" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/maven.svg" iconPlugin="com.intellij.java" isLeaf="true" text="pom.xml" />
+                    <item name="pom.xml" type="d371aba8:MavenTreeStructureProvider$MavenPomFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-datagen" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-connector-datagen" />
+                  <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-datagen}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-datagen-test" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-connector-datagen-test" />
+                  <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-datagen-test}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-connector-files" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-connector-files" />
+                  <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-connector-files}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-file-sink-common" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-file-sink-common" />
+                  <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-file-sink-common}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/flink-hadoop-compatibility" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-hadoop-compatibility" />
+                  <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-connectors/flink-hadoop-compatibility}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/flink-connectors/pom.xml" />
+                    </map>
+                  </attributes>
+                  <data iconPath="icons/expui/maven.svg" iconPlugin="com.intellij.java" isLeaf="true" text="pom.xml" />
+                  <item name="pom.xml" type="d371aba8:MavenTreeStructureProvider$MavenPomFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-container" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-container" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-container}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-core" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-core" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-core}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-core-api" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-core-api" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-core-api}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-datastream" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-datastream" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-datastream}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-datastream-api" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-datastream-api" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-datastream-api}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-dist" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-dist" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-dist}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-dist-scala" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-dist-scala" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-dist-scala}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-docs" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-docs" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-docs}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-dstl" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-dstl" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-dstl}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-end-to-end-tests" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-end-to-end-tests" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-end-to-end-tests}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-examples" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-examples" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-examples}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-external-resources" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-external-resources" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-external-resources}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-filesystems" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-filesystems" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-filesystems}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-formats" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-formats" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-formats}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-fs-tests" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-fs-tests" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-fs-tests}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-kubernetes" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-kubernetes" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-kubernetes}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-libraries" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-libraries" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-libraries}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-metrics" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-metrics" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-metrics}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-models" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-models" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-models}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-python" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-python" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-python}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-queryable-state" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-queryable-state" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-queryable-state}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-quickstart" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-quickstart" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-quickstart}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-rpc" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-rpc" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-rpc}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-runtime" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-runtime" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-runtime}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-runtime-web" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-runtime-web" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-runtime-web}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-state-backends" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-state-backends" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-state-backends}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-streaming-java" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-streaming-java" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-streaming-java}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-table" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-table" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-table}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-test-utils-parent" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-test-utils-parent" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-test-utils-parent}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-tests" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-tests" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-tests}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-tests-java17" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-tests-java17" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-tests-java17}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-walkthroughs" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-walkthroughs" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-walkthroughs}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-yarn" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-yarn" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-yarn}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/flink-yarn-tests" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="flink-yarn-tests" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/flink-yarn-tests}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/licenses" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="licenses" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/licenses}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/target" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="target" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/target}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/tools" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="tools" />
+                <item name="dir{file:///home/sicoz/dev/open_source/Flink/flink/tools}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.asf.yaml" />
+                  </map>
+                </attributes>
+                <data iconPath="fileTypes/yaml.svg" iconPlugin="com.intellij" isLeaf="true" text=".asf.yaml" />
+                <item name=".asf.yaml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.editorconfig" />
+                  </map>
+                </attributes>
+                <data iconPath="nodes/editorconfig.svg" iconPlugin="com.intellij" isLeaf="true" text=".editorconfig" />
+                <item name=".editorconfig" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.git-blame-ignore-revs" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text=".git-blame-ignore-revs" />
+                <item name=".git-blame-ignore-revs" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data iconPath="vcs/ignore_file.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitmodules" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitmodules" />
+                <item name=".gitmodules" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.scalafmt.conf" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text=".scalafmt.conf" />
+                <item name=".scalafmt.conf" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/azure-pipelines.yml" />
+                  </map>
+                </attributes>
+                <data iconPath="fileTypes/yaml.svg" iconPlugin="com.intellij" isLeaf="true" text="azure-pipelines.yml" />
+                <item name="azure-pipelines.yml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/LICENSE" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="LICENSE" />
+                <item name="LICENSE" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/mvnw" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="mvnw" />
+                <item name="mvnw" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/mvnw.cmd" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="mvnw.cmd" />
+                <item name="mvnw.cmd" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/NOTICE" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="NOTICE" />
+                <item name="NOTICE" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/pom.xml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/maven.svg" iconPlugin="com.intellij.java" isLeaf="true" text="pom.xml" />
+                <item name="pom.xml" type="d371aba8:MavenTreeStructureProvider$MavenPomFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/README.md" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/markdown.svg" iconPlugin="org.intellij.plugins.markdown" isLeaf="true" text="README.md" />
+                <item name="README.md" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="true" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28336865" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Build" order="5" weight="0.32955664" />
+      <window_info anchor="bottom" id="Python Packages" order="6" />
+      <window_info anchor="bottom" id="CheckStyle" order="7" weight="0.32955664" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.33026317" />
+      <window_info anchor="right" id="Python Console" order="5" />
+      <unified_weights bottom="0.32955664" left="0.28336865" right="0.33026317" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>CheckStyle</value>
+      <value>Build</value>
+      <value>Maven</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2475" y="224" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1753754630278">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="224" width="800" height="647" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1753754630278" />
+    <state x="2636" y="304" key="FileChooserDialogImpl" timestamp="1753756488296">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2636" y="304" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1753756488296" />
+    <state x="2237" y="145" width="1222" height="800" key="SettingsEditor" timestamp="1753756283773">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2237" y="145" width="1222" height="800" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1753756283773" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-annotations/src/main/java/org/apache/flink/annotation/Public.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-annotations/src/main/java/org/apache/flink/annotation/PublicEvolving.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-annotations/src/main/java/org/apache/flink/annotation/Experimental.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/flink-connectors/flink-connector-base/src/main/java/org/apache/flink/connector/base/DeliveryGuarantee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Apache</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI" />
+      <state key="GlobalLibrariesConfigurable.UI" />
+      <state key="JdkListConfigurable.UI" />
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>another-dummy-fs</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI" />
+    </states>
+  </component>
+</project>

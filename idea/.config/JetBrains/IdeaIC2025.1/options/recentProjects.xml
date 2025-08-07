@@ -1,0 +1,138 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/.cache/JetBrains/IdeaIC2025.1/demo/IdeaLearningProject">
+          <value>
+            <RecentProjectMetaInfo frameTitle="IdeaLearningProject – Welcome.java" hidden="true" projectWorkspaceId="30T92Vh9B1Hu9Vnh9RpFPVW3l9K">
+              <option name="activationTimestamp" value="1753647268718" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="1930" y="55" width="1900" height="1015" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1753640489474" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/dev/open_source/Flink/flink">
+          <value>
+            <RecentProjectMetaInfo frameTitle="flink – DeliveryGuarantee.java [flink-connector-base]" projectWorkspaceId="30Tb3mvbw9NB6LhmivQcGmyC41z">
+              <option name="activationTimestamp" value="1753756608731" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo customColor="994d5dca" />
+              </option>
+              <frame x="2886" y="55" width="944" height="1015" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1753756609030" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/dev/open_source/Flink/tutorials/try_flink/frauddetection">
+          <value>
+            <RecentProjectMetaInfo frameTitle="frauddetection – FraudDetector.java" projectWorkspaceId="30VGmiC8lR8q0YjZMstNa136cMG">
+              <option name="activationTimestamp" value="1753963415869" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="2886" y="55" width="944" height="1015" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1753963349334" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/dev/online_judges/leetcode/303_range_sum_query">
+          <value>
+            <RecentProjectMetaInfo frameTitle="303_range_sum_query – NumArray.java" projectWorkspaceId="30kLBbEtMSIyc7uNNaNuHqRZ6D4">
+              <option name="activationTimestamp" value="1754252529191" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <frame x="1930" y="55" width="1900" height="1015" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1754252335269" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/dev/online_judges/leetcode/525_contiguous_array">
+          <value>
+            <RecentProjectMetaInfo frameTitle="525_contiguous_array – Solution.java" projectWorkspaceId="30mdaIndIVov8EJOpuZmjAqeN3B">
+              <option name="activationTimestamp" value="1754252628779" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <frame x="1930" y="55" width="1900" height="1015" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1754252529742" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/dev/online_judges/leetcode/560_suarrays_sum_k">
+          <value>
+            <RecentProjectMetaInfo frameTitle="560_suarrays_sum_k – Solution.java" projectWorkspaceId="30mqhJLZVRMxQlwMZRzaBcnrkIn">
+              <option name="activationTimestamp" value="1754252333872" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="1930" y="55" width="1900" height="1015" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1754252629299" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/dev/open_source/Flink/tutorials/flink-playgrounds/docker/data-generator">
+          <value>
+            <RecentProjectMetaInfo frameTitle="data-generator – ExpenseCategory.java" projectWorkspaceId="30owhdGmjeM03Uln6kFRbZ0xF4X">
+              <option name="activationTimestamp" value="1754448808216" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="1930" y="55" width="1900" height="1015" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1754443256665" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/dev/open_source/Flink/tutorials/flink-playgrounds/table-walkthrough">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="30aqNdcCJN96pVA3Q6vHwSDv1Os">
+              <option name="activationTimestamp" value="1754448812580" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="2886" y="55" width="944" height="1015" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1754443709429" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/dev/open_source/Flink/tutorials/flink-playgrounds/table-walkthrough" />
+    <option name="lastProjectLocation" value="$USER_HOME$/dev/open_source/Flink/tutorials/flink-playgrounds/docker" />
+  </component>
+</application>

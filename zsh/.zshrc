@@ -17,16 +17,8 @@ export GOBIN="$GOPATH/bin"
 
 export PATH=$GOROOT/bin:$GOBIN:$PATH
 
-# Deno
-# . "/home/sicoz/.deno/env"
-
-# Java
-export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 export PATH=$JAVA_HOME/bin:$PATH
-
-# Gradle
-export GRADLE_HOME=/opt/gradle/gradle-8.13
-export PATH=$GRADLE_HOME/bin:$PATH
 
 # Intellij IDEA
 export IDEABIN="/opt/idea/bin"
@@ -49,7 +41,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # SHELL for tmux sessions
 # export SHELL="/usr/bin/zsh"
 
-export AIRFLOW_HOME=~/.local/share/airflow
+alias kb="setxkbmap -layout us -variant dvorak -option"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -118,37 +110,7 @@ plugins=(
     zsh-syntax-highlighting
 )
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-# Quick commands
-# alias cat=batcat
-# alias kb="setxkbmap -layout us -variant real-prog-dvorak -option caps:escape"
-alias kb="setxkbmap -layout us -variant dvorak -option"
-alias myip="xh http://ipecho.net/plain; echo"
-alias shdnow="shutdown now"
-alias v="vim ."
-alias ranger=". ranger"
-
 source $ZSH/oh-my-zsh.sh
-
-# eval "$(starship init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Quick reminder trick
-# reminder='\t+++++ REMINDER +++++\n\t[ ] Get ready for going out: basketball clothes, bag, basketball, water\n\t[ ] Brown noise background\n\t[ ] Dev until 7:00'
-# echo -n -e '\033[1m\033[1;33m'
-# echo ${reminder}
-# echo -n -e '\033[0m'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
