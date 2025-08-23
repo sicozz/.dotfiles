@@ -19,18 +19,12 @@ export PATH=$GOROOT/bin:$GOBIN:$PATH
 
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 export PATH=$JAVA_HOME/bin:$PATH
-
 # Intellij IDEA
 export IDEABIN="/opt/idea/bin"
 export PATH=$IDEABIN:$PATH
 
-# Intellij RustRover
-export RUSTROVERBIN="/opt/rustrover/bin"
-export PATH=$RUSTROVERBIN:$PATH
-
-# Maven
-export MAVEN_HOME="/opt/apache-maven-3.8.6"
-export PATH=$MAVEN_HOME/bin:$PATH
+# Gradle
+export PATH=/opt/gradle/gradle-9.0.0/bin:$PATH
 
 # Default editor (used by sudoedit)
 export EDITOR=$(which vim)
