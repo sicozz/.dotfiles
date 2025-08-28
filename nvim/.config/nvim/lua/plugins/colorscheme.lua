@@ -1,10 +1,10 @@
 return {
   {
-    "sicozz/kanso.nvim",
+    "sicozz/conqueror.nvim",
     lazy = false,
     priority = 1000,
     opts = function()
-      require("kanso").setup({
+      require("conqueror").setup({
         bold = true, -- enable bold fonts
         italics = true, -- enable italics
         compile = false, -- enable compiling the colorscheme
@@ -53,36 +53,6 @@ return {
   --   end,
   --   lazy = false,
   -- },
-
-  {
-    "sicozz/conqueror.nvim",
-    priority = 1000,
-    config = true,
-    opts = function()
-      -- Default options:
-      require("conqueror").setup({
-        terminal_colors = true,
-        undercurl = true,
-        underline = true,
-        bold = true,
-        italic = {
-          strings = true,
-          emphasis = true,
-          comments = true,
-          operators = false,
-          folds = true,
-        },
-        strikethrough = true,
-        invert_selection = false,
-        invert_signs = false,
-        invert_tabline = false,
-        invert_intend_guides = false,
-        inverse = true,
-        dim_inactive = false,
-        transparent_mode = true,
-      })
-    end,
-  },
 
   {
     "rebelot/kanagawa.nvim",
