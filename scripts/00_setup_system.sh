@@ -48,6 +48,7 @@ htop \
 cmatrix \
 rg \
 fd-find \
+tree-sitter-cli \
 fastfetch
 
 sudo dnf group install development-tools -y
