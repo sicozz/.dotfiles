@@ -1,5 +1,9 @@
 return {
   {
+    "sicozz/retrofuture.nvim",
+  },
+
+  {
     "sicozz/conqueror.nvim",
     lazy = false,
     priority = 1000,

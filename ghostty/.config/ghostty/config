@@ -2,8 +2,8 @@
 
 # Theme - load the custom theme we created
 # Dark theme:
-theme = kanso-zen.conf
- # Light theme:
+theme = retrofuture.conf
+# Light theme:
 # theme = kanso-pearl.conf
 
 # Font settings
@@ -24,7 +24,7 @@ cursor-style = block
 cursor-style-blink = true
 cursor-invert-fg-bg = true
 mouse-hide-while-typing = true
-background-opacity = 0.85
+# background-opacity = 0.85
 # adjust-cell-height = 120% # Increase line spacing (uncomment to enable)
 
 # Keybindings
