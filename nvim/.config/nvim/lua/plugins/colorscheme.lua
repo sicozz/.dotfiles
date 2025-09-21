@@ -1,5 +1,19 @@
 return {
   {
+    "fcancelinha/nordern.nvim",
+    branch = "master",
+    priority = 1000,
+    config = function()
+        require('nordern').setup({
+            brighter_comments = false,
+            brighter_constants = true,
+            italic_comments = true,
+            transparent = true,
+        })
+    end
+  },
+
+  {
     "sicozz/retrofuture.nvim",
   },
 
