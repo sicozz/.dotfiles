@@ -2,7 +2,7 @@
 
 # Theme - load the custom theme we created
 # Dark theme:
-theme = nord-dark.conf
+theme = solarized-dark.conf
 # Light theme:
 # theme = kanso-pearl.conf
 
